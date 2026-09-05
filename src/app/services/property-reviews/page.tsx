@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Routine Property Reviews & Home Watch Checklists | Delaware Beaches',
-  description: 'Exhaustive interior and exterior home inspection checklists starting at 5/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
+  description: 'Exhaustive interior and exterior home inspection checklists starting at $45/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
   keywords: ['property review delaware', 'home watch checklist beach house', 'vacation home inspection rehoboth', 'house watching sussex county'],
 };
 
@@ -42,7 +42,7 @@ export default function PropertyReviewsPage() {
             Routine Property Reviews & Home Watch Program
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Having our eyes on your property is the single most critical defense against catastrophic and concealed coastal damage. Comprehensive, customizable walk-throughs starting at 5 per visit.
+            Having our eyes on your property is the single most critical defense against catastrophic and concealed coastal damage. Comprehensive, customizable walk-throughs starting at $45 per visit.
           </p>
           <div className="pt-2 flex flex-wrap gap-4 text-xs">
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Digital Report with Photos</span>
@@ -66,42 +66,114 @@ export default function PropertyReviewsPage() {
           </p>
         </div>
 
-        {/* Checklists Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Interior Checklist */}
-          <div className="bg-white p-8 rounded-2xl border border-sand-200 shadow-sm space-y-4">
-            <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold">
-              INT
-            </div>
-            <h3 className="font-serif text-xl font-bold text-slate-900">Interior Property Checklist</h3>
-            <p className="text-slate-600 text-xs leading-relaxed">
-              Our comprehensive Interior Property Review focuses on maintaining immaculate conditions and optimal functionality of vital systems:
+        {/* Sample Property Review Reports Gallery */}
+        <div className="space-y-6">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <span className="text-xs font-semibold tracking-widest text-coastal-600 uppercase">
+              Digital Inspection Reports
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+              Sample Property Review Reports
+            </h3>
+            <p className="text-slate-600 text-xs sm:text-sm">
+              Here is an authentic look at the detailed digital reports delivered directly to homeowners after every visit—complete with timestamped photography, system checks, and actionable observations.
             </p>
-            <ul className="space-y-2 text-xs text-slate-700">
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>HVAC & Dehumidification:</strong> Confirming thermostat operation and humidity levels to prevent mold growth in closets and crawlspaces.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Plumbing & Freeze Checks:</strong> Operating faucets, flushing toilets, running disposals, and inspecting under-sink traps for silent leaks.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Electrical & Appliances:</strong> Cycling refrigerators, dishwashers, and wine chillers to prevent seals from drying out.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Security & Smart Systems:</strong> Verifying door locks, sensor alignments, and internet connectivity.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Pest & Rodent Detection:</strong> Inspecting mechanical rooms, basements, and attic access points for early intrusion.</li>
-            </ul>
           </div>
 
-          {/* Exterior Checklist */}
-          <div className="bg-white p-8 rounded-2xl border border-sand-200 shadow-sm space-y-4">
-            <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold">
-              EXT
-            </div>
-            <h3 className="font-serif text-xl font-bold text-slate-900">Exterior Property Checklist</h3>
-            <p className="text-slate-600 text-xs leading-relaxed">
-              Our Exterior Review safeguards curb appeal, structural envelope integrity, and general grounds safety:
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a
+              href="/SPR1.webp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block bg-white rounded-2xl border border-sand-200 shadow-sm overflow-hidden hover:shadow-lg hover:border-coastal-400 transition duration-200"
+            >
+              <div className="overflow-hidden bg-slate-50">
+                <img
+                  src="/SPR1.webp"
+                  alt="Sample Property Review Report Page 1"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                />
+              </div>
+              <div className="p-4 text-center border-t border-sand-200">
+                <span className="text-xs font-semibold text-slate-800 group-hover:text-coastal-700 transition">
+                  Report Preview 1 (Click to enlarge) ↗
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="/SPR2.webp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block bg-white rounded-2xl border border-sand-200 shadow-sm overflow-hidden hover:shadow-lg hover:border-coastal-400 transition duration-200"
+            >
+              <div className="overflow-hidden bg-slate-50">
+                <img
+                  src="/SPR2.webp"
+                  alt="Sample Property Review Report Page 2"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                />
+              </div>
+              <div className="p-4 text-center border-t border-sand-200">
+                <span className="text-xs font-semibold text-slate-800 group-hover:text-coastal-700 transition">
+                  Report Preview 2 (Click to enlarge) ↗
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="/SPR3.webp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block bg-white rounded-2xl border border-sand-200 shadow-sm overflow-hidden hover:shadow-lg hover:border-coastal-400 transition duration-200"
+            >
+              <div className="overflow-hidden bg-slate-50">
+                <img
+                  src="/SPR3.webp"
+                  alt="Sample Property Review Report Page 3"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-300"
+                />
+              </div>
+              <div className="p-4 text-center border-t border-sand-200">
+                <span className="text-xs font-semibold text-slate-800 group-hover:text-coastal-700 transition">
+                  Report Preview 3 (Click to enlarge) ↗
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        {/* Specialized Turnover Reviews for Self-Managing Vacation Rental Owners */}
+        <div className="bg-coastal-950 text-white p-8 sm:p-10 rounded-2xl border border-coastal-800 space-y-6 shadow-md">
+          <div className="space-y-2">
+            <span className="bg-sand-400 text-coastal-950 font-bold text-[10px] uppercase tracking-widest px-2.5 py-1 rounded inline-block">
+              Vacation Rental Partnership
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+              Specialized Turnover Reviews for Self-Managing Rental Owners
+            </h3>
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-3xl">
+              Many Sussex County coastal homeowners manage their own Airbnb, VRBO, or direct guest bookings to maximize their income. Elevated Property Care provides the professional, on-the-ground property stewardship you need without charging any commission on your rental earnings.
             </p>
-            <ul className="space-y-2 text-xs text-slate-700">
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Roof & Drainage:</strong> Visual inspection of downspouts, gutter lines, flashing, and soffit vents for storm displacement.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Envelope & Siding:</strong> Auditing wind-driven salt wear, siding integrity, window seals, and deck fasteners.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Vendor Quality Control:</strong> Verifying that contracted lawn and pool services performed complete, quality work.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Grounds & Perimeter:</strong> Checking gates, fence lines, bulkhead edges, and outdoor showers.</li>
-              <li className="flex items-start"><span className="text-coastal-700 mr-2 font-bold">•</span><strong>Storm Readiness:</strong> Inspecting outdoor furniture, covers, and loose accessories before forecast weather events.</li>
-            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+            <div className="bg-coastal-900/80 p-5 rounded-xl border border-coastal-800 space-y-2">
+              <h4 className="font-bold text-sm text-sand-300">Pre-Rental Readiness Checks</h4>
+              <p>We verify HVAC set points, test plumbing fixtures, inspect lighting and smart locks, and ensure all amenities are pristine, safe, and ready for arriving guests.</p>
+            </div>
+            <div className="bg-coastal-900/80 p-5 rounded-xl border border-coastal-800 space-y-2">
+              <h4 className="font-bold text-sm text-sand-300">Post-Checkout Damage Reviews</h4>
+              <p>Following guest departures, we complete detailed interior and exterior inspections, documenting any damage, excessive wear, or maintenance needs with timestamped photos before your next turnover.</p>
+            </div>
+            <div className="bg-coastal-900/80 p-5 rounded-xl border border-coastal-800 space-y-2">
+              <h4 className="font-bold text-sm text-sand-300">Tenant & Owner Ground Assistance</h4>
+              <p>When unexpected maintenance issues arise during a guest stay—from a tripped breaker to an appliance malfunction—our licensed local team provides rapid assistance to resolve issues and protect your asset.</p>
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-coastal-800/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-xs text-sand-200">
+            <span><strong>Zero Rental Commission:</strong> You keep 100% of your booking revenue. We simply keep your home in prime condition.</span>
           </div>
         </div>
 
