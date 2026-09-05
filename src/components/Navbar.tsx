@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="w-full bg-coastal-950 text-slate-300 text-xs py-2 px-4 border-b border-coastal-800">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-1">
           <span className="font-medium text-slate-300 tracking-wide text-[11px] sm:text-xs">
-            Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island
+            Serving Sussex County Delaware: Lewes - Rehoboth Beach - Bethany Beach, Fenwick Island, Dewey Beach, Ocean View and other coastal towns
           </span>
           <div className="flex items-center space-x-4 text-[11px] sm:text-xs">
             <span className="text-emerald-400 font-medium flex items-center">
