@@ -31,6 +31,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: baseUrl + route,
     lastModified,
     changeFrequency: route.includes('/resources') ? 'monthly' : 'weekly',
-    priority: route === '' ? 1.0 : route.includes('/locations') || route.includes('/services') ? 0.8 : 0.6,
+    priority: route === '' ? 1.0 : 0.8,
   }));
 }
