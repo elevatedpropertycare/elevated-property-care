@@ -56,10 +56,10 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-white font-semibold text-base mb-4 tracking-wide">Target Areas</h4>
           <ul className="space-y-2.5 text-xs text-slate-400">
-            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach Care</Link></li>
-            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach Care</Link></li>
-            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes Estate Care</Link></li>
-            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island Care</Link></li>
+            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach</Link></li>
+            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach</Link></li>
+            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes</Link></li>
+            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island</Link></li>
             <li><Link href="/annual-estimate" className="hover:text-white transition">Annual Estimate Calculator</Link></li>
             <li><Link href="/resources" className="hover:text-white transition">Coastal Protection Guides</Link></li>
           </ul>
