@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Routine Property Reviews & Home Watch Checklists | Delaware Beaches',
-  description: 'Exhaustive interior and exterior home inspection checklists starting at $45/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
+  description: 'Exhaustive interior and exterior home inspection checklists starting at $50/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
   keywords: ['property review delaware', 'home watch checklist beach house', 'vacation home inspection rehoboth', 'house watching sussex county'],
 };
 
