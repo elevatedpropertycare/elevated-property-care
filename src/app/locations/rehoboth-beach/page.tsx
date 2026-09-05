@@ -34,7 +34,7 @@ export default function RehobothBeachPage() {
       <section className="relative bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-4">
           <div className="inline-block bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded">
-            Rehoboth Beach, Delaware Estate Caretaking
+            Rehoboth Beach, Delaware Property Care
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
             Rehoboth Beach Luxury Home Watch & Estate Management
