@@ -30,7 +30,7 @@ export default function Footer() {
             Elevated Property Care
           </span>
           <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-            Delaware’s premier full-service luxury estate management and absentee home watch business. Built on transparency, proactive preventative care, and extensive Hamptons estate oversight experience.
+            Delaware’s premier full-service luxury property care and absentee home watch business. Built on transparency, proactive preventative care, and extensive Hamptons estate oversight experience.
           </p>
           <div className="pt-2 space-y-1 text-xs text-sand-200">
             <p className="font-semibold text-white">Delaware Licensed & Insured Contractor</p>
