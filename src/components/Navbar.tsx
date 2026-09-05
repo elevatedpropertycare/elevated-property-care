@@ -37,7 +37,7 @@ export default function Navbar() {
               Elevated Property Care
             </span>
             <span className="text-[8px] sm:text-[9px] tracking-[0.18em] text-coastal-600 font-medium uppercase mt-0.5 leading-none">
-              Delaware Coastal Estate Management & Home Watch
+              Delaware Coastal Property Care & Home Watch
             </span>
           </Link>
 
