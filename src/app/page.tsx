@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="max-w-3xl space-y-6">
             <div className="inline-flex items-center space-x-2 bg-coastal-900/90 border border-sand-400/30 px-3.5 py-1.5 rounded-full text-sand-200 text-xs font-medium tracking-wide uppercase">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Hamptons-Standard Estate Care In Coastal Delaware</span>
+              <span>Hamptons-Standard Property Care In Coastal Delaware</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15] text-balance">
