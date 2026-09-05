@@ -32,7 +32,7 @@ export default function AboutPage() {
               A Higher Benchmark in Coastal Property Oversight
             </h2>
             <p>
-              Elevated Property Care was established by drawing directly on extensive experience managing high-profile private homes, luxury estates, and complex mechanical residences in the Hamptons. In premier resort markets, second-home owners understand that simple drive-bys or occasional contractor visits are insufficient to defend against coastal degradation.
+              Elevated Property Care was established by drawing directly on extensive experience caring for high-profile private homes, luxury beach houses, and complex coastal residences in the Hamptons. In premier resort markets, second-home owners understand that simple drive-bys or occasional contractor visits are insufficient to defend against coastal degradation and weather events.
             </p>
             <p>
               As a licensed General Services and Resident Contractor in Delaware, Elevated Property Care operates exclusively across Coastal Sussex County—including Lewes, Rehoboth Beach, Bethany Beach, and Fenwick Island. We do not manage short-term tenant rentals or vacation booking turnovers; our sole loyalty is to the homeowner and the enduring physical health of their private property.
