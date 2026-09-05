@@ -27,7 +27,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed max-w-2xl text-balance">
-              Unrivaled absentee caretaking, routine property reviews, and preventative maintenance across Sussex County’s premier beach communities. Absolute peace of mind for your vacation home.
+              Unrivaled property care, routine home reviews, and preventative maintenance across Sussex County’s premier beach communities. Absolute peace of mind for your vacation home.
             </p>
 
             {/* Value Trust Badges */}
