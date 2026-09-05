@@ -18,10 +18,10 @@ export default function AnnualEstimatePage() {
   // Pricing formula logic
   // Base rates per visit
   const baseRateMap: Record<string, number> = {
-    small: 45,      // < 2,500 sq ft
-    medium: 55,     // 2,500 - 4,000 sq ft
-    large: 70,      // 4,000 - 6,000 sq ft
-    estate: 90      // 6,000+ sq ft
+    small: 50,      // < 2,500 sq ft
+    medium: 60,     // 2,500 - 4,000 sq ft
+    large: 75,      // 4,000 - 6,000 sq ft
+    estate: 95      // 6,000+ sq ft
   };
 
   const visitsMap: Record<string, number> = {
