@@ -34,7 +34,7 @@ export default function FenwickIslandPage() {
       <section className="relative bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-4">
           <div className="inline-block bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded">
-            Fenwick Island, Delaware Estate Caretaking
+            Fenwick Island, Delaware Property Care
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
             Fenwick Island Vacation Home Watch & Maintenance
