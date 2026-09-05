@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return routes.map((route) => ({
-    url: ,
+    url: baseUrl + route,
     lastModified,
     changeFrequency: route.includes('/resources') ? 'monthly' : 'weekly',
     priority: route === '' ? 1.0 : route.includes('/locations') || route.includes('/services') ? 0.8 : 0.6,
