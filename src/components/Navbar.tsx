@@ -36,7 +36,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Elevated Property Care - Managing Delaware's Finest Homes"
-              className="h-11 sm:h-13 md:h-[54px] w-auto object-contain transition duration-200 group-hover:opacity-85"
+              className="h-12 sm:h-14 md:h-[65px] w-auto object-contain transition duration-200 group-hover:opacity-85"
             />
           </Link>
 
