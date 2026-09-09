@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="w-full bg-coastal-950 text-slate-300 text-xs py-2 px-4 border-b border-coastal-800">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-1">
           <span className="font-medium text-slate-300 tracking-wide text-[11px] sm:text-xs">
-            Serving Sussex County Delaware: Lewes - Rehoboth Beach - Bethany Beach, Fenwick Island, Dewey Beach, Ocean View and other coastal towns
+            Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island
           </span>
           <div className="flex items-center space-x-4 text-[11px] sm:text-xs">
             <span className="text-emerald-400 font-medium flex items-center">
@@ -31,14 +31,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-nowrap justify-between items-center h-20 gap-4">
           
-          {/* Brand Logo */}
-          <Link href="/" className="flex flex-col flex-shrink-0 group">
-            <span className="font-serif text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-coastal-950 uppercase group-hover:text-coastal-700 transition leading-tight">
-              Elevated Property Care
-            </span>
-            <span className="text-[8px] sm:text-[9px] tracking-[0.18em] text-coastal-600 font-medium uppercase mt-0.5 leading-none">
-              Delaware Coastal Property Care & Home Watch
-            </span>
+          {/* Brand Logo Image (Replaced Text) */}
+          <Link href="/" className="flex items-center flex-shrink-0 py-1 group">
+            <img
+              src="/logo.png"
+              alt="Elevated Property Care - Managing Delaware's Finest Homes"
+              className="h-9 sm:h-11 md:h-12 w-auto object-contain transition duration-200 group-hover:opacity-85"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}
