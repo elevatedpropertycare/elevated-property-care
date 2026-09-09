@@ -31,12 +31,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-nowrap justify-between items-center h-20 gap-4">
           
-          {/* Brand Logo Image (Replaced Text) */}
-          <Link href="/" className="flex items-center flex-shrink-0 py-1 group">
+          {/* Brand Logo Image (Enlarged to fill vertical space) */}
+          <Link href="/" className="flex items-center flex-shrink-0 group">
             <img
               src="/logo.png"
               alt="Elevated Property Care - Managing Delaware's Finest Homes"
-              className="h-9 sm:h-11 md:h-12 w-auto object-contain transition duration-200 group-hover:opacity-85"
+              className="h-11 sm:h-13 md:h-[54px] w-auto object-contain transition duration-200 group-hover:opacity-85"
             />
           </Link>
 
@@ -117,111 +117,3 @@ export default function Navbar() {
             </Link>
             <Link href="/contact" className="hover:text-coastal-800 transition py-1">
               Contact
-            </Link>
-          </nav>
-
-          {/* Desktop Right Action Button */}
-          <div className="hidden lg:flex items-center flex-shrink-0">
-            <Link
-              href="/annual-estimate"
-              className="bg-coastal-900 hover:bg-coastal-800 text-white text-xs uppercase tracking-wider font-semibold py-2.5 px-4 rounded-lg shadow-sm transition whitespace-nowrap flex items-center"
-            >
-              Request Estimate
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-800 hover:text-coastal-800 p-2 focus:outline-none"
-              aria-label="Toggle navigation menu"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-      {/* Mobile Drawer */}
-      {isOpen && (
-        <div className="lg:hidden bg-white border-b border-sand-200 px-5 pt-3 pb-8 space-y-4 font-medium shadow-lg">
-          <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 font-semibold">
-            Home
-          </Link>
-
-          <div className="pl-3 border-l-2 border-coastal-300 space-y-2.5 py-1">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-coastal-800 block">Services</span>
-            <Link href="/services/property-reviews" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Property Reviews (Home Watch)
-            </Link>
-            <Link href="/services/preventative-maintenance" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Preventative Maintenance
-            </Link>
-            <Link href="/services/landscaping-care" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Landscaping & Exterior
-            </Link>
-            <Link href="/services/pool-and-spa-care" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Pool & Spa Oversight
-            </Link>
-            <Link href="/services/handyman-and-repairs" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Handyman & Carpentry ($50/hr)
-            </Link>
-            <Link href="/services/concierge" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Concierge & Storm Prep
-            </Link>
-          </div>
-
-          <div className="pl-3 border-l-2 border-coastal-300 space-y-2 py-1">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-coastal-800 block">Target Locations</span>
-            <Link href="/locations/rehoboth-beach" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Rehoboth Beach
-            </Link>
-            <Link href="/locations/bethany-beach" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Bethany Beach
-            </Link>
-            <Link href="/locations/lewes" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Lewes
-            </Link>
-            <Link href="/locations/fenwick-island" onClick={() => setIsOpen(false)} className="block text-xs text-slate-700 hover:text-coastal-800">
-              Fenwick Island
-            </Link>
-          </div>
-
-          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 text-sm">
-            Annual Estimate Calculator
-          </Link>
-          <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 text-sm">
-            Pricing & FAQ
-          </Link>
-          <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 text-sm">
-            About Us
-          </Link>
-          <Link href="/resources" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 text-sm">
-            Resources & Guides
-          </Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700 text-sm">
-            Contact
-          </Link>
-
-          <div className="pt-2">
-            <Link
-              href="/annual-estimate"
-              onClick={() => setIsOpen(false)}
-              className="block text-center bg-coastal-900 text-white font-semibold py-3 rounded-lg text-xs uppercase tracking-wider shadow"
-            >
-              Request Annual Estimate
-            </Link>
-          </div>
-        </div>
-      )}
-    </header>
-  );
-}
