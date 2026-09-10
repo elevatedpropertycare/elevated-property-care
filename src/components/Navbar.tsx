@@ -9,30 +9,32 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-200">
       {/* Top utility notification bar */}
-      <div className="bg-coastal-900 text-sand-100 text-xs py-2 px-4 text-center font-medium tracking-wide flex justify-between items-center max-w-7xl mx-auto">
-        <span>Serving Sussex County DE: Lewes - Rehoboth Beach - Bethany Beach, Fenwick Island, Dewey Beach, Ocean View and other coastal Delaware towns</span>
-        <div className="hidden md:flex items-center space-x-6">
-          <span>Available 365 Days a Year</span>
-          <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline">
-            Call: (302) 278-0938
-          </a>
+      <div className="bg-coastal-900 text-sand-100 text-[11px] sm:text-xs py-1.5 px-4 font-medium tracking-wide">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 text-center sm:text-left">
+          <span>Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
+          <div className="flex items-center space-x-4 text-[11px]">
+            <span className="hidden md:inline text-slate-300">Available 365 Days a Year</span>
+            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline">
+              (302) 278-0938
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Brand Logo */}
-          <Link href="/" className="flex flex-col">
-            <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-coastal-950 uppercase">
+          <Link href="/" className="flex flex-col min-w-0 pr-2">
+            <span className="font-serif text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-coastal-950 uppercase truncate">
               Elevated Property Care
             </span>
-            <span className="text-[10px] tracking-[0.25em] text-coastal-600 font-medium uppercase">
+            <span className="text-[9px] sm:text-[10px] tracking-wider sm:tracking-[0.18em] text-coastal-600 font-medium uppercase truncate">
               Delaware Coastal Property Care & Home Watch
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8 font-medium text-sm text-slate-700">
+          {/* Desktop Navigation (XL screens for clean spacing) */}
+          <nav className="hidden xl:flex items-center space-x-6 font-medium text-sm text-slate-700">
             <Link href="/" className="hover:text-coastal-700 transition">Home</Link>
             
             <div className="relative group py-2">
@@ -43,11 +45,11 @@ export default function Navbar() {
               <div className="absolute left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
                 <Link href="/services/property-reviews" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Property Reviews (Home Watch)
-                  <span className="block text-xs text-slate-500 font-normal">Weekly/bi-weekly inspection checklists</span>
+                  <span className="block text-xs text-slate-500 font-normal">Bi-weekly seasonal & mechanical audits</span>
                 </Link>
                 <Link href="/services/preventative-maintenance" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Preventative Maintenance
-                  <span className="block text-xs text-slate-500 font-normal">HVAC cycling, plumbing & winterization</span>
+                  <span className="block text-xs text-slate-500 font-normal">HVAC cycling, plumbing & freeze defense</span>
                 </Link>
                 <Link href="/services/landscaping-care" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Landscaping & Exterior
@@ -59,11 +61,11 @@ export default function Navbar() {
                 </Link>
                 <Link href="/services/handyman-and-repairs" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Handyman & Skilled Carpentry
-                  <span className="block text-xs text-slate-500 font-normal">Transparent 0/hr technical labor</span>
+                  <span className="block text-xs text-slate-500 font-normal">Transparent $50/hr technical labor</span>
                 </Link>
                 <Link href="/services/concierge" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Concierge & Storm Prep
-                  <span className="block text-xs text-slate-500 font-normal">Keyholder, deliveries & emergency response</span>
+                  <span className="block text-xs text-slate-500 font-normal">Keyholder, deliveries & emergency access</span>
                 </Link>
               </div>
             </div>
@@ -81,7 +83,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/annual-estimate" className="hover:text-coastal-700 transition">Home Watch Plans</Link>
+            <Link href="/annual-estimate" className="hover:text-coastal-700 transition font-semibold text-coastal-900">Home Watch Plans</Link>
             <Link href="/faq" className="hover:text-coastal-700 transition">FAQ & Pricing</Link>
             <Link href="/about" className="hover:text-coastal-700 transition">About Us</Link>
             <Link href="/resources" className="hover:text-coastal-700 transition">Resources</Link>
@@ -89,20 +91,20 @@ export default function Navbar() {
           </nav>
 
           {/* Direct CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden xl:flex items-center space-x-4">
             <Link
               href="/annual-estimate"
-              className="bg-coastal-800 hover:bg-coastal-900 text-white text-xs uppercase tracking-wider font-semibold py-3 px-5 rounded shadow-sm transition"
+              className="bg-coastal-900 hover:bg-coastal-950 text-white text-xs uppercase tracking-wider font-semibold py-3 px-5 rounded shadow-sm transition"
             >
               View Home Watch Plans
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex lg:hidden">
+          {/* Mobile / Tablet Menu Button (Shows on all screens smaller than XL) */}
+          <div className="flex xl:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-800 p-2 focus:outline-none"
+              className="text-slate-800 p-2 focus:outline-none rounded-lg hover:bg-sand-100 transition"
               aria-label="Toggle menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,9 +119,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile / Tablet drawer */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-b border-sand-200 px-4 pt-3 pb-6 space-y-3 font-medium">
+        <div className="xl:hidden bg-white border-b border-sand-200 px-4 pt-3 pb-6 space-y-3 font-medium max-h-[85vh] overflow-y-auto shadow-xl">
           <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Home</Link>
           <div className="pl-2 border-l-2 border-coastal-400 space-y-2 py-1">
             <span className="text-xs font-semibold uppercase tracking-wider text-coastal-800">Services</span>
@@ -127,7 +129,7 @@ export default function Navbar() {
             <Link href="/services/preventative-maintenance" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Preventative Maintenance</Link>
             <Link href="/services/landscaping-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Landscaping & Exterior</Link>
             <Link href="/services/pool-and-spa-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Pool & Spa Care</Link>
-            <Link href="/services/handyman-and-repairs" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Handyman & Carpentry (0/hr)</Link>
+            <Link href="/services/handyman-and-repairs" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Handyman & Carpentry ($50/hr)</Link>
             <Link href="/services/concierge" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Concierge & Storm Response</Link>
           </div>
           <div className="pl-2 border-l-2 border-coastal-400 space-y-2 py-1">
@@ -137,15 +139,22 @@ export default function Navbar() {
             <Link href="/locations/lewes" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Lewes</Link>
             <Link href="/locations/fenwick-island" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Fenwick Island</Link>
           </div>
-          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Home Watch Plans & Tiers</Link>
+          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Home Watch Plans & Tiers</Link>
           <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ & Pricing</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">About Us</Link>
           <Link href="/resources" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Resources & Guides</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Contact Us</Link>
-          <div className="pt-2">
+          <div className="pt-2 space-y-2">
+            <Link
+              href="/annual-estimate#walkthrough-form"
+              onClick={() => setIsOpen(false)}
+              className="block text-center bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold py-3 rounded-md text-xs uppercase tracking-wider transition"
+            >
+              Schedule Property Walkthrough
+            </Link>
             <a
               href="tel:3022780938"
-              className="block text-center bg-coastal-800 text-white font-semibold py-3 rounded-md text-sm"
+              className="block text-center bg-coastal-900 text-white font-semibold py-3 rounded-md text-sm"
             >
               Call (302) 278-0938
             </a>

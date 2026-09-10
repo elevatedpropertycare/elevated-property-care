@@ -69,7 +69,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm hover:shadow-md transition">
             <div className="w-10 h-10 rounded-lg bg-coastal-50 flex items-center justify-center text-coastal-800 font-bold mb-4">01</div>
             <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">One Contact</h3>
@@ -351,7 +351,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-md lg:max-w-none mx-auto">
             {/* Tier 1 */}
             <div className="bg-coastal-900/90 rounded-2xl p-6 border border-coastal-700 flex flex-col justify-between space-y-6">
               <div className="space-y-4">

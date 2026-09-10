@@ -15,7 +15,7 @@ export default function HomeWatchPlansPage() {
       id: 'essential',
       name: 'Essential Watch',
       tagline: 'Baseline Peace of Mind',
-      description: 'Ideal for frequent visitors or lower-maintenance properties seeking dependable baseline oversight and keyholder security.',
+      description: 'Ideal for frequent visitors or low-complexity beach properties seeking dependable keyholder security and monthly oversight.',
       monthlyPrice: 165,
       annualPrice: 1980,
       popular: false,
@@ -29,7 +29,6 @@ export default function HomeWatchPlansPage() {
         'Banked Review Credit policy (reschedule when you are in town)',
         'Billed monthly in arrears strictly for services rendered',
       ],
-      liaisons: 'Liaison visits billed as needed @ $65/ea',
       reviewsText: '12 Reviews / Year'
     },
     {
@@ -52,7 +51,6 @@ export default function HomeWatchPlansPage() {
         'Banked Review Credit policy (convert skipped reviews to credits)',
         'Billed monthly in arrears with itemized accounting',
       ],
-      liaisons: '2 Complimentary Liaisons Included (add’l @ $60/ea)',
       reviewsText: '26 Reviews / Year (Every 2 Weeks)'
     },
     {
@@ -75,7 +73,6 @@ export default function HomeWatchPlansPage() {
         'Full vendor management with zero routine trade markup',
         'Billed monthly in arrears with flexible cancellation credits',
       ],
-      liaisons: '4 Complimentary Liaisons Included (add’l @ $55/ea)',
       reviewsText: '36 Reviews / Year (Weekly in Winter / Bi-Weekly in Summer)'
     }
   ];
@@ -107,36 +104,36 @@ export default function HomeWatchPlansPage() {
   };
 
   return (
-    <div className="space-y-20 pb-20">
+    <div className="space-y-16 sm:space-y-20 pb-20 w-full overflow-hidden">
       <SchemaMarkup data={planSchema} />
 
       {/* Hero Section */}
-      <section className="relative bg-coastal-950 text-white py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+      <section className="relative bg-coastal-950 text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-coastal-900/40 via-coastal-950 to-coastal-950" />
         
-        <div className="relative max-w-5xl mx-auto space-y-6">
-          <div className="inline-flex items-center space-x-2 bg-coastal-800/90 border border-sand-400/30 px-4 py-1.5 rounded-full text-sand-200 text-xs font-semibold uppercase tracking-wider">
+        <div className="relative max-w-5xl mx-auto space-y-5">
+          <div className="inline-flex items-center space-x-2 bg-coastal-800/90 border border-sand-400/30 px-3.5 py-1.5 rounded-full text-sand-200 text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>Coastal Delaware Absentee Home Watch</span>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight text-balance">
             Transparent Home Watch & Coastal Stewardship Plans
           </h1>
           
-          <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-slate-300 text-sm sm:text-base sm:leading-relaxed max-w-3xl mx-auto font-light text-balance">
             Structured, predictable property care tailored for absentee beach homeowners in Bethany Beach, Rehoboth Beach, Lewes, and Fenwick Island. Billed monthly in arrears with zero surprise markups.
           </p>
 
-          {/* Billing Cycle Toggle */}
-          <div className="pt-4 flex items-center justify-center space-x-4">
+          {/* Billing Cycle Toggle (Mobile friendly wrap) */}
+          <div className="pt-3 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <span className={`text-xs uppercase tracking-wider font-semibold ${billingCycle === 'monthly' ? 'text-sand-300' : 'text-slate-400'}`}>
               Billed Monthly In Arrears
             </span>
             <button
               type="button"
               onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'annual' : 'monthly')}
-              className="relative inline-flex h-7 w-14 items-center rounded-full bg-coastal-800 p-1 border border-coastal-700 transition"
+              className="relative inline-flex h-7 w-14 items-center rounded-full bg-coastal-800 p-1 border border-coastal-700 transition flex-shrink-0"
               aria-label="Toggle billing view"
             >
               <span
@@ -153,20 +150,20 @@ export default function HomeWatchPlansPage() {
         </div>
       </section>
 
-      {/* Pricing Cards Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+      {/* Pricing Cards Grid (Clean on phone, tablet & desktop) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 lg:-mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-md lg:max-w-none mx-auto">
           {tiers.map((tier) => (
             <div
               key={tier.id}
               className={`relative rounded-2xl flex flex-col justify-between transition-all duration-300 ${
                 tier.popular
-                  ? 'bg-white border-2 border-coastal-900 shadow-2xl scale-100 lg:-translate-y-2 z-10'
+                  ? 'bg-white border-2 border-coastal-950 shadow-2xl scale-100 lg:-translate-y-2 z-10'
                   : 'bg-white border border-sand-200 shadow-md hover:shadow-lg'
               } p-6 sm:p-8`}
             >
               {tier.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-coastal-900 text-sand-300 text-[11px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-coastal-950 text-sand-300 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md whitespace-nowrap">
                   Most Popular Across Sussex Beaches
                 </div>
               )}
@@ -187,7 +184,7 @@ export default function HomeWatchPlansPage() {
                 {/* Price Display */}
                 <div className="border-y border-sand-200 py-4">
                   <div className="flex items-baseline space-x-2">
-                    <span className="font-serif text-4xl sm:text-5xl font-bold text-coastal-950">
+                    <span className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coastal-950">
                       ${billingCycle === 'monthly' ? tier.monthlyPrice : tier.annualPrice.toLocaleString()}
                     </span>
                     <span className="text-xs text-slate-500 font-medium">
@@ -202,7 +199,7 @@ export default function HomeWatchPlansPage() {
                 {/* Features List */}
                 <div className="space-y-3">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-900 block">
-                    Plan Specifications & Benefits:
+                    Plan Specifications & Inclusions:
                   </span>
                   <ul className="space-y-2.5 text-xs text-slate-700">
                     {tier.features.map((feature, idx) => (
@@ -218,7 +215,7 @@ export default function HomeWatchPlansPage() {
               </div>
 
               {/* Action Button */}
-              <div className="pt-8 mt-6 border-t border-sand-100">
+              <div className="pt-6 sm:pt-8 mt-6 border-t border-sand-100">
                 <a
                   href="#walkthrough-form"
                   onClick={() => setSelectedTier(tier.id)}
@@ -240,18 +237,18 @@ export default function HomeWatchPlansPage() {
       </section>
 
       {/* The Elevated Standard: Core Inclusions */}
-      <section className="bg-sand-50 border-y border-sand-200 py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-sand-50 border-y border-sand-200 py-14 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
             <h2 className="font-serif text-2xl sm:text-4xl font-bold text-slate-900">
               The Standard of Excellence in Every Plan
             </h2>
-            <p className="text-slate-600 text-sm leading-relaxed">
+            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
               Every Elevated Property Care membership includes our core operating principles designed to make beach homeownership convenient, simple, and rewarding.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm space-y-3">
               <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                 1
@@ -287,7 +284,7 @@ export default function HomeWatchPlansPage() {
 
       {/* Routine Preventative Maintenance Packages (Add-on Menu) */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="border border-sand-200 bg-white rounded-2xl p-8 shadow-sm space-y-8">
+        <div className="border border-sand-200 bg-white rounded-2xl p-6 sm:p-8 shadow-sm space-y-6 sm:space-y-8">
           <div className="border-b border-sand-200 pb-6 flex flex-col md:flex-row justify-between md:items-end gap-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-coastal-600">
@@ -305,7 +302,7 @@ export default function HomeWatchPlansPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {maintenanceAddons.map((addon, i) => (
               <div key={i} className="p-4 rounded-xl border border-sand-200 bg-sand-50/50 flex justify-between items-start space-x-4">
                 <div className="space-y-1">
@@ -320,7 +317,7 @@ export default function HomeWatchPlansPage() {
           </div>
 
           {/* Additional Managed Trades Note */}
-          <div className="bg-coastal-50 border border-coastal-200 p-6 rounded-xl space-y-2">
+          <div className="bg-coastal-50 border border-coastal-200 p-5 sm:p-6 rounded-xl space-y-2">
             <h4 className="text-xs font-bold uppercase tracking-wider text-coastal-950">
               Full-Service Managed Care Available:
             </h4>
@@ -333,16 +330,16 @@ export default function HomeWatchPlansPage() {
 
       {/* On-Site Walkthrough Lead Form */}
       <section id="walkthrough-form" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28">
-        <div className="bg-coastal-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl space-y-8">
-          <div className="text-center space-y-3">
+        <div className="bg-coastal-950 text-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl space-y-6 sm:space-y-8">
+          <div className="text-center space-y-2.5">
             <span className="text-xs uppercase tracking-widest text-sand-300 font-semibold">
               The Next Step in Asset Protection
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
+            <h2 className="font-serif text-2xl sm:text-4xl font-bold text-white">
               Schedule Your On-Site Property Walkthrough
             </h2>
-            <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-              Before delivering a formal agreement, we walk your home together to review mechanical systems, coastal exposure, and your seasonal schedule. 
+            <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed font-light">
+              Before delivering a formal agreement, we walk your home together to review mechanical systems, coastal exposure, and your seasonal schedule.
             </p>
           </div>
 
