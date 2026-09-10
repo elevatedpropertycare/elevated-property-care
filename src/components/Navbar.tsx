@@ -8,13 +8,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-200">
-      {/* Top utility notification bar */}
+      {/* Top Utility Announcement Bar */}
       <div className="bg-coastal-900 text-sand-100 text-[11px] sm:text-xs py-1.5 px-4 font-medium tracking-wide">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 text-center sm:text-left">
-          <span>Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
-          <div className="flex items-center space-x-4 text-[11px]">
+          <span className="truncate">Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
+          <div className="flex items-center space-x-4 text-[11px] flex-shrink-0">
             <span className="hidden md:inline text-slate-300">Available 365 Days a Year</span>
-            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline">
+            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
               (302) 278-0938
             </a>
           </div>
@@ -23,26 +23,39 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Brand Logo */}
-          <Link href="/" className="flex flex-col min-w-0 pr-2">
-            <span className="font-serif text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-coastal-950 uppercase truncate">
-              Elevated Property Care
-            </span>
-            <span className="text-[9px] sm:text-[10px] tracking-wider sm:tracking-[0.18em] text-coastal-600 font-medium uppercase truncate">
-              Delaware Coastal Property Care & Home Watch
-            </span>
+          {/* Brand Logo - Supports /logo.png directly */}
+          <Link href="/" className="flex items-center flex-shrink-0 mr-4 sm:mr-6">
+            <img
+              src="/logo.png"
+              alt="Elevated Property Care"
+              className="h-10 sm:h-12 w-auto object-contain"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                const fallback = document.getElementById('navbar-text-logo');
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            <div id="navbar-text-logo" className="hidden flex-col">
+              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-coastal-950 uppercase whitespace-nowrap">
+                Elevated Property Care
+              </span>
+              <span className="text-[9px] tracking-wider text-coastal-600 font-medium uppercase whitespace-nowrap">
+                Delaware Coastal Property Care
+              </span>
+            </div>
           </Link>
 
-          {/* Desktop Navigation (XL screens for clean spacing) */}
-          <nav className="hidden xl:flex items-center space-x-6 font-medium text-sm text-slate-700">
-            <Link href="/" className="hover:text-coastal-700 transition">Home</Link>
-            
+          {/* Desktop Navigation: No text wrapping, clean luxury spacing */}
+          <nav className="hidden xl:flex items-center space-x-6 2xl:space-x-8 font-medium text-sm text-slate-700">
+            {/* Services Dropdown */}
             <div className="relative group py-2">
-              <span className="cursor-pointer hover:text-coastal-700 transition flex items-center">
+              <span className="cursor-pointer hover:text-coastal-700 transition flex items-center whitespace-nowrap">
                 Services
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                <svg className="w-4 h-4 ml-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </span>
-              <div className="absolute left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
                 <Link href="/services/property-reviews" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Property Reviews (Home Watch)
                   <span className="block text-xs text-slate-500 font-normal">Bi-weekly seasonal & mechanical audits</span>
@@ -52,7 +65,7 @@ export default function Navbar() {
                   <span className="block text-xs text-slate-500 font-normal">HVAC cycling, plumbing & freeze defense</span>
                 </Link>
                 <Link href="/services/landscaping-care" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
-                  Landscaping & Exterior
+                  Landscaping & Grounds
                   <span className="block text-xs text-slate-500 font-normal">Curb appeal & vendor quality control</span>
                 </Link>
                 <Link href="/services/pool-and-spa-care" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
@@ -60,7 +73,7 @@ export default function Navbar() {
                   <span className="block text-xs text-slate-500 font-normal">Chemistry audit & opening/closing</span>
                 </Link>
                 <Link href="/services/handyman-and-repairs" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
-                  Handyman & Skilled Carpentry
+                  Handyman & Carpentry
                   <span className="block text-xs text-slate-500 font-normal">Transparent $50/hr technical labor</span>
                 </Link>
                 <Link href="/services/concierge" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
@@ -70,12 +83,15 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Locations Dropdown */}
             <div className="relative group py-2">
-              <span className="cursor-pointer hover:text-coastal-700 transition flex items-center">
+              <span className="cursor-pointer hover:text-coastal-700 transition flex items-center whitespace-nowrap">
                 Locations
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                <svg className="w-4 h-4 ml-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </span>
-              <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
                 <Link href="/locations/rehoboth-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Rehoboth Beach</Link>
                 <Link href="/locations/bethany-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Bethany Beach</Link>
                 <Link href="/locations/lewes" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Lewes</Link>
@@ -83,25 +99,35 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/annual-estimate" className="hover:text-coastal-700 transition font-semibold text-coastal-900">Home Watch Plans</Link>
-            <Link href="/faq" className="hover:text-coastal-700 transition">FAQ & Pricing</Link>
-            <Link href="/about" className="hover:text-coastal-700 transition">About Us</Link>
-            <Link href="/resources" className="hover:text-coastal-700 transition">Resources</Link>
-            <Link href="/contact" className="hover:text-coastal-700 transition">Contact</Link>
+            <Link href="/annual-estimate" className="hover:text-coastal-700 transition whitespace-nowrap font-semibold text-coastal-950">
+              Home Watch Plans
+            </Link>
+            <Link href="/faq" className="hover:text-coastal-700 transition whitespace-nowrap">
+              FAQ & Pricing
+            </Link>
+            <Link href="/about" className="hover:text-coastal-700 transition whitespace-nowrap">
+              About Us
+            </Link>
+            <Link href="/resources" className="hover:text-coastal-700 transition whitespace-nowrap">
+              Resources
+            </Link>
+            <Link href="/contact" className="hover:text-coastal-700 transition whitespace-nowrap">
+              Contact
+            </Link>
           </nav>
 
-          {/* Direct CTA */}
-          <div className="hidden xl:flex items-center space-x-4">
+          {/* Direct CTA Button (Single, high-converting, non-wrapping) */}
+          <div className="hidden xl:flex items-center flex-shrink-0 ml-4">
             <Link
-              href="/annual-estimate"
-              className="bg-coastal-900 hover:bg-coastal-950 text-white text-xs uppercase tracking-wider font-semibold py-3 px-5 rounded shadow-sm transition"
+              href="/annual-estimate#walkthrough-form"
+              className="bg-coastal-900 hover:bg-coastal-950 text-white text-xs uppercase tracking-wider font-semibold py-3 px-5 rounded-xl shadow-sm transition whitespace-nowrap"
             >
-              View Home Watch Plans
+              Schedule Walkthrough
             </Link>
           </div>
 
-          {/* Mobile / Tablet Menu Button (Shows on all screens smaller than XL) */}
-          <div className="flex xl:hidden">
+          {/* Mobile / Tablet Hamburger Toggle */}
+          <div className="flex xl:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-slate-800 p-2 focus:outline-none rounded-lg hover:bg-sand-100 transition"
@@ -119,7 +145,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile / Tablet drawer */}
+      {/* Mobile Drawer */}
       {isOpen && (
         <div className="xl:hidden bg-white border-b border-sand-200 px-4 pt-3 pb-6 space-y-3 font-medium max-h-[85vh] overflow-y-auto shadow-xl">
           <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Home</Link>
@@ -148,7 +174,7 @@ export default function Navbar() {
             <Link
               href="/annual-estimate#walkthrough-form"
               onClick={() => setIsOpen(false)}
-              className="block text-center bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold py-3 rounded-md text-xs uppercase tracking-wider transition"
+              className="block text-center bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold py-3 rounded-md text-xs uppercase tracking-wider transition shadow-md"
             >
               Schedule Property Walkthrough
             </Link>
