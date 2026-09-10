@@ -6,7 +6,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Luxury Home Watch & Property Management in Fenwick Island, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Fenwick Island, Delaware.',
-  keywords: ['home watch fenwick island de', 'property management fenwick island', 'beach house maintenance fenwick island', 'vacation home inspection fenwick island'],
+  keywords: ['fenwick island home watch', 'fenwick home watch', 'absentee home services fenwick island', 'absentee home watch delaware', 'bayside home watch fenwick', 'vacation home inspection fenwick island de'],
 };
 
 export default function FenwickIslandPage() {
@@ -57,7 +57,7 @@ export default function FenwickIslandPage() {
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Local Environmental Vulnerabilities</span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
-            Protecting Fenwick Island Real Estate from Coastal Hazards
+            Protecting Fenwick Island Homes from Coastal Hazards
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

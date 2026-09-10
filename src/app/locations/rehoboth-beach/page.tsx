@@ -6,7 +6,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Luxury Home Watch & Property Management in Rehoboth Beach, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Rehoboth Beach, Delaware.',
-  keywords: ['home watch rehoboth beach de', 'property management rehoboth beach', 'beach house maintenance rehoboth beach', 'vacation home inspection rehoboth beach'],
+  keywords: ['rehoboth home watch', 'rehoboth beach home watch', 'absentee home services rehoboth beach', 'absentee home watch delaware', 'henlopen acres home watch', 'property management rehoboth beach de', 'beach house winterization rehoboth'],
 };
 
 export default function RehobothBeachPage() {
@@ -37,7 +37,7 @@ export default function RehobothBeachPage() {
             Rehoboth Beach, Delaware Property Care
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
-            Rehoboth Beach Luxury Home Watch & Estate Management
+            Rehoboth Beach Luxury Home Watch & Property Care
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
             Providing dedicated absentee caretaking, weekly property inspections, and comprehensive vendor oversight for non-rental luxury homes across Rehoboth Beach.
@@ -57,7 +57,7 @@ export default function RehobothBeachPage() {
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Local Environmental Vulnerabilities</span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
-            Protecting Rehoboth Beach Real Estate from Coastal Hazards
+            Protecting Rehoboth Beach Homes from Coastal Hazards
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

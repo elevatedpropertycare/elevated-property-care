@@ -6,7 +6,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Luxury Home Watch & Property Management in Bethany Beach, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Bethany Beach, Delaware.',
-  keywords: ['home watch bethany beach de', 'property management bethany beach', 'beach house maintenance bethany beach', 'vacation home inspection bethany beach'],
+  keywords: ['bethany home watch', 'bethany beach home watch', 'absentee home services bethany beach', 'absentee home watch delaware', 'beach house property management bethany beach', 'vacation home inspection bethany beach de', 'sussex county home watch'],
 };
 
 export default function BethanyBeachPage() {
@@ -34,7 +34,7 @@ export default function BethanyBeachPage() {
       <section className="relative bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-4">
           <div className="inline-block bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded">
-            Bethany Beach, Delaware Property Caretaking
+            Bethany Beach, Delaware Property Care
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
             Bethany Beach Absentee Property Care & Home Watch
@@ -57,7 +57,7 @@ export default function BethanyBeachPage() {
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Local Environmental Vulnerabilities</span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
-            Protecting Bethany Beach Real Estate from Coastal Hazards
+            Protecting Bethany Beach Homes from Coastal Hazards
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

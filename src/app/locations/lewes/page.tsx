@@ -6,7 +6,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Luxury Home Watch & Property Management in Lewes, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Lewes, Delaware.',
-  keywords: ['home watch lewes de', 'property management lewes', 'beach house maintenance lewes', 'vacation home inspection lewes'],
+  keywords: ['lewes home watch', 'lewes de home watch', 'absentee home services lewes de', 'absentee home watch coastal delaware', 'cape shores home watch', 'property management lewes delaware'],
 };
 
 export default function LewesPage() {
@@ -37,7 +37,7 @@ export default function LewesPage() {
             Lewes, Delaware Property Care
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
-            Lewes Delaware Estate Management & Property Reviews
+            Lewes Delaware Home Watch & Property Care
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
             Operating from our primary hub in Lewes, Delaware, we offer high-touch home watch, skilled carpentry repairs, and vendor quality management for discerning homeowners.
@@ -57,7 +57,7 @@ export default function LewesPage() {
         <div>
           <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Local Environmental Vulnerabilities</span>
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
-            Protecting Lewes Real Estate from Coastal Hazards
+            Protecting Lewes Homes from Coastal Hazards
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

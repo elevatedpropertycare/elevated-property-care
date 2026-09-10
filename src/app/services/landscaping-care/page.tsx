@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Landscaping & Exterior Plant Health Oversight | Elevated Property Care',
-  description: 'Auditing landscape contractors, monitoring irrigation, and maintaining pristine curb appeal across Sussex County beach estates.',
+  description: 'Auditing landscape contractors, monitoring irrigation, and maintaining pristine curb appeal across Sussex County beach homes.',
 };
 
 export default function LandscapingCarePage() {
@@ -19,7 +19,7 @@ export default function LandscapingCarePage() {
             Coastal Landscaping Oversight & Plant Health Care
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Auditing landscape contractors, monitoring irrigation, and maintaining pristine curb appeal across Sussex County beach estates.
+            Auditing landscape contractors, monitoring irrigation, and maintaining pristine curb appeal across Sussex County beach homes.
           </p>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default function LandscapingCarePage() {
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
       <p className="text-slate-700 text-sm leading-relaxed">
-        A pristine coastal estate requires landscape care specifically tailored to sandy soils, salt exposure, and seasonal growth cycles. However, absentee homeowners frequently pay premium rates to lawn services that simply mow and leave without attending to plant vitality or irrigation calibration.
+        A pristine coastal property requires landscape care specifically tailored to sandy soils, salt exposure, and seasonal growth cycles. However, absentee homeowners frequently pay premium rates to lawn services that simply mow and leave without attending to plant vitality or irrigation calibration.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 text-xs text-slate-700">
         <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2">

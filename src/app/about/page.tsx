@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Us & Hamptons-Standard Estate Care | Elevated Property Care',
-  description: 'Learn about Elevated Property Care: Delaware licensed contractor, seasoned Hamptons estate caretaking background, and dedicated Sussex County home watch.',
+  title: 'About Us & Coastal Property Care | Elevated Property Care',
+  description: 'Learn about Elevated Property Care: Delaware licensed contractor, seasoned coastal home care background, and dedicated Sussex County home watch.',
 };
 
 export default function AboutPage() {
@@ -32,10 +32,16 @@ export default function AboutPage() {
               A Higher Benchmark in Coastal Property Oversight
             </h2>
             <p>
-              Elevated Property Care was established by drawing directly on extensive experience caring for high-profile private homes, luxury beach houses, and complex coastal residences in the Hamptons. In premier resort markets, second-home owners understand that simple drive-bys or occasional contractor visits are insufficient to defend against coastal degradation and weather events.
+              Elevated Property Care was established by drawing directly on extensive experience caring for high-profile private homes, luxury beach houses, and complex coastal residences. In premier resort markets, second-home owners understand that simple drive-bys or occasional contractor visits are insufficient to defend against coastal degradation.
             </p>
             <p>
-              As a licensed General Services and Resident Contractor in Delaware, Elevated Property Care operates exclusively across Coastal Sussex County—including Lewes, Rehoboth Beach, Bethany Beach, and Fenwick Island. We do not manage short-term tenant rentals or vacation booking turnovers; our sole loyalty is to the homeowner and the enduring physical health of their private property.
+              As a licensed General Services and Resident Contractor in Delaware, Elevated Property Care operates exclusively across Sussex County—including Lewes, Rehoboth Beach, Bethany Beach, Fenwick Island, Dewey Beach, Ocean View, and surrounding coastal communities.
+            </p>
+            <p>
+              Unlike conventional property management companies whose business model revolves around tenant churn, rental booking commissions (often taking 20% to 30% of gross revenue), and squeezing short-term profit from a property, our sole mission is preserving and enhancing the physical health of your home. We view high-touch caretaking as an investment into the property that protects and increases its long-term asset value—one that routinely pays for itself by catching minor plumbing leaks, electrical faults, and weather wear before they turn into tens of thousands of dollars in emergency damages.
+            </p>
+            <p>
+              For homeowners who manage their own vacation rentals on Airbnb, VRBO, or direct booking platforms, our model is the ideal partnership: you retain 100% of your booking revenue without paying any rental commission splits, while relying on our licensed local team for thorough pre- and post-rental turnover inspections, prompt handyman maintenance, and reliable tenant or owner assistance.
             </p>
           </div>
           <div className="bg-sand-100 p-8 rounded-2xl border border-sand-300 space-y-4 text-xs text-slate-700">

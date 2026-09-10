@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Routine Property Reviews & Home Watch Checklists | Delaware Beaches',
-  description: 'Exhaustive interior and exterior home inspection checklists starting at $50/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
+  description: 'Exhaustive interior and exterior home inspection checklists starting at $45/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
   keywords: ['property review delaware', 'home watch checklist beach house', 'vacation home inspection rehoboth', 'house watching sussex county'],
 };
 
@@ -22,9 +22,9 @@ export default function PropertyReviewsPage() {
     "description": "Structured weekly or bi-weekly interior and exterior property inspections for coastal Delaware homes.",
     "offers": {
       "@type": "Offer",
-      "price": "45.00",
+      "price": "165.00",
       "priceCurrency": "USD",
-      "unitText": "per visit"
+      "unitText": "per month"
     }
   };
 
@@ -42,7 +42,7 @@ export default function PropertyReviewsPage() {
             Routine Property Reviews & Home Watch Program
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Having our eyes on your property is the single most critical defense against catastrophic and concealed coastal damage. Comprehensive, customizable walk-throughs starting at $45 per visit.
+            Having our eyes on your property is the single most critical defense against catastrophic and concealed coastal damage. Comprehensive, customizable walk-throughs starting at $45 per month.
           </p>
           <div className="pt-2 flex flex-wrap gap-4 text-xs">
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Digital Report with Photos</span>
@@ -191,7 +191,7 @@ export default function PropertyReviewsPage() {
         {/* CTA */}
         <div className="text-center space-y-4 pt-6">
           <Link href="/annual-estimate" className="inline-block bg-coastal-800 hover:bg-coastal-900 text-white font-semibold px-8 py-3.5 rounded text-xs uppercase tracking-wider transition">
-            Calculate Property Review Pricing on Your Annual Estimate →
+            Explore Our 3 Home Watch Plans & Pricing →
           </Link>
         </div>
       </section>

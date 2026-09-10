@@ -27,7 +27,7 @@ export default function FAQPage() {
       a: "Elevated Property Care is available 365 days a year for all your property needs. Each property is assigned a dedicated Primary Property Manager. We also offer after-hours assistance for urgent emergencies and maintain a network of local vendors available around the clock."
     },
     {
-      q: "Why use a caretaker / property management company for a private home?",
+      q: "Why hire a professional property care and home watch team for a private home?",
       a: "Vacation homes require a local professional to inspect the property, provide access to and oversee maintenance vendors, verify quality control, and handle storm preparations. A professional 'one-stop-shop' makes sense for a simple, convenient, and reliable solution to luxury homeownership."
     },
     {
@@ -45,6 +45,14 @@ export default function FAQPage() {
     {
       q: "Do you provide handyman and carpentry services in-house?",
       a: "Yes. We offer skilled in-house services across painting, carpentry, structural repairs, furniture assembly, power washing, and general punch lists at our published $50/hr rate."
+    },
+    {
+      q: "How does Elevated Property Care differ from traditional rental property management companies?",
+      a: "Most property management companies in Sussex County focus primarily on marketing short-term rentals, booking guest reservations, and taking 20% to 30% of your gross rental income. Elevated Property Care is a dedicated property care and home watch firm. We do not manage rental booking contracts or take any percentage of your rental income. Our sole mission is keeping your home in peak physical condition. Our preventative care model is an investment that preserves and elevates property equity, paying for itself by averting catastrophic water leaks, mechanical breakdowns, and emergency contractor premiums."
+    },
+    {
+      q: "I manage my own vacation rental on Airbnb or VRBO. Can I use Elevated Property Care?",
+      a: "Yes. Many of our clients self-manage their vacation rentals to retain 100% of their booking revenue. We partner with self-managing homeowners by handling the critical physical operations on the ground: pre-arrival readiness walkthroughs, post-departure damage reviews with timestamped photos, prompt handyman maintenance, and local tenant/owner assistance during unexpected issues. You enjoy your full rental revenue while resting assured that your property is rigorously protected."
     }
   ];
 

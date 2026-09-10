@@ -30,7 +30,7 @@ export default function Footer() {
             Elevated Property Care
           </span>
           <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-            Delaware’s premier full-service luxury property care and absentee home watch business. Built on transparency, proactive preventative care, and extensive Hamptons estate oversight experience.
+            Delaware’s premier full-service luxury property care and absentee home watch business. Built on transparency, proactive preventative care, and meticulous residential oversight experience.
           </p>
           <div className="pt-2 space-y-1 text-xs text-sand-200">
             <p className="font-semibold text-white">Delaware Licensed & Insured Contractor</p>
@@ -56,11 +56,11 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-white font-semibold text-base mb-4 tracking-wide">Target Areas</h4>
           <ul className="space-y-2.5 text-xs text-slate-400">
-            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach</Link></li>
-            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach</Link></li>
-            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes</Link></li>
-            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island</Link></li>
-            <li><Link href="/annual-estimate" className="hover:text-white transition">Annual Estimate Calculator</Link></li>
+            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach Care</Link></li>
+            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach Care</Link></li>
+            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes Property Care</Link></li>
+            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island Care</Link></li>
+            <li><Link href="/annual-estimate" className="hover:text-white transition">Home Watch Plans & Tiers</Link></li>
             <li><Link href="/resources" className="hover:text-white transition">Coastal Protection Guides</Link></li>
           </ul>
         </div>

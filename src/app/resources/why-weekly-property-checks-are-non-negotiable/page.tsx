@@ -27,7 +27,7 @@ export default function WeeklyChecksArticlePage() {
           The purchase of a luxury vacation home in Coastal Sussex County, Delaware, represents a significant investment and a dream realized. Yet, the same elements that make this location desirable—the ocean air, the beautiful beaches, and the seasonal usage patterns—pose a persistent threat to the home’s structural and mechanical integrity.
         </p>
         <p>
-          At Elevated Property Care, we know that owning a luxury coastal vacation property demands a level of oversight that goes far beyond annual walk-throughs or simple contractor scheduling. Drawing on our experience managing high-profile homes and estates in the Hamptons, we view weekly property checks not as a task, but as the single most critical defense against catastrophic and concealed damage.
+          At Elevated Property Care, we know that owning a luxury coastal vacation property demands a level of oversight that goes far beyond annual walk-throughs or simple contractor scheduling. Drawing on our extensive experience caring for high-profile coastal and beach homes, we view weekly property checks not as a task, but as the single most critical defense against catastrophic and concealed damage.
         </p>
 
         <h2 className="font-serif text-xl sm:text-2xl font-bold text-slate-900 pt-4">
