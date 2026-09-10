@@ -23,26 +23,13 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Brand Logo - Supports /logo.png directly */}
+          {/* Brand Logo - Clean image loading from /public/logo.png */}
           <Link href="/" className="flex items-center flex-shrink-0 mr-4 sm:mr-6">
             <img
               src="/logo.png"
               alt="Elevated Property Care"
               className="h-10 sm:h-12 w-auto object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                const fallback = document.getElementById('navbar-text-logo');
-                if (fallback) fallback.style.display = 'flex';
-              }}
             />
-            <div id="navbar-text-logo" className="hidden flex-col">
-              <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-coastal-950 uppercase whitespace-nowrap">
-                Elevated Property Care
-              </span>
-              <span className="text-[9px] tracking-wider text-coastal-600 font-medium uppercase whitespace-nowrap">
-                Delaware Coastal Property Care
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Navigation: No text wrapping, clean luxury spacing */}

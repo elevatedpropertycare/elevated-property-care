@@ -6,6 +6,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  staticPageGenerationTimeout: 180,
   images: {
     domains: ['images.unsplash.com', 'assets.zyrosite.com'],
     remotePatterns: [

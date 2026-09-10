@@ -31,15 +31,7 @@ export default function Footer() {
               src="/logo.png"
               alt="Elevated Property Care"
               className="h-10 sm:h-12 w-auto object-contain brightness-0 invert opacity-95"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                const fallback = document.getElementById('footer-text-logo');
-                if (fallback) fallback.style.display = 'block';
-              }}
             />
-            <span id="footer-text-logo" className="font-serif text-2xl font-bold tracking-tight text-white uppercase block">
-              Elevated Property Care
-            </span>
           </Link>
           <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
             Delaware’s premier full-service property care and absentee home watch business. Built on transparency, proactive preventative care, and meticulous residential oversight.
