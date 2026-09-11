@@ -38,9 +38,8 @@ export default function HomePage() {
               <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ Bi-Weekly Mechanical Audits</span>
               <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ Delaware Licensed Contractor</span>
             </div>
-          </div>
 
-          <div className="pt-6 flex flex-col sm:flex-row gap-4">
+            <div className="pt-6 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/annual-estimate"
                 className="bg-sand-400 hover:bg-sand-300 text-coastal-950 font-semibold px-8 py-4 rounded text-center text-sm uppercase tracking-wider shadow-lg transition duration-200"
