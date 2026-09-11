@@ -5,7 +5,6 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export default function HomeWatchPlansPage() {
-  const [billingCycle, setBillingCycle] = useState<'monthly' | 'annual'>('monthly');
   const [selectedTier, setSelectedTier] = useState<string>('stewardship');
   const [town, setTown] = useState('Bethany Beach');
   const [submitted, setSubmitted] = useState(false);
@@ -15,9 +14,9 @@ export default function HomeWatchPlansPage() {
       id: 'essential',
       name: 'Essential Watch',
       tagline: 'Baseline Peace of Mind',
-      description: 'Ideal for frequent visitors or low-complexity beach properties seeking dependable keyholder security and monthly oversight.',
-      monthlyPrice: 165,
-      annualPrice: 1980,
+      description: 'Ideal for frequent visitors or lower-maintenance beach properties seeking dependable keyholder security and monthly oversight.',
+      monthlyPrice: '$165',
+      annualBudget: '$1,980 Annual Budget',
       popular: false,
       features: [
         '1x Monthly Comprehensive Property Review (12 visits/yr)',
@@ -36,8 +35,8 @@ export default function HomeWatchPlansPage() {
       name: 'Coastal Stewardship',
       tagline: 'Our Most Popular Flagship Plan',
       description: 'Engineered specifically for absentee owners of $2M–$4M coastal homes requiring proactive year-round mechanical and security defense.',
-      monthlyPrice: 295,
-      annualPrice: 3540,
+      monthlyPrice: '$295',
+      annualBudget: '$3,540 Annual Budget',
       popular: true,
       features: [
         'Bi-Weekly Year-Round Property Reviews (26 visits/yr)',
@@ -58,8 +57,8 @@ export default function HomeWatchPlansPage() {
       name: 'Executive Care',
       tagline: 'Maximum Protection & Priority',
       description: 'High-touch, intensive stewardship for oceanfront homes, high-complexity systems, or remote owners demanding maximum oversight.',
-      monthlyPrice: 445,
-      annualPrice: 5340,
+      monthlyPrice: '$445',
+      annualBudget: '$5,340 Annual Budget',
       popular: false,
       features: [
         '36 Comprehensive Property Reviews / Year',
@@ -88,7 +87,7 @@ export default function HomeWatchPlansPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Elevated Property Care - Coastal Delaware Home Watch Plans",
-    "description": "Transparent, structured absentee home watch and coastal property management plans for Bethany Beach, Rehoboth Beach, Lewes, and Fenwick Island.",
+    "description": "Transparent, structured absentee home watch and coastal property management plans for Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island.",
     "brand": {
       "@type": "Brand",
       "name": "Elevated Property Care"
@@ -96,7 +95,7 @@ export default function HomeWatchPlansPage() {
     "offers": tiers.map(tier => ({
       "@type": "Offer",
       "name": tier.name,
-      "price": tier.monthlyPrice.toString(),
+      "price": tier.monthlyPrice.replace('$', ''),
       "priceCurrency": "USD",
       "unitText": "MONTH",
       "description": tier.description
@@ -108,7 +107,7 @@ export default function HomeWatchPlansPage() {
       <SchemaMarkup data={planSchema} />
 
       <div className="w-full pb-20 overflow-hidden">
-        {/* Hero Section - Flushes cleanly against navbar with zero white gap */}
+        {/* Hero Section - Direct flush against navbar, zero white gap */}
         <section className="relative bg-coastal-950 text-white pt-8 pb-10 sm:pt-14 sm:pb-16 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-coastal-900/40 via-coastal-950 to-coastal-950" />
           
@@ -123,47 +122,18 @@ export default function HomeWatchPlansPage() {
             </h1>
             
             <p className="text-slate-300 text-xs sm:text-base sm:leading-relaxed max-w-3xl mx-auto font-light text-balance">
-              Structured, predictable property care tailored for absentee beach homeowners in Bethany Beach, Rehoboth Beach, Lewes, and Fenwick Island. Billed monthly in arrears with zero surprise markups.
+              Structured, predictable property care tailored for absentee beach homeowners across Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island. Billed monthly in arrears strictly for services rendered.
             </p>
 
-            {/* Segmented Billing Control - Unified Pill: Never wraps or breaks on mobile */}
-            <div className="pt-2 flex justify-center">
-              <div className="inline-flex items-center p-1 bg-coastal-900/95 border border-coastal-700/80 rounded-xl shadow-inner max-w-xs sm:max-w-md w-full sm:w-auto justify-center">
-                <button
-                  type="button"
-                  onClick={() => setBillingCycle('monthly')}
-                  className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
-                    billingCycle === 'monthly'
-                      ? 'bg-sand-400 text-coastal-950 font-bold shadow-md'
-                      : 'text-slate-300 hover:text-white'
-                  }`}
-                >
-                  Monthly In Arrears
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setBillingCycle('annual')}
-                  className={`flex-1 sm:flex-initial px-3 sm:px-5 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all duration-200 flex items-center justify-center space-x-1.5 ${
-                    billingCycle === 'annual'
-                      ? 'bg-sand-400 text-coastal-950 font-bold shadow-md'
-                      : 'text-slate-300 hover:text-white'
-                  }`}
-                >
-                  <span>Annual Plan</span>
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
-                    billingCycle === 'annual'
-                      ? 'bg-coastal-950 text-sand-300'
-                      : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                  }`}>
-                    12-Mo
-                  </span>
-                </button>
-              </div>
+            <div className="pt-2">
+              <span className="inline-block bg-coastal-900/90 text-sand-300 border border-coastal-700 text-xs px-4 py-1.5 rounded-full font-semibold">
+                ✓ Billed Monthly In Arrears • No Upfront Prepayments • Banked Review Credits
+              </span>
             </div>
           </div>
         </section>
 
-        {/* Pricing Cards Grid - Starts cleanly below the hero with zero empty black gap */}
+        {/* Pricing Cards Grid - Starts directly below the hero */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 sm:-mt-6 lg:-mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch max-w-md lg:max-w-none mx-auto">
             {tiers.map((tier) => (
@@ -198,14 +168,17 @@ export default function HomeWatchPlansPage() {
                   <div className="border-y border-sand-200 py-4">
                     <div className="flex items-baseline space-x-2">
                       <span className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coastal-950">
-                        ${billingCycle === 'monthly' ? tier.monthlyPrice : tier.annualPrice.toLocaleString()}
+                        {tier.monthlyPrice}
                       </span>
                       <span className="text-xs text-slate-500 font-medium">
-                        {billingCycle === 'monthly' ? '/ month' : '/ year'}
+                        / month
                       </span>
                     </div>
-                    <div className="text-[11px] text-emerald-700 font-medium mt-1">
-                      {tier.reviewsText} • Billed monthly in arrears
+                    <div className="text-[11px] text-emerald-700 font-semibold mt-1">
+                      {tier.reviewsText} • {tier.annualBudget}
+                    </div>
+                    <div className="text-[10px] text-slate-500 mt-0.5">
+                      Invoiced monthly in arrears strictly as completed
                     </div>
                   </div>
 
@@ -412,11 +385,11 @@ export default function HomeWatchPlansPage() {
                       <option value="Bethany Beach">Bethany Beach</option>
                       <option value="Rehoboth Beach">Rehoboth Beach</option>
                       <option value="Lewes">Lewes</option>
+                      <option value="Dewey Beach">Dewey Beach</option>
+                      <option value="Ocean View / Millville">Ocean View / Millville</option>
                       <option value="Fenwick Island">Fenwick Island</option>
                       <option value="South Bethany">South Bethany</option>
                       <option value="North Bethany">North Bethany</option>
-                      <option value="Dewey Beach">Dewey Beach</option>
-                      <option value="Ocean View / Millville">Ocean View / Millville</option>
                     </select>
                   </div>
                 </div>

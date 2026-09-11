@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className="space-y-20 pb-20">
       {/* 1. HERO SECTION */}
-      <section className="relative bg-coastal-950 text-white min-h-[85vh] flex items-center overflow-hidden">
+      <section className="relative bg-coastal-950 text-white min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden">
         {/* Background Stock Image (Replaceable: Coastal Luxury Beach Estate) */}
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity scale-105 transform transition duration-1000"
@@ -16,7 +16,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-coastal-950 via-coastal-950/80 to-transparent" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 md:py-24">
           <div className="max-w-3xl space-y-6">
             <div className="inline-flex items-center space-x-2 bg-coastal-800/80 border border-sand-400/30 px-3.5 py-1.5 rounded-full text-sand-200 text-xs font-medium tracking-wide uppercase">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -32,14 +32,15 @@ export default function HomePage() {
             </p>
 
             {/* Core Value Badges */}
-            <div className="pt-2 flex flex-wrap gap-3 text-xs text-sand-200">
-              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15">✓ No Markup on Routine Care</span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15">✓ Transparent $50/hr Labor</span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15">✓ $45 Baseline Property Reviews</span>
-              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15">✓ 365 Days a Year Coverage</span>
+            <div className="pt-2 flex flex-wrap gap-2 sm:gap-3 text-xs text-sand-200">
+              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ Structured 3-Tier Care Plans</span>
+              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ In-Arrears Monthly Invoicing</span>
+              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ Bi-Weekly Mechanical Audits</span>
+              <span className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded border border-white/15 whitespace-nowrap">✓ Delaware Licensed Contractor</span>
             </div>
+          </div>
 
-            <div className="pt-6 flex flex-col sm:flex-row gap-4">
+          <div className="pt-6 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/annual-estimate"
                 className="bg-sand-400 hover:bg-sand-300 text-coastal-950 font-semibold px-8 py-4 rounded text-center text-sm uppercase tracking-wider shadow-lg transition duration-200"
@@ -357,7 +358,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Essential Watch</div>
                 <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">65</span>
+                  <span className="font-serif text-4xl font-bold text-white">$165</span>
                   <span className="text-xs text-slate-400">/ month</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -386,7 +387,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Coastal Stewardship</div>
                 <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">95</span>
+                  <span className="font-serif text-4xl font-bold text-white">$295</span>
                   <span className="text-xs text-slate-400">/ month</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -413,7 +414,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Executive Care</div>
                 <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">45</span>
+                  <span className="font-serif text-4xl font-bold text-white">$445</span>
                   <span className="text-xs text-slate-400">/ month</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">

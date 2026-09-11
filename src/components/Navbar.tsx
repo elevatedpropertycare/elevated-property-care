@@ -6,35 +6,39 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const marqueeText = "🌊 Serving Coastal Sussex County: Lewes • Rehoboth Beach • Dewey Beach • Bethany Beach • South Bethany • Fenwick Island • Ocean View • Millville • Sussex County Coastal Beaches";
+
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-200">
-      {/* Top Utility Announcement Bar - Clean, 100% responsive, never clips */}
-      <div className="bg-coastal-900 text-sand-100 text-[11px] sm:text-xs py-1.5 px-4 font-medium tracking-wide">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Mobile view: Concise, elegant, never clips */}
-          <div className="sm:hidden flex items-center justify-between w-full">
-            <span className="text-sand-200 truncate">Serving Coastal Delaware</span>
-            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap ml-2">
-              (302) 278-0938
-            </a>
+      {/* Top Utility Announcement Bar: Continuous Animated Marquee Tape */}
+      <div className="bg-coastal-950 text-sand-100 text-[11px] sm:text-xs py-1.5 border-b border-coastal-800 overflow-hidden relative">
+        <div className="flex items-center justify-between">
+          {/* Marquee Ticker Track */}
+          <div className="overflow-hidden whitespace-nowrap flex-grow flex py-0.5">
+            <div className="animate-marquee flex items-center space-x-8 text-sand-300 font-medium">
+              <span>{marqueeText}</span>
+              <span>•</span>
+              <span className="text-white font-semibold">Direct Dispatch: (302) 278-0938</span>
+              <span>•</span>
+              <span>{marqueeText}</span>
+              <span>•</span>
+              <span className="text-white font-semibold">Direct Dispatch: (302) 278-0938</span>
+            </div>
           </div>
 
-          {/* Tablet & Desktop view: Full town roster */}
-          <div className="hidden sm:flex items-center justify-between w-full">
-            <span className="truncate">Serving Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
-            <div className="flex items-center space-x-4 flex-shrink-0 ml-4">
-              <span className="hidden md:inline text-slate-300">Available 365 Days a Year</span>
-              <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
-                (302) 278-0938
-              </a>
-            </div>
+          {/* Pinned Direct Call Link on Right (Always clickable on mobile & desktop) */}
+          <div className="flex items-center px-3 sm:px-4 z-10 bg-coastal-950 flex-shrink-0 border-l border-coastal-800 space-x-2 text-[11px]">
+            <span className="hidden md:inline text-slate-300">365 Days</span>
+            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
+              (302) 278-0938
+            </a>
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Brand Logo - Crisp /public/logo.png loading */}
+          {/* Brand Logo - Loads /public/logo.png cleanly */}
           <Link href="/" className="flex items-center flex-shrink-0 mr-4 sm:mr-6">
             <img
               src="/logo.png"

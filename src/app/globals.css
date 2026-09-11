@@ -19,7 +19,27 @@
   text-wrap: balance;
 }
 
-/* Smooth scrolling without jarring shifts */
 html {
   scroll-behavior: smooth;
+}
+
+/* Continuous Horizontal Sliding Marquee Ticker */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
