@@ -28,10 +28,10 @@ export default function LewesPage() {
   };
 
   return (
-    <div className="space-y-16 pb-20">
+    <>
       <SchemaMarkup data={localSchema} />
-      
-      <section className="relative bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="w-full pb-20 overflow-hidden space-y-16">
+        <section className="relative bg-coastal-950 text-white py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-4">
           <div className="inline-block bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded">
             Lewes, Delaware Property Care
@@ -104,5 +104,6 @@ export default function LewesPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

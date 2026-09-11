@@ -8,22 +8,33 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-200">
-      {/* Top Utility Announcement Bar */}
+      {/* Top Utility Announcement Bar - Clean, 100% responsive, never clips */}
       <div className="bg-coastal-900 text-sand-100 text-[11px] sm:text-xs py-1.5 px-4 font-medium tracking-wide">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 text-center sm:text-left">
-          <span className="truncate">Serving Coastal Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
-          <div className="flex items-center space-x-4 text-[11px] flex-shrink-0">
-            <span className="hidden md:inline text-slate-300">Available 365 Days a Year</span>
-            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Mobile view: Concise, elegant, never clips */}
+          <div className="sm:hidden flex items-center justify-between w-full">
+            <span className="text-sand-200 truncate">Serving Coastal Delaware</span>
+            <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap ml-2">
               (302) 278-0938
             </a>
+          </div>
+
+          {/* Tablet & Desktop view: Full town roster */}
+          <div className="hidden sm:flex items-center justify-between w-full">
+            <span className="truncate">Serving Sussex County: Lewes • Rehoboth Beach • Bethany Beach • Fenwick Island</span>
+            <div className="flex items-center space-x-4 flex-shrink-0 ml-4">
+              <span className="hidden md:inline text-slate-300">Available 365 Days a Year</span>
+              <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
+                (302) 278-0938
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Brand Logo - Clean image loading from /public/logo.png */}
+          {/* Brand Logo - Crisp /public/logo.png loading */}
           <Link href="/" className="flex items-center flex-shrink-0 mr-4 sm:mr-6">
             <img
               src="/logo.png"
@@ -103,7 +114,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          {/* Direct CTA Button (Single, high-converting, non-wrapping) */}
+          {/* Direct CTA Button */}
           <div className="hidden xl:flex items-center flex-shrink-0 ml-4">
             <Link
               href="/annual-estimate#walkthrough-form"

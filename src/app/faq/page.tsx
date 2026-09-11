@@ -70,10 +70,10 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="space-y-16 pb-20">
+    <>
       <SchemaMarkup data={faqSchema} />
-
-      <section className="bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8 text-center">
+      <div className="w-full pb-20 overflow-hidden">
+        <section className="bg-coastal-950 text-white py-14 sm:py-20 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-4">
           <span className="bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded inline-block">
             Complete Fiscal Transparency
@@ -112,6 +112,9 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
+
+    </>

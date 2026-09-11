@@ -29,11 +29,11 @@ export default function PropertyReviewsPage() {
   };
 
   return (
-    <div className="space-y-16 pb-20">
+    <>
       <SchemaMarkup data={serviceSchema} />
-
-      {/* Hero */}
-      <section className="bg-coastal-950 text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="w-full pb-20 overflow-hidden space-y-16">
+        {/* Hero */}
+        <section className="bg-coastal-950 text-white py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto space-y-4">
           <span className="bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded inline-block">
             The Cornerstone of Elevated Care
@@ -196,5 +196,6 @@ export default function PropertyReviewsPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
