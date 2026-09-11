@@ -4,22 +4,22 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="bg-coastal-950 text-slate-300 border-t border-coastal-800">
-      {/* Upper Footer: Municipalities strip */}
+      {/* Upper Footer: Municipalities strip - All linked cleanly */}
       <div className="bg-coastal-900 border-b border-coastal-800 py-4 sm:py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs tracking-wider uppercase text-sand-300 space-x-2 md:space-x-6 flex flex-wrap justify-center gap-y-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs tracking-wider uppercase text-sand-300 space-x-2 md:space-x-5 flex flex-wrap justify-center gap-y-2">
           <Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach</Link>
           <span>•</span>
           <Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach</Link>
           <span>•</span>
           <Link href="/locations/lewes" className="hover:text-white transition">Lewes</Link>
           <span>•</span>
+          <Link href="/locations/dewey-beach" className="hover:text-white transition">Dewey Beach</Link>
+          <span>•</span>
+          <Link href="/locations/south-bethany" className="hover:text-white transition">South Bethany</Link>
+          <span>•</span>
           <Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island</Link>
           <span>•</span>
-          <span className="text-slate-400">Dewey Beach</span>
-          <span>•</span>
-          <span className="text-slate-400">Ocean View</span>
-          <span>•</span>
-          <span className="text-slate-400">South Bethany</span>
+          <Link href="/locations/ocean-view" className="hover:text-white transition">Ocean View</Link>
         </div>
       </div>
 
@@ -49,23 +49,25 @@ export default function Footer() {
           <ul className="space-y-2.5 text-xs text-slate-400">
             <li><Link href="/services/property-reviews" className="hover:text-white transition">Property Reviews (Home Watch)</Link></li>
             <li><Link href="/services/preventative-maintenance" className="hover:text-white transition">Preventative Maintenance</Link></li>
-            <li><Link href="/services/landscaping-care" className="hover:text-white transition">Landscaping & Exterior</Link></li>
+            <li><Link href="/services/landscaping-care" className="hover:text-white transition">Landscaping & Grounds</Link></li>
             <li><Link href="/services/pool-and-spa-care" className="hover:text-white transition">Pool & Spa Care</Link></li>
             <li><Link href="/services/handyman-and-repairs" className="hover:text-white transition">Handyman & Carpentry ($50/hr)</Link></li>
             <li><Link href="/services/concierge" className="hover:text-white transition">Concierge & Keyholder</Link></li>
           </ul>
         </div>
 
-        {/* Col 3: Areas Served */}
+        {/* Col 3: Areas Served - All fully linked */}
         <div>
           <h4 className="font-serif text-white font-semibold text-base mb-4 tracking-wide">Target Areas</h4>
-          <ul className="space-y-2.5 text-xs text-slate-400">
-            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach Care</Link></li>
+          <ul className="space-y-2 text-xs text-slate-400">
             <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach Care</Link></li>
+            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach Care</Link></li>
             <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes Property Care</Link></li>
+            <li><Link href="/locations/dewey-beach" className="hover:text-white transition">Dewey Beach Care</Link></li>
+            <li><Link href="/locations/south-bethany" className="hover:text-white transition">South Bethany Care</Link></li>
             <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island Care</Link></li>
+            <li><Link href="/locations/ocean-view" className="hover:text-white transition">Ocean View Care</Link></li>
             <li><Link href="/annual-estimate" className="hover:text-white transition font-semibold text-sand-300">Home Watch Plans & Tiers</Link></li>
-            <li><Link href="/resources" className="hover:text-white transition">Coastal Protection Guides</Link></li>
           </ul>
         </div>
 
@@ -88,7 +90,7 @@ export default function Footer() {
             <div>
               <span className="block text-slate-500 font-medium">Direct Billing Policy:</span>
               <p className="text-[11px] text-slate-400 mt-0.5">
-                Invoiced in arrears monthly with full itemization. Zero management markup on routine maintenance.
+                Invoiced in arrears monthly with full itemization. Zero management fee on routine contracted services.
               </p>
             </div>
           </div>

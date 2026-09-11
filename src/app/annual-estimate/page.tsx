@@ -77,10 +77,10 @@ export default function HomeWatchPlansPage() {
   ];
 
   const maintenanceAddons = [
-    { name: 'Annual Smoke & CO Detector Sweep', price: '$95/yr', desc: 'Spring testing, full battery replacement across all sensors, and date audit.' },
-    { name: 'Dryer Duct Safety Cleaning', price: '$125/yr', desc: 'Full lint cleanout from dryer to exterior vent to reduce fire risk and boost efficiency.' },
-    { name: 'Outdoor Shower & Spigot Winterization', price: '$175/yr', desc: 'Fall blowout, line draining, and valve shut-off to prevent freeze-burst catastrophes.' },
-    { name: 'Seasonal Furniture Staging & Storage', price: 'T&M ($130 1st hr)', desc: 'Spring patio setup and fall wrap/secure storage by our 2-person crew.' },
+    { name: 'Annual Smoke & CO Detector Sweep', price: 'Custom Scoped', desc: 'Spring testing, full battery replacement across all sensors, and device date audits.' },
+    { name: 'Dryer Duct Safety Cleaning', price: 'Custom Scoped', desc: 'Full lint cleanout from dryer to exterior exhaust flapper to reduce fire hazards and boost efficiency.' },
+    { name: 'Outdoor Shower & Spigot Winterization', price: 'Custom Scoped', desc: 'Fall line draining, compressed-air blowout, and valve shut-off to prevent catastrophic freeze bursts.' },
+    { name: 'Seasonal Furniture Staging & Storage', price: 'Custom Scoped', desc: 'Spring patio staging and fall protective wrap and secure indoor storage by our crew.' },
   ];
 
   const planSchema = {
@@ -122,12 +122,12 @@ export default function HomeWatchPlansPage() {
             </h1>
             
             <p className="text-slate-300 text-xs sm:text-base sm:leading-relaxed max-w-3xl mx-auto font-light text-balance">
-              Structured, predictable property care tailored for absentee beach homeowners across Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island. Billed monthly in arrears strictly for services rendered.
+              Structured, predictable property care tailored for absentee beach homeowners across Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island. One accountable advocate for your home and one itemized monthly invoice for total convenience.
             </p>
 
             <div className="pt-2">
-              <span className="inline-block bg-coastal-900/90 text-sand-300 border border-coastal-700 text-xs px-4 py-1.5 rounded-full font-semibold">
-                ✓ Billed Monthly In Arrears • No Upfront Prepayments • Banked Review Credits
+              <span className="inline-block bg-coastal-900/90 text-sand-300 border border-coastal-700 text-[11px] sm:text-xs px-4 py-1.5 rounded-full font-semibold">
+                ✓ One Dedicated Contact For Everything • One Reconciled Monthly Invoice For All Property Expenses
               </span>
             </div>
           </div>
@@ -239,9 +239,9 @@ export default function HomeWatchPlansPage() {
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   1
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">Banked Review Credits</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">Customized Annual Care Plans</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Visiting your beach house? If you or guests are in residence, simply notify us 48 hours in advance to skip a property review. Your review credit is preserved for future post-storm checks or liaison visits—you never lose money.
+                  Tailored annual care plans built specifically around your property's mechanical layout, systems, and personal usage. You retain complete flexibility throughout the season and only pay for services that are actually scheduled and rendered.
                 </p>
               </div>
 
@@ -249,9 +249,9 @@ export default function HomeWatchPlansPage() {
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   2
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">Account & Vendor Administration</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">Full Property Support</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Includes your dedicated Property Manager, secure keyholder custody, vendor COI and licensing verification, centralized digital service logs, and priority emergency trade dispatch.
+                  Includes full property support, dedicated property representation, secure keyholder custody and access management, vendor licensing and insurance (COI) compliance auditing, centralized digital service logs, and priority emergency contractor dispatch.
                 </p>
               </div>
 
@@ -259,9 +259,9 @@ export default function HomeWatchPlansPage() {
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   3
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">Billed in Arrears</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">One Consolidated Monthly Invoice</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Zero large upfront prepayments. We bill on the 1st of each month for services rendered during the preceding month, accompanied by full itemization and documentation for complete financial peace of mind.
+                  Never juggle scattered vendor bills or contractor receipts. All routine reviews, scheduled maintenance, and approved repair expenses are carefully reconciled into a single transparent, itemized monthly invoice for total convenience.
                 </p>
               </div>
             </div>
@@ -280,7 +280,7 @@ export default function HomeWatchPlansPage() {
                   Proactive Home Health Packages
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-                  Add essential seasonal maintenance to your routine plan. Each service is performed by our licensed crew or certified specialists at agreed turnkey rates.
+                  Customized seasonal care designed around your property's layout, square footage, and system age. Scoped with complete itemized clarity during your initial walkthrough, with zero management markup on routine scheduled care.
                 </p>
               </div>
               <div className="text-xs text-slate-500 font-medium">
@@ -350,7 +350,7 @@ export default function HomeWatchPlansPage() {
                     <input
                       type="text"
                       required
-                      placeholder="Kevin Bloom"
+                      placeholder="Your Full Name"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
                   </div>
@@ -359,7 +359,7 @@ export default function HomeWatchPlansPage() {
                     <input
                       type="email"
                       required
-                      placeholder="kevin@example.com"
+                      placeholder="youremail@example.com"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
                   </div>
@@ -371,7 +371,7 @@ export default function HomeWatchPlansPage() {
                     <input
                       type="tel"
                       required
-                      placeholder="(302) 555-0199"
+                      placeholder="Your Phone Number"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
                   </div>
@@ -386,7 +386,7 @@ export default function HomeWatchPlansPage() {
                       <option value="Rehoboth Beach">Rehoboth Beach</option>
                       <option value="Lewes">Lewes</option>
                       <option value="Dewey Beach">Dewey Beach</option>
-                      <option value="Ocean View / Millville">Ocean View / Millville</option>
+                      <option value="Ocean View">Ocean View</option>
                       <option value="Fenwick Island">Fenwick Island</option>
                       <option value="South Bethany">South Bethany</option>
                       <option value="North Bethany">North Bethany</option>

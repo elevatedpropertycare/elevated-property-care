@@ -6,29 +6,28 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const marqueeText = "🌊 Serving Coastal Sussex County: Lewes • Rehoboth Beach • Dewey Beach • Bethany Beach • South Bethany • Fenwick Island • Ocean View • Millville • Sussex County Coastal Beaches";
+  const marqueeText = "Serving Coastal Sussex County: Lewes • Rehoboth Beach • Dewey Beach • Bethany Beach • South Bethany • Fenwick Island • Ocean View • Sussex County Coastal Beaches";
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-200">
       {/* Top Utility Announcement Bar: Continuous Animated Marquee Tape */}
       <div className="bg-coastal-950 text-sand-100 text-[11px] sm:text-xs py-1.5 border-b border-coastal-800 overflow-hidden relative">
         <div className="flex items-center justify-between">
-          {/* Marquee Ticker Track */}
+          {/* Marquee Ticker Track - Clean without redundant phone or emoji */}
           <div className="overflow-hidden whitespace-nowrap flex-grow flex py-0.5">
             <div className="animate-marquee flex items-center space-x-8 text-sand-300 font-medium">
               <span>{marqueeText}</span>
               <span>•</span>
-              <span className="text-white font-semibold">Direct Dispatch: (302) 278-0938</span>
+              <span>{marqueeText}</span>
               <span>•</span>
               <span>{marqueeText}</span>
               <span>•</span>
-              <span className="text-white font-semibold">Direct Dispatch: (302) 278-0938</span>
             </div>
           </div>
 
           {/* Pinned Direct Call Link on Right (Always clickable on mobile & desktop) */}
           <div className="flex items-center px-3 sm:px-4 z-10 bg-coastal-950 flex-shrink-0 border-l border-coastal-800 space-x-2 text-[11px]">
-            <span className="hidden md:inline text-slate-300">365 Days</span>
+            <span className="hidden md:inline text-slate-300">Available 365 Days</span>
             <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
               (302) 278-0938
             </a>
@@ -93,11 +92,14 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                 </svg>
               </span>
-              <div className="absolute left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
-                <Link href="/locations/rehoboth-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Rehoboth Beach</Link>
+              <div className="absolute left-0 mt-2 w-60 bg-white rounded-xl shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
                 <Link href="/locations/bethany-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Bethany Beach</Link>
+                <Link href="/locations/south-bethany" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">South Bethany</Link>
+                <Link href="/locations/rehoboth-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Rehoboth Beach</Link>
+                <Link href="/locations/dewey-beach" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Dewey Beach</Link>
                 <Link href="/locations/lewes" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Lewes</Link>
                 <Link href="/locations/fenwick-island" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Fenwick Island</Link>
+                <Link href="/locations/ocean-view" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">Ocean View</Link>
               </div>
             </div>
 
@@ -162,10 +164,13 @@ export default function Navbar() {
           </div>
           <div className="pl-2 border-l-2 border-coastal-400 space-y-2 py-1">
             <span className="text-xs font-semibold uppercase tracking-wider text-coastal-800">Locations</span>
-            <Link href="/locations/rehoboth-beach" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Rehoboth Beach</Link>
             <Link href="/locations/bethany-beach" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Bethany Beach</Link>
+            <Link href="/locations/south-bethany" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">South Bethany</Link>
+            <Link href="/locations/rehoboth-beach" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Rehoboth Beach</Link>
+            <Link href="/locations/dewey-beach" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Dewey Beach</Link>
             <Link href="/locations/lewes" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Lewes</Link>
             <Link href="/locations/fenwick-island" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Fenwick Island</Link>
+            <Link href="/locations/ocean-view" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Ocean View</Link>
           </div>
           <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Home Watch Plans & Tiers</Link>
           <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ & Pricing</Link>

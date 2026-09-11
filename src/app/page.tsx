@@ -6,11 +6,10 @@ export default function HomePage() {
     <div className="space-y-20 pb-20">
       {/* 1. HERO SECTION */}
       <section className="relative bg-coastal-950 text-white min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden">
-        {/* Background Stock Image (Replaceable: Coastal Luxury Beach Estate) */}
+        {/* Background Stock Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-luminosity scale-105 transform transition duration-1000"
           style={{
-            /* STOCK IMAGE: Replace with your custom high-res photography */
             backgroundImage: "url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80')"
           }}
         />
@@ -123,12 +122,12 @@ export default function HomePage() {
             {/* Card 1: Property Reviews */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
               <div className="h-48 bg-cover bg-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">From $45/visit</div>
+                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">Structured Plans</div>
               </div>
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Property Reviews (Home Watch)</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  The cornerstone of our model. Structured weekly or bi-weekly interior and exterior inspections designed to identify subtle coastal failures before they escalate.
+                  The cornerstone of our model. Structured bi-weekly interior and exterior inspections designed to identify subtle coastal failures before they escalate into costly damage.
                 </p>
               </div>
               <div className="p-6 pt-0">
@@ -146,7 +145,7 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Preventative Maintenance</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Running plumbing traps to prevent sewer gas infiltration, cycling HVAC and dehumidification units against salt-air seizure, and winterization oversight.
+                  Running plumbing traps to prevent sewer gas infiltration, cycling HVAC and dehumidification units against salt-air seizure, and comprehensive freeze defense.
                 </p>
               </div>
               <div className="p-6 pt-0">
@@ -159,7 +158,7 @@ export default function HomePage() {
             {/* Card 3: Handyman & Carpentry */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
               <div className="h-48 bg-cover bg-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">0/hr Flat Labor</div>
+                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">$50/hr Flat Labor</div>
               </div>
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Handyman & Skilled Carpentry</h3>
@@ -231,110 +230,94 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3B. ASSET PRESERVATION & SELF-MANAGING RENTAL PARTNERSHIP */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-coastal-950 text-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-coastal-800 shadow-xl overflow-hidden relative">
-          <div className="relative z-10 max-w-4xl mx-auto text-center space-y-4 mb-12">
-            <span className="bg-sand-400 text-coastal-950 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded inline-block">
-              Our Operating Philosophy
+      {/* 4. NON-ROUTINE JOBS, REPAIRS & CONSTRUCTION PROJECT MANAGEMENT */}
+      <section className="bg-sand-100/70 py-20 border-y border-sand-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-coastal-700">
+              High-End Construction & Trade Project Management
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold leading-tight">
-              An Investment in Property Value — Not a Rental Commission Model
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+              Skilled Repairs, Construction Oversight & Home Improvements
             </h2>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
-              Most local property management companies focus on booking volume, guest turnovers, and taking 20% to 30% cuts of your rental revenue. Our model is fundamentally different: pure, uncompromising asset stewardship.
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light max-w-2xl mx-auto">
+              With deep expertise in luxury coastal construction, custom carpentry, and complex mechanical systems, Elevated Property Care manages, oversees, and executes residential projects of any scope—from precision punch lists to transformative renovations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-            {/* Pillar 1: Why Caretaking Pays for Itself */}
-            <div className="bg-coastal-900/90 rounded-2xl p-8 border border-coastal-800 space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-sand-400/20 text-sand-300 flex items-center justify-center font-serif text-xl font-bold">
-                  01
-                </div>
-                <h3 className="font-serif text-xl font-bold text-white">
-                  Preserving & Appreciating Property Value
-                </h3>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  We are not here to squeeze rental profit out of your home. Our mission is to keep your property in the absolute best shape possible. Regular property care and proactive maintenance is an investment that preserves and elevates market value.
-                </p>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  Our service directly pays for itself: catching minor leaks, electrical faults, salt-air HVAC corrosion, and storm vulnerabilities before they turn into tens of thousands of dollars in emergency damage and costly downtime.
-                </p>
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sand-200 shadow-sm space-y-4">
+              <div className="w-12 h-12 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-lg">
+                🔨
               </div>
-              <div className="pt-4 border-t border-coastal-800 text-sand-300 text-xs font-medium">
-                ✓ 100% focused on home longevity & structural health
-              </div>
+              <h3 className="font-serif text-xl font-bold text-slate-900">Fine Carpentry & In-House Repairs</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">
+                Skilled finish carpentry, custom cabinetry adjustments, interior and exterior paint restoration, door and lock hardware tuning, dry rot repairs, and deck maintenance handled in-house with transparent $50/hr labor.
+              </p>
             </div>
 
-            {/* Pillar 2: Self-Managing Rental Owners */}
-            <div className="bg-coastal-900/90 rounded-2xl p-8 border border-coastal-800 space-y-4 flex flex-col justify-between">
-              <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center font-serif text-xl font-bold">
-                  02
-                </div>
-                <h3 className="font-serif text-xl font-bold text-white">
-                  Self-Managing Your Rentals? Keep 100% of Your Revenue
-                </h3>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  Homeowners who manage their own Airbnb, VRBO, or direct bookings find our service invaluable. You focus on guest bookings and enjoy collecting 100% of your rental revenue—we take zero commission on your rental earnings.
-                </p>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  We handle the on-the-ground property demands: structured pre-rental readiness checks, post-checkout damage walkthroughs, prompt handyman repairs, and reliable tenant or owner assistance during emergencies.
-                </p>
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sand-200 shadow-sm space-y-4">
+              <div className="w-12 h-12 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-lg">
+                📐
               </div>
-              <div className="pt-4 border-t border-coastal-800 text-emerald-300 text-xs font-medium">
-                ✓ Zero commission splits • Professional on-the-ground support
+              <h3 className="font-serif text-xl font-bold text-slate-900">Major Improvements & Renovations</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">
+                Planning a bathroom remodel, outdoor kitchen, composite decking upgrade, or dual-fuel HVAC replacement? We leverage trusted trade relationships to source, bid, and manage licensed sub-contractors on your behalf.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sand-200 shadow-sm space-y-4">
+              <div className="w-12 h-12 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-lg">
+                🛡️
               </div>
+              <h3 className="font-serif text-xl font-bold text-slate-900">On-Site Supervision & Warranty</h3>
+              <p className="text-slate-600 text-xs leading-relaxed">
+                We audit all trade contractor licenses, workers&apos; compensation, and liability insurance. Every project includes on-site supervision, progress photo reporting, and EPC’s comprehensive workmanship warranty.
+              </p>
             </div>
           </div>
 
-          <div className="mt-12 text-center relative z-10">
-            <Link
-              href="/services/property-reviews"
-              className="inline-block bg-sand-400 hover:bg-sand-300 text-coastal-950 font-semibold px-8 py-3.5 rounded text-xs uppercase tracking-wider transition"
-            >
-              Explore Our Property Review Checklists →
-            </Link>
+          {/* Transparent Management Fee Structure */}
+          <div className="bg-white rounded-3xl p-8 sm:p-10 border border-sand-300 shadow-md">
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="text-center space-y-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-coastal-700">Fiscal Policy & Management Fees</span>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+                  Transparent Pricing: Routine vs. Non-Routine Work
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
+                  We believe in total upfront clarity regarding fees. You always know exactly how work is priced before any tool touches your home.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-6 space-y-3">
+                  <div className="inline-block bg-emerald-700 text-white font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                    Routine Contract Services
+                  </div>
+                  <h4 className="font-serif text-lg font-bold text-slate-900">0% Management Fee</h4>
+                  <p className="text-slate-700 text-xs leading-relaxed">
+                    All services included on your agreed Annual Property Care plan (property reviews, scheduled preventative maintenance, pool/lawn care, and $50/hr technician labor) carry <strong>zero management surcharge</strong>. You pay the agreed contracted rate with zero markup.
+                  </p>
+                </div>
+
+                <div className="bg-coastal-50/70 border border-coastal-200 rounded-2xl p-6 space-y-3">
+                  <div className="inline-block bg-coastal-900 text-sand-300 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                    Non-Routine Jobs & Trade Projects
+                  </div>
+                  <h4 className="font-serif text-lg font-bold text-slate-900">15% Management & Admin Fee</h4>
+                  <p className="text-slate-700 text-xs leading-relaxed">
+                    For unscheduled repairs, ad-hoc trade work, emergency dispatch, and custom improvement projects outside your annual plan, a transparent <strong>15% Management and Administration Fee</strong> applies to the trade invoice. No non-routine work is ever started without your explicit written approval.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center pt-2 text-xs text-slate-500">
+                Every project includes contractor COI verification, milestone photo updates, and consolidated monthly invoice reconciliation.
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* 4. GEOGRAPHIC COVERAGE (LOCAL SILOS) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <div className="text-center max-w-2xl mx-auto space-y-2">
-          <span className="text-xs font-semibold tracking-widest text-coastal-600 uppercase">Sussex County Coastal Footprint</span>
-          <h2 className="font-serif text-3xl font-bold text-slate-900">Tailored Local Care Across Delaware Beaches</h2>
-          <p className="text-slate-600 text-xs sm:text-sm">
-            Every beach community has unique exposure to wind-driven salt air, coastal flooding, and seasonal temperature swings. Click below to explore our hyper-local care plans.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Link href="/locations/rehoboth-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Rehoboth Beach</h3>
-            <p className="text-slate-500 text-xs mt-2">The Pines, Country Club Estates, North Shores, and Henlopen Acres home care.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Rehoboth Services →</span>
-          </Link>
-
-          <Link href="/locations/bethany-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Bethany Beach</h3>
-            <p className="text-slate-500 text-xs mt-2">Sea Colony, North Bethany oceanfronts, and South Bethany canal home maintenance.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Bethany Services →</span>
-          </Link>
-
-          <Link href="/locations/lewes" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Lewes</h3>
-            <p className="text-slate-500 text-xs mt-2">Historic District, Pilottown Village, Cape Shores, and bayfront property protection.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Lewes Services →</span>
-          </Link>
-
-          <Link href="/locations/fenwick-island" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Fenwick Island</h3>
-            <p className="text-slate-500 text-xs mt-2">Bayside, oceanfront, and barrier island piling, plumbing, and bulkheading reviews.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Fenwick Services →</span>
-          </Link>
         </div>
       </section>
 
@@ -347,7 +330,7 @@ export default function HomePage() {
               Delaware Beach Home Watch & Stewardship Tiers
             </h2>
             <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
-              Predictable, structured plans for absentee coastal homeowners. Billed monthly in arrears with banked review credits when you are in residence.
+              Predictable, structured plans for absentee coastal homeowners. One dedicated point of contact and one reconciled monthly invoice for all house expenses.
             </p>
           </div>
 
@@ -444,6 +427,61 @@ export default function HomePage() {
               Schedule Your Complimentary Property Walkthrough →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* 6. GEOGRAPHIC COVERAGE - ALL 7 COASTAL TOWNS */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div className="text-center max-w-2xl mx-auto space-y-2">
+          <span className="text-xs font-semibold tracking-widest text-coastal-600 uppercase">Sussex County Coastal Footprint</span>
+          <h2 className="font-serif text-3xl font-bold text-slate-900">Tailored Local Care Across Delaware Beaches</h2>
+          <p className="text-slate-600 text-xs sm:text-sm">
+            Every coastal community has unique exposure to wind-driven salt air, storm surge, and canal water tables. Click below to explore our dedicated town care hubs.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <Link href="/locations/bethany-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Bethany Beach</h3>
+            <p className="text-slate-500 text-xs mt-2">Sea Colony, North Bethany gated oceanfronts, and Garfield Parkway enclaves.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Bethany Services →</span>
+          </Link>
+
+          <Link href="/locations/south-bethany" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">South Bethany</h3>
+            <p className="text-slate-500 text-xs mt-2">Canal waterways, bulkhead integrity, private boat docks, and piling home freeze defense.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View South Bethany Services →</span>
+          </Link>
+
+          <Link href="/locations/rehoboth-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Rehoboth Beach</h3>
+            <p className="text-slate-500 text-xs mt-2">The Pines, Country Club Estates, North Shores, and Henlopen Acres luxury care.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Rehoboth Services →</span>
+          </Link>
+
+          <Link href="/locations/dewey-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Dewey Beach</h3>
+            <p className="text-slate-500 text-xs mt-2">Ocean-to-bay barrier strip, storm shutter maintenance, and high salt-air exposure protection.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Dewey Services →</span>
+          </Link>
+
+          <Link href="/locations/lewes" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Lewes</h3>
+            <p className="text-slate-500 text-xs mt-2">Historic District, Pilottown Village, Cape Shores, and bayfront property protection.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Lewes Services →</span>
+          </Link>
+
+          <Link href="/locations/fenwick-island" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Fenwick Island</h3>
+            <p className="text-slate-500 text-xs mt-2">Bayside, oceanfront, and barrier island piling, plumbing, and bulkheading reviews.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Fenwick Services →</span>
+          </Link>
+
+          <Link href="/locations/ocean-view" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
+            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Ocean View</h3>
+            <p className="text-slate-500 text-xs mt-2">Bear Trap Dunes, Bethany Bay, crawlspace dehumidification, and golf community home care.</p>
+            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Ocean View Services →</span>
+          </Link>
         </div>
       </section>
     </div>
