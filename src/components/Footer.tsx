@@ -26,21 +26,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10 text-sm">
         {/* Col 1: Brand story & Logo */}
         <div className="lg:col-span-2 space-y-4">
-          <Link href="/" className="inline-block">
+          <Link href="/" className="inline-block hover:opacity-90 transition">
             <img
               src="/logo.png"
               alt="Elevated Property Care"
-              className="h-10 sm:h-12 w-auto object-contain brightness-0 invert opacity-95"
+              className="h-9 sm:h-10 w-auto object-contain"
             />
           </Link>
           <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
             Delaware’s premier full-service property care and absentee home watch business. Built on transparency, proactive preventative care, and meticulous residential oversight.
           </p>
-          <div className="pt-2 space-y-1 text-xs text-sand-200">
-            <p className="font-semibold text-white">Delaware Licensed & Insured Contractor</p>
-            <p>Operational Hub: Lewes, Delaware 19958</p>
-            <p>Emergency Response: Available 365 Days a Year</p>
-          </div>
         </div>
 
         {/* Col 2: Services */}
