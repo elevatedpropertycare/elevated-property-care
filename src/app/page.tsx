@@ -429,61 +429,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* 6. GEOGRAPHIC COVERAGE - ALL 7 COASTAL TOWNS */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <div className="text-center max-w-2xl mx-auto space-y-2">
-          <span className="text-xs font-semibold tracking-widest text-coastal-600 uppercase">Sussex County Coastal Footprint</span>
-          <h2 className="font-serif text-3xl font-bold text-slate-900">Tailored Local Care Across Delaware Beaches</h2>
-          <p className="text-slate-600 text-xs sm:text-sm">
-            Every coastal community has unique exposure to wind-driven salt air, storm surge, and canal water tables. Click below to explore our dedicated town care hubs.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <Link href="/locations/bethany-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Bethany Beach</h3>
-            <p className="text-slate-500 text-xs mt-2">Sea Colony, North Bethany gated oceanfronts, and Garfield Parkway enclaves.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Bethany Services →</span>
-          </Link>
-
-          <Link href="/locations/south-bethany" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">South Bethany</h3>
-            <p className="text-slate-500 text-xs mt-2">Canal waterways, bulkhead integrity, private boat docks, and piling home freeze defense.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View South Bethany Services →</span>
-          </Link>
-
-          <Link href="/locations/rehoboth-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Rehoboth Beach</h3>
-            <p className="text-slate-500 text-xs mt-2">The Pines, Country Club Estates, North Shores, and Henlopen Acres luxury care.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Rehoboth Services →</span>
-          </Link>
-
-          <Link href="/locations/dewey-beach" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Dewey Beach</h3>
-            <p className="text-slate-500 text-xs mt-2">Ocean-to-bay barrier strip, storm shutter maintenance, and high salt-air exposure protection.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Dewey Services →</span>
-          </Link>
-
-          <Link href="/locations/lewes" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Lewes</h3>
-            <p className="text-slate-500 text-xs mt-2">Historic District, Pilottown Village, Cape Shores, and bayfront property protection.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Lewes Services →</span>
-          </Link>
-
-          <Link href="/locations/fenwick-island" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Fenwick Island</h3>
-            <p className="text-slate-500 text-xs mt-2">Bayside, oceanfront, and barrier island piling, plumbing, and bulkheading reviews.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Fenwick Services →</span>
-          </Link>
-
-          <Link href="/locations/ocean-view" className="group block bg-white rounded-xl p-6 border border-sand-200 shadow-sm hover:border-coastal-500 hover:shadow-md transition">
-            <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-700 transition">Ocean View</h3>
-            <p className="text-slate-500 text-xs mt-2">Bear Trap Dunes, Bethany Bay, crawlspace dehumidification, and golf community home care.</p>
-            <span className="inline-block mt-4 text-xs font-semibold text-coastal-800 group-hover:translate-x-1 transition">View Ocean View Services →</span>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }
