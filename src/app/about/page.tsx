@@ -49,7 +49,7 @@ export default function AboutPage() {
             <ul className="space-y-2.5">
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Delaware Licensed General Services & Resident Contractor</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Fully Insured & Bonded with Comprehensive Liability Coverage</li>
-              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Managers (No Outsourced Dispatchers)</li>
+              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Managers (No Outsourced Contractors)</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Published, Predictable Labor Rates ($50/hr Flat Rate)</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 365 Days a Year Rapid Emergency Response</li>
             </ul>
@@ -66,7 +66,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-slate-700">
             <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2 shadow-sm">
               <h4 className="font-bold text-sm text-slate-900">Absolute Transparency</h4>
-              <p>Every service is clearly itemized. Zero surprise charges, complete vendor quality control, and transparent billing in arrears.</p>
+              <p>Every service and vendor cost is itemized. Zero hidden fees, zero markups on routine contracts, and transparent billing in arrears.</p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2 shadow-sm">
               <h4 className="font-bold text-sm text-slate-900">Proactive Prevention</h4>
