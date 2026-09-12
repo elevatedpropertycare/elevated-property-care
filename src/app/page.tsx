@@ -61,7 +61,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <div className="bg-sand-50/70 p-6 rounded-xl border border-sand-200 shadow-sm hover:shadow-md transition">
               <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold mb-4">01</div>
               <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">One Contact</h3>
@@ -86,14 +86,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-sand-50/70 p-6 rounded-xl border border-sand-200 shadow-sm hover:shadow-md transition">
-              <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold mb-4">04</div>
-              <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Zero Markup on Routine Care</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                We negotiate volume commercial rates with trusted local vendors. We pass those savings directly to you with 0% management fee on all scheduled annual contract care.
-              </p>
             </div>
-          </div>
         </div>
       </section>
 
