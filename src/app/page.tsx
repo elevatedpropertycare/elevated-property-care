@@ -27,7 +27,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 font-light leading-relaxed max-w-2xl text-balance">
-              Unrivaled property care, routine home reviews, and preventative maintenance across Sussex County’s premier beach communities. Dedicated asset protection with zero rental commissions.
+              Unrivaled property care, routine home checks, professional and timely preventative maintenance across Sussex County’s beach communities. Dedicated asset protection and full-service routine service execution and quality control.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4">
@@ -57,7 +57,7 @@ export default function HomePage() {
               Effortless Ownership. Complete Peace of Mind.
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Owning a multi-million dollar beach house in Sussex County should be a source of relaxation, not friction. We serve as your dedicated professional advocate on the ground.
+              Owning a multi-million dollar beach house in Sussex County is impressive, and it should be a source of relaxation and enjoyment, not friction and a part time job chasing vendors on weekends. We serve as your dedicated professional advocate on the ground, so you can use your beach house as intended - relaxing!
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function HomePage() {
               <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold mb-4">01</div>
               <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">One Contact</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Each client is assigned a dedicated Primary Property Manager. No call centers or outsourced dispatchers. One professional representing your exact standards.
+                No call centers or outsourced dispatchers. One professional contact representing your exact standards. Available when needed, and genuinely happy to assist.
               </p>
             </div>
 
@@ -74,7 +74,7 @@ export default function HomePage() {
               <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold mb-4">02</div>
               <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">One Monthly Invoice</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                We reconcile all routine maintenance vendors into a single transparent, itemized monthly bill invoiced in arrears. Zero surprise charges or scattered contractor receipts.
+                We carefully check and reconcile all routine maintenance vendor invoices and repairs into a single transparent, itemized monthly bill invoiced in arrears.
               </p>
             </div>
 
@@ -115,9 +115,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1: Property Reviews */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">Structured Plans</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Property Reviews (Home Watch)</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
@@ -133,9 +131,7 @@ export default function HomePage() {
 
             {/* Card 2: Preventative Maintenance */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">System Cycling</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Preventative Maintenance</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
@@ -149,13 +145,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Card 3: Handyman & Carpentry */}
+            {/* Card 3: Furniture assembly, hardware installation */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">$50/hr Flat Labor</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Handyman & Skilled Carpentry</h3>
+                <h3 className="font-serif text-xl font-bold text-slate-900">Furniture assembly, hardware installation</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
                   Custom carpentry, punch list repairs, furniture assembly, paint touch-ups, and hardware adjustments handled in-house with full rate transparency.
                 </p>
@@ -169,9 +163,7 @@ export default function HomePage() {
 
             {/* Card 4: Landscaping Oversight */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">Vendor QC</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Landscaping & Exterior Care</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
@@ -187,9 +179,7 @@ export default function HomePage() {
 
             {/* Card 5: Pool and Spa */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">Water Quality</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Pool & Spa Coordination</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
@@ -205,9 +195,7 @@ export default function HomePage() {
 
             {/* Card 6: Concierge & Storm Prep */}
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200 relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=800&q=80')" }}>
-                <div className="absolute top-3 right-3 bg-coastal-900/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded">365 Response</div>
-              </div>
+              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Concierge & Storm Response</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
@@ -239,15 +227,15 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Capabilities Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Capabilities Grid - 2 Cards Perfectly Centered */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sand-200 shadow-sm space-y-4">
               <div className="w-12 h-12 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-lg">
                 🔨
               </div>
-              <h3 className="font-serif text-xl font-bold text-slate-900">Fine Carpentry & In-House Repairs</h3>
+              <h3 className="font-serif text-xl font-bold text-slate-900">In-House Repairs</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Skilled finish carpentry, custom cabinetry adjustments, interior and exterior paint restoration, door and lock hardware tuning, dry rot repairs, and deck maintenance handled in-house with transparent $50/hr labor.
+                Skilled finish carpentry, cabinetry adjustments, furniture assembly, door and lock hardware tuning, deck repairs and maintenance handled in-house
               </p>
             </div>
 
@@ -260,23 +248,12 @@ export default function HomePage() {
                 Planning a bathroom remodel, outdoor kitchen, composite decking upgrade, or dual-fuel HVAC replacement? We leverage trusted trade relationships to source, bid, and manage licensed sub-contractors on your behalf.
               </p>
             </div>
-
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-sand-200 shadow-sm space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-lg">
-                🛡️
-              </div>
-              <h3 className="font-serif text-xl font-bold text-slate-900">On-Site Supervision & Warranty</h3>
-              <p className="text-slate-600 text-xs leading-relaxed">
-                We audit all trade contractor licenses, workers&apos; compensation, and liability insurance. Every project includes on-site supervision, progress photo reporting, and EPC’s comprehensive workmanship warranty.
-              </p>
-            </div>
           </div>
 
           {/* Transparent Management Fee Structure */}
           <div className="bg-white rounded-3xl p-8 sm:p-10 border border-sand-300 shadow-md">
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-coastal-700">Fiscal Policy & Management Fees</span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
                   Transparent Pricing: Routine vs. Non-Routine Work
                 </h3>
@@ -292,7 +269,7 @@ export default function HomePage() {
                   </div>
                   <h4 className="font-serif text-lg font-bold text-slate-900">0% Management Fee</h4>
                   <p className="text-slate-700 text-xs leading-relaxed">
-                    All services included on your agreed Annual Property Care plan (property reviews, scheduled preventative maintenance, pool/lawn care, and $50/hr technician labor) carry <strong>zero management surcharge</strong>. You pay the agreed contracted rate with zero markup.
+                    All services included on your agreed Annual Care plan (home checks, scheduled preventative maintenance, pool/lawn care) carry zero management fee surcharge.
                   </p>
                 </div>
 
