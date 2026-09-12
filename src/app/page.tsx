@@ -112,7 +112,7 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Property Reviews (Home Watch)</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  The cornerstone of our model. Structured bi-weekly interior and exterior inspections designed to identify subtle coastal failures before they escalate into costly damage.
+                  The cornerstone of our model. Structured bi-weekly interior and exterior detailed inspections designed to test system and identify issues early, as well as quality control routine services and ensure all systems and mechanicals operate as intended. Real-time digital reporting.
                 </p>
               </div>
               <div className="p-6 pt-0">
@@ -128,12 +128,12 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Preventative Maintenance</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Running plumbing traps to prevent sewer gas infiltration, cycling HVAC and dehumidification units against salt-air seizure, and comprehensive freeze defense.
+                  Running plumbing and electrical fixtures, cycling HVAC units, ensuring perimeter security and comprehensive actions for freeze defense.
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <Link href="/services/preventative-maintenance" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Learn About System Cycling →
+                  Learn about our preventative measures →
                 </Link>
               </div>
             </div>
@@ -144,12 +144,12 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Furniture assembly, hardware installation</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Custom carpentry, punch list repairs, furniture assembly, paint touch-ups, and hardware adjustments handled in-house with full rate transparency.
+                  Punch list and carpentry repairs, furniture assembly, paint touch-ups, and hardware adjustments handled in-house. We are happy to assist with any requets our clients may have. 
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <Link href="/services/handyman-and-repairs" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Explore Handyman Rates →
+                  Handyman jobs →
                 </Link>
               </div>
             </div>
@@ -160,12 +160,12 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Landscaping & Exterior Care</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Overseeing landscape contractors to ensure adherence to coastal plant health, mulch replenishment, irrigation monitoring, and seasonal cleanups.
+                  Management of your lawn and grounds through our vetted partner vendors. We coordinate, oversee and quality control routine mowing, seasonal cleanups, pruning, mulch replenishment, irrigation monitoring, and coastal plant health so your property gets important landscaping care.
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <Link href="/services/landscaping-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Quality Control Standards →
+                  More about landscaping services →
                 </Link>
               </div>
             </div>
@@ -176,12 +176,12 @@ export default function HomePage() {
               <div className="p-6 flex-grow space-y-3">
                 <h3 className="font-serif text-xl font-bold text-slate-900">Pool & Spa Coordination</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Auditing vendor chemical balances, ensuring filter cycles run properly, and coordinating winterization covers and spring openings.
+                  Managing pool opening and closing procedures, weekly pool service ensuring pool is sparkling clean with a balanced water quality, taking away the hassle from you. 
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <Link href="/services/pool-and-spa-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Pool Maintenance Oversight →
+                  Pool Service Oversight →
                 </Link>
               </div>
             </div>
@@ -190,14 +190,14 @@ export default function HomePage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
               <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=800&q=80')" }} />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Concierge & Storm Response</h3>
+                <h3 className="font-serif text-xl font-bold text-slate-900">Storm and Weather Event Response</h3>
                 <p className="text-slate-600 text-xs leading-relaxed">
-                  Discreet package management, keyholder access for third-party trades, pre-storm patio furniture tie-downs, and immediate post-storm damage assessments.
+                  Pre-storm property and patio furniture preparations, and immediate post-storm checks and damage assessments with real-time digital reports. Pre-freeze protocols for house preparations before high risk freeze events.  
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <Link href="/services/concierge" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Concierge Support Details →
+                  Weather event prep →
                 </Link>
               </div>
             </div>
@@ -213,10 +213,10 @@ export default function HomePage() {
               High-End Construction & Trade Project Management
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-              Skilled Repairs, Construction Oversight & Home Improvements
+              Complex Repairs, Remodeling Oversight & Home Improvements
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-light max-w-2xl mx-auto">
-              With deep expertise in luxury coastal construction, custom carpentry, and complex mechanical systems, Elevated Property Care manages, oversees, and executes residential projects of any scope—from precision punch lists to transformative renovations.
+              With deep expertise in luxury coastal construction, custom carpentry, and complex mechanical systems, Elevated Property Care manages, oversees, and executes residential projects of any scope—from precision punch lists and to transformative renovations both interior and exterior.
             </p>
           </div>
 
@@ -228,7 +228,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-xl font-bold text-slate-900">In-House Repairs</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Skilled finish carpentry, cabinetry adjustments, furniture assembly, door and lock hardware tuning, deck repairs and maintenance handled in-house
+                Skilled finish carpentry, cabinetry adjustments, furniture assembly, door and lock hardware tuning, deck repairs and other maintenance handled in-house.
               </p>
             </div>
 
@@ -238,7 +238,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-xl font-bold text-slate-900">Major Improvements & Renovations</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                Planning a bathroom remodel, outdoor kitchen, composite decking upgrade, or dual-fuel HVAC replacement? We leverage trusted trade relationships to source, bid, and manage licensed sub-contractors on your behalf.
+                We act as your dedicated owner’s representative. Working under a transparent 15% management fee, our priority is solely your best interest—vetting licensed subcontractors, negotiating fair pricing, enforcing strict quality control, and holding schedules accountable. You get the quality you pay for, completed on budget and on time, without the headaches of managing it yourself.
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function HomePage() {
                   Transparent Pricing: Routine vs. Non-Routine Work
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                  We believe in total upfront clarity regarding fees. You always know exactly how work is priced before any tool touches your home.
+                  We believe in total upfront clarity regarding fees. You always know exactly how work is priced before any services take place.
                 </p>
               </div>
 
@@ -262,7 +262,7 @@ export default function HomePage() {
                   </div>
                   <h4 className="font-serif text-lg font-bold text-slate-900">0% Management Fee</h4>
                   <p className="text-slate-700 text-xs leading-relaxed">
-                    All services included on your agreed Annual Care plan (home checks, scheduled preventative maintenance, pool/lawn care) carry zero management fee surcharge.
+                    All services included on your agreed Annual Care plan (home checks, scheduled preventative maintenance, pool/lawn care) carry zero management fee surcharge. All services price itemized.
                   </p>
                 </div>
 
@@ -294,7 +294,7 @@ export default function HomePage() {
               Tailored Annual Care Contract
             </h2>
             <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
-              Rather than choosing from rigid, generic tiers, every home receives a tailored annual care contract built specifically around your property's square footage, mechanical layout, and personal usage schedule.
+              Every client receives a tailored annual care contract built specifically around their property's needs and specifics, mechanical equipment, and only services client requests. 
             </p>
           </div>
 
@@ -304,7 +304,7 @@ export default function HomePage() {
                 <span className="text-xs font-semibold text-sand-300 uppercase tracking-wider block">Step 01</span>
                 <h3 className="font-serif text-lg font-bold text-white">Property Walkthrough</h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  We walk your property together (or via lockbox) to review mechanical configurations, shutoff valves, exterior exposures, and seasonal priorities.
+                  Every home has unique needs, and our approach is built entirely around what suits yours best. We begin with a thorough in-preson property walkthrough to evaluate all primary mechanical systems and exterior conditions. From there, we design a tailored, balanced care plan reflecting your priorities, whether you need comprehensive ongoing oversight or simple baseline reviews. You maintain complete control: every service is clearly scoped, priced transparently, and executed only with your explicit approval.
                 </p>
               </div>
 
