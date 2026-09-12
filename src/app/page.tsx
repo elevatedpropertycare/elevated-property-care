@@ -101,7 +101,7 @@ export default function HomePage() {
               </h2>
             </div>
             <Link href="/annual-estimate" className="text-coastal-800 hover:text-coastal-950 font-semibold text-sm flex items-center">
-              View All Home Watch Tiers & Pricing →
+              Annual Care Estimate →
             </Link>
           </div>
 
