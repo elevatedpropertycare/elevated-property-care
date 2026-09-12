@@ -4,77 +4,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
-export default function HomeWatchPlansPage() {
-  const [selectedTier, setSelectedTier] = useState<string>('stewardship');
+export default function AnnualCarePlanPage() {
   const [town, setTown] = useState('Bethany Beach');
+  const [usage, setUsage] = useState('Personal Second Home / Vacation Retreat');
   const [submitted, setSubmitted] = useState(false);
-
-  const tiers = [
-    {
-      id: 'essential',
-      name: 'Essential Watch',
-      tagline: 'Baseline Peace of Mind',
-      description: 'Ideal for frequent visitors or lower-maintenance beach properties seeking dependable keyholder security and monthly oversight.',
-      monthlyPrice: '$165',
-      annualBudget: '$1,980 Annual Budget',
-      popular: false,
-      features: [
-        '1x Monthly Comprehensive Property Review (12 visits/yr)',
-        'Full interior & exterior digital report with date-stamped photos',
-        'Account & Vendor Administration ($90/mo value included)',
-        'Secure keyholder custody and managed property access',
-        'Trade vendor insurance (COI) & license compliance auditing',
-        'Local contact listing for alarm monitoring & incident escalation',
-        'Banked Review Credit policy (reschedule when you are in town)',
-        'Billed monthly in arrears strictly for services rendered',
-      ],
-      reviewsText: '12 Reviews / Year'
-    },
-    {
-      id: 'stewardship',
-      name: 'Coastal Stewardship',
-      tagline: 'Our Most Popular Flagship Plan',
-      description: 'Engineered specifically for absentee owners of $2M–$4M coastal homes requiring proactive year-round mechanical and security defense.',
-      monthlyPrice: '$295',
-      annualBudget: '$3,540 Annual Budget',
-      popular: true,
-      features: [
-        'Bi-Weekly Year-Round Property Reviews (26 visits/yr)',
-        'In-Season Summer Mechanical Audits (HVAC load, dehumidifiers, moisture)',
-        'Off-Season Winter Freeze Audits (pipe integrity, heat check, storm surge)',
-        'Account & Vendor Administration ($90/mo value included)',
-        '2 Included Concierge & Vendor Access Liaisons annually ($120 value)',
-        'Secure keyholder custody and access management',
-        'Vendor insurance auditing & consolidated monthly billing',
-        'Priority emergency contractor dispatch with partner trades',
-        'Banked Review Credit policy (convert skipped reviews to credits)',
-        'Billed monthly in arrears with itemized accounting',
-      ],
-      reviewsText: '26 Reviews / Year (Every 2 Weeks)'
-    },
-    {
-      id: 'executive',
-      name: 'Executive Care',
-      tagline: 'Maximum Protection & Priority',
-      description: 'High-touch, intensive stewardship for oceanfront homes, high-complexity systems, or remote owners demanding maximum oversight.',
-      monthlyPrice: '$445',
-      annualBudget: '$5,340 Annual Budget',
-      popular: false,
-      features: [
-        '36 Comprehensive Property Reviews / Year',
-        'Weekly Reviews in Off-Season (Nov–Apr: 24 weekly inspections)',
-        'Bi-Weekly Reviews in Summer (May–Oct: 12 bi-weekly inspections)',
-        'Account & Vendor Administration ($90/mo value included)',
-        '4 Included Concierge & Vendor Access Liaisons annually ($240 value)',
-        'Guaranteed Post-Storm Property Sweeps within 24 hours of severe coastal weather',
-        'Dedicated Primary Property Manager',
-        'Priority scheduling for all handyman, carpentry, and repair projects',
-        'Full vendor management with zero routine trade markup',
-        'Billed monthly in arrears with flexible cancellation credits',
-      ],
-      reviewsText: '36 Reviews / Year (Weekly in Winter / Bi-Weekly in Summer)'
-    }
-  ];
 
   const maintenanceAddons = [
     { name: 'Annual Smoke & CO Detector Sweep', price: 'Custom Scoped', desc: 'Spring testing, full battery replacement across all sensors, and device date audits.' },
@@ -85,21 +18,14 @@ export default function HomeWatchPlansPage() {
 
   const planSchema = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Elevated Property Care - Coastal Delaware Home Watch Plans",
-    "description": "Transparent, structured absentee home watch and coastal property management plans for Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Elevated Property Care"
-    },
-    "offers": tiers.map(tier => ({
-      "@type": "Offer",
-      "name": tier.name,
-      "price": tier.monthlyPrice.replace('$', ''),
-      "priceCurrency": "USD",
-      "unitText": "MONTH",
-      "description": tier.description
-    }))
+    "@type": "Service",
+    "name": "Elevated Property Care - Coastal Delaware Property Stewardship",
+    "description": "Tailored absentee home watch and coastal property management plans for Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, South Bethany, and Fenwick Island.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Elevated Property Care",
+      "telephone": "+1-302-278-0938"
+    }
   };
 
   return (
@@ -107,161 +33,168 @@ export default function HomeWatchPlansPage() {
       <SchemaMarkup data={planSchema} />
 
       <div className="w-full pb-20 overflow-hidden">
-        {/* Hero Section - Direct flush against navbar, zero white gap */}
-        <section className="relative bg-coastal-950 text-white pt-8 pb-10 sm:pt-14 sm:pb-16 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
+        {/* Hero Section */}
+        <section className="relative bg-coastal-950 text-white pt-8 pb-12 sm:pt-14 sm:pb-20 px-4 sm:px-6 lg:px-8 text-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-coastal-900/40 via-coastal-950 to-coastal-950" />
           
           <div className="relative max-w-5xl mx-auto space-y-4">
             <div className="inline-flex items-center space-x-2 bg-coastal-800/90 border border-sand-400/30 px-3.5 py-1.5 rounded-full text-sand-200 text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Coastal Delaware Absentee Home Watch</span>
+              <span>Coastal Delaware Property Stewardship</span>
             </div>
 
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight text-balance">
-              Transparent Home Watch & Coastal Stewardship Plans
+              Tailored Annual Property Stewardship
             </h1>
             
             <p className="text-slate-300 text-xs sm:text-base sm:leading-relaxed max-w-3xl mx-auto font-light text-balance">
-              Structured, predictable property care tailored for absentee beach homeowners across Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, and Fenwick Island. One accountable advocate for your home and one itemized monthly invoice for total convenience.
+              Predictable, comprehensive property care built around your home's unique layout, mechanical systems, and family occupancy schedule across Sussex County. One dedicated advocate for your home and one itemized monthly statement.
             </p>
 
             <div className="pt-2">
               <span className="inline-block bg-coastal-900/90 text-sand-300 border border-coastal-700 text-[11px] sm:text-xs px-4 py-1.5 rounded-full font-semibold">
-                ✓ One Dedicated Contact For Everything • One Reconciled Monthly Invoice For All Property Expenses
+                ✓ One Dedicated Contact • Turnkey Vendor Quality Control • Invoiced Monthly in Arrears
               </span>
             </div>
           </div>
         </section>
 
-        {/* Pricing Cards Grid - Starts directly below the hero */}
+        {/* Core Inclusions Overview (Replaces the 3 static tier cards) */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 sm:-mt-6 lg:-mt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch max-w-md lg:max-w-none mx-auto">
-            {tiers.map((tier) => (
-              <div
-                key={tier.id}
-                className={`relative rounded-2xl flex flex-col justify-between transition-all duration-300 ${
-                  tier.popular
-                    ? 'bg-white border-2 border-coastal-950 shadow-2xl scale-100 lg:-translate-y-2 z-10'
-                    : 'bg-white border border-sand-200 shadow-md hover:shadow-lg'
-                } p-6 sm:p-8`}
-              >
-                {tier.popular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-coastal-950 text-sand-300 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md whitespace-nowrap">
-                    Most Popular Across Sussex Beaches
-                  </div>
-                )}
-
-                <div className="space-y-6">
-                  <div>
-                    <div className="text-xs font-semibold text-coastal-600 uppercase tracking-wider">
-                      {tier.tagline}
-                    </div>
-                    <h3 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
-                      {tier.name}
-                    </h3>
-                    <p className="text-slate-600 text-xs mt-2 leading-relaxed">
-                      {tier.description}
-                    </p>
-                  </div>
-
-                  {/* Price Display */}
-                  <div className="border-y border-sand-200 py-4">
-                    <div className="flex items-baseline space-x-2">
-                      <span className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-coastal-950">
-                        {tier.monthlyPrice}
-                      </span>
-                      <span className="text-xs text-slate-500 font-medium">
-                        / month
-                      </span>
-                    </div>
-                    <div className="text-[11px] text-emerald-700 font-semibold mt-1">
-                      {tier.reviewsText} • {tier.annualBudget}
-                    </div>
-                    <div className="text-[10px] text-slate-500 mt-0.5">
-                      Invoiced monthly in arrears strictly as completed
-                    </div>
-                  </div>
-
-                  {/* Features List */}
-                  <div className="space-y-3">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-slate-900 block">
-                      Plan Specifications & Inclusions:
-                    </span>
-                    <ul className="space-y-2.5 text-xs text-slate-700">
-                      {tier.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start space-x-2.5">
-                          <svg className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
-                          </svg>
-                          <span className="leading-snug">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Action Button */}
-                <div className="pt-6 sm:pt-8 mt-6 border-t border-sand-100">
-                  <a
-                    href="#walkthrough-form"
-                    onClick={() => setSelectedTier(tier.id)}
-                    className={`block w-full py-3.5 px-4 rounded-xl text-center text-xs uppercase tracking-wider font-bold transition shadow-sm ${
-                      tier.popular
-                        ? 'bg-coastal-900 hover:bg-coastal-950 text-white shadow-coastal-900/20'
-                        : 'bg-sand-100 hover:bg-sand-200 text-coastal-950 border border-sand-300'
-                    }`}
-                  >
-                    Request On-Site Walkthrough
-                  </a>
-                  <div className="text-[10px] text-center text-slate-400 mt-2">
-                    Complimentary on-site mechanical walkthrough included
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* The Elevated Standard: Core Inclusions */}
-        <section className="bg-sand-50 border-y border-sand-200 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 my-12 sm:my-16">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-12">
+          <div className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-sand-200 shadow-xl space-y-10">
+            <div className="text-center max-w-3xl mx-auto space-y-3">
+              <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">The Bespoke Care Model</span>
               <h2 className="font-serif text-2xl sm:text-4xl font-bold text-slate-900">
-                The Standard of Excellence in Every Plan
+                What's Included in Your Annual Stewardship Plan
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                Every Elevated Property Care membership includes our core operating principles designed to make beach homeownership convenient, simple, and rewarding.
+                Rather than generic, one-size-fits-all packages, we formulate a single transparent care agreement customized to your property during our initial mechanical walkthrough.
               </p>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              {/* Card 1 */}
+              <div className="bg-sand-50/70 rounded-2xl p-6 border border-sand-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
+                    01
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">Routine Home Checks</h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Scheduled interior and exterior inspections. We cycle plumbing fixtures, verify HVAC functionality, monitor crawlspace humidity, and inspect for leaks or storm wear.
+                  </p>
+                </div>
+                <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
+                  <li>• 50-point inspection checklist</li>
+                  <li>• High-resolution digital photo logs</li>
+                  <li>• Delivered immediately to your portal</li>
+                </ul>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-sand-50/70 rounded-2xl p-6 border border-sand-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
+                    02
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">Mechanical & Weather Defense</h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Active defense against coastal elements: cycling condenser units against salt seizure, winter freeze checks, line blowouts, and priority post-storm sweeps.
+                  </p>
+                </div>
+                <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
+                  <li>• Summer dehumidification monitoring</li>
+                  <li>• Comprehensive pipe freeze protection</li>
+                  <li>• Rapid storm damage assessments</li>
+                </ul>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-sand-50/70 rounded-2xl p-6 border border-sand-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
+                    03
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">Turnkey Vendor Oversight</h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    We coordinate, schedule, and supervise your routine exterior maintenance—lawn care, landscaping, pool and spa service, and seasonal cleanups.
+                  </p>
+                </div>
+                <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
+                  <li>• Vendor licensing & COI auditing</li>
+                  <li>• On-site quality inspection before billing</li>
+                  <li>• Zero vendor coordination headache</li>
+                </ul>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-sand-50/70 rounded-2xl p-6 border border-sand-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
+                    04
+                  </div>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">One Consolidated Statement</h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    All scheduled home checks, routine maintenance, and approved repair expenses are carefully reconciled into a single transparent monthly invoice in arrears.
+                  </p>
+                </div>
+                <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
+                  <li>• Billed monthly in arrears</li>
+                  <li>• Completely itemized accounting</li>
+                  <li>• Single point of accountability</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="text-center pt-2">
+              <a
+                href="#walkthrough-form"
+                className="inline-block bg-coastal-900 hover:bg-coastal-950 text-white font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-md"
+              >
+                Schedule Walkthrough For Your Custom Plan →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* The 3-Step Walkthrough Process */}
+        <section className="bg-sand-50 border-y border-sand-200 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 my-12 sm:my-16">
+          <div className="max-w-5xl mx-auto space-y-10">
+            <div className="text-center max-w-3xl mx-auto space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-coastal-700">How It Works</span>
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+                Three Simple Steps to Effortless Ownership
+              </h2>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm space-y-3">
+              <div className="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm space-y-3">
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   1
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">Customized Annual Care Plans</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">20-Min Property Walkthrough</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Tailored annual care plans built specifically around your property's mechanical layout, systems, and personal usage. You retain complete flexibility throughout the season and only pay for services that are actually scheduled and rendered.
+                  We walk your property together (or access via lockbox) to review mechanical configurations, shutoff valves, exterior exposures, and seasonal priorities.
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm space-y-3">
+              <div className="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm space-y-3">
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   2
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">Full Property Support</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">Itemized Care Proposal</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Includes full property support, dedicated property representation, secure keyholder custody and access management, vendor licensing and insurance (COI) compliance auditing, centralized digital service logs, and priority emergency contractor dispatch.
+                  You receive a clear, transparent annual proposal specifying your inspection cadence, routine service schedule, and predictable monthly billing in arrears.
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl border border-sand-200 shadow-sm space-y-3">
+              <div className="bg-white p-6 rounded-2xl border border-sand-200 shadow-sm space-y-3">
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   3
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">One Consolidated Monthly Invoice</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">Hands-Off Coastal Living</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Never juggle scattered vendor bills or contractor receipts. All routine reviews, scheduled maintenance, and approved repair expenses are carefully reconciled into a single transparent, itemized monthly invoice for total convenience.
+                  We take full custody of your property operations. You receive timely digital reports after every check and use your beach home as intended—relaxing!
                 </p>
               </div>
             </div>
@@ -280,7 +213,7 @@ export default function HomeWatchPlansPage() {
                   Proactive Home Health Packages
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-                  Customized seasonal care designed around your property's layout, square footage, and system age. Scoped with complete itemized clarity during your initial walkthrough, with zero management markup on routine scheduled care.
+                  Customized seasonal care designed around your property's layout, square footage, and system age. Scoped with complete itemized clarity during your initial walkthrough.
                 </p>
               </div>
               <div className="text-xs text-slate-500 font-medium">
@@ -383,12 +316,12 @@ export default function HomeWatchPlansPage() {
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white focus:outline-none focus:border-sand-400"
                     >
                       <option value="Bethany Beach">Bethany Beach</option>
+                      <option value="South Bethany">South Bethany</option>
                       <option value="Rehoboth Beach">Rehoboth Beach</option>
                       <option value="Lewes">Lewes</option>
                       <option value="Dewey Beach">Dewey Beach</option>
                       <option value="Ocean View">Ocean View</option>
                       <option value="Fenwick Island">Fenwick Island</option>
-                      <option value="South Bethany">South Bethany</option>
                       <option value="North Bethany">North Bethany</option>
                     </select>
                   </div>
@@ -396,15 +329,17 @@ export default function HomeWatchPlansPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Preferred Plan Tier</label>
+                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Primary Property Usage</label>
                     <select
-                      value={selectedTier}
-                      onChange={(e) => setSelectedTier(e.target.value)}
+                      value={usage}
+                      onChange={(e) => setUsage(e.target.value)}
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white focus:outline-none focus:border-sand-400"
                     >
-                      <option value="essential">Tier 1: Essential Watch ($165/mo)</option>
-                      <option value="stewardship">Tier 2: Coastal Stewardship ($295/mo) - Recommended</option>
-                      <option value="executive">Tier 3: Executive Care ($445/mo)</option>
+                      <option value="Personal Second Home / Vacation Retreat">Personal Second Home / Vacation Retreat</option>
+                      <option value="Seasonal Family Retreat">Seasonal Family Retreat</option>
+                      <option value="Full-Time Residence">Full-Time Residence</option>
+                      <option value="Hybrid Vacation Rental & Personal Use">Hybrid Vacation Rental & Personal Use</option>
+                      <option value="New Construction / Recent Purchase">New Construction / Recent Purchase</option>
                     </select>
                   </div>
                   <div className="space-y-1">

@@ -62,7 +62,7 @@ export default function Footer() {
             <li><Link href="/locations/south-bethany" className="hover:text-white transition">South Bethany Care</Link></li>
             <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island Care</Link></li>
             <li><Link href="/locations/ocean-view" className="hover:text-white transition">Ocean View Care</Link></li>
-            <li><Link href="/annual-estimate" className="hover:text-white transition font-semibold text-sand-300">Home Watch Plans & Tiers</Link></li>
+            <li><Link href="/annual-estimate" className="hover:text-white transition font-semibold text-sand-300">Annual Care Plans</Link></li>
           </ul>
         </div>
 

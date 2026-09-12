@@ -35,7 +35,7 @@ export default function HomePage() {
                 href="/annual-estimate"
                 className="bg-sand-400 hover:bg-sand-300 text-coastal-950 font-semibold px-8 py-4 rounded-xl text-center text-sm uppercase tracking-wider shadow-lg transition duration-200"
               >
-                Explore Home Watch Plans
+                Explore Annual Care Plans
               </Link>
               <Link
                 href="/annual-estimate#walkthrough-form"
@@ -88,9 +88,9 @@ export default function HomePage() {
 
             <div className="bg-sand-50/70 p-6 rounded-xl border border-sand-200 shadow-sm hover:shadow-md transition">
               <div className="w-10 h-10 rounded-lg bg-coastal-100 flex items-center justify-center text-coastal-800 font-bold mb-4">04</div>
-              <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Zero Markup on Routine Care</h3>
+              <h3 className="font-serif text-lg font-bold text-slate-900 mb-2">Turnkey Quality Assurance</h3>
               <p className="text-slate-600 text-xs leading-relaxed">
-                We negotiate volume commercial rates with trusted local vendors. We pass those savings directly to you with 0% management fee on all scheduled annual contract care.
+                We partner only with premier, thoroughly vetted local trades who meet our strict licensing, insurance, and performance standards. Every job is supervised and verified by our team before being approved.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function HomePage() {
               </h2>
             </div>
             <Link href="/annual-estimate" className="text-coastal-800 hover:text-coastal-950 font-semibold text-sm flex items-center">
-              View All Home Watch Tiers & Pricing →
+              Explore Tailored Annual Care Plans →
             </Link>
           </div>
 
@@ -250,36 +250,36 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Transparent Management Fee Structure */}
+          {/* Transparent Service Standards & Execution */}
           <div className="bg-white rounded-3xl p-8 sm:p-10 border border-sand-300 shadow-md">
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="text-center space-y-2">
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
-                  Transparent Pricing: Routine vs. Non-Routine Work
+                  Transparent Service Standards & Execution
                 </h3>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-2xl mx-auto">
-                  We believe in total upfront clarity regarding fees. You always know exactly how work is priced before any tool touches your home.
+                  Total upfront clarity and single-source accountability. You always know exactly how work is planned, executed, and billed.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-6 space-y-3">
-                  <div className="inline-block bg-emerald-700 text-white font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
-                    Routine Contract Services
+                <div className="bg-sand-50/80 border border-sand-200 rounded-2xl p-6 space-y-3">
+                  <div className="inline-block bg-coastal-900 text-sand-300 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
+                    Turnkey Annual Care
                   </div>
-                  <h4 className="font-serif text-lg font-bold text-slate-900">0% Management Fee</h4>
+                  <h4 className="font-serif text-lg font-bold text-slate-900">All-Inclusive Coordination</h4>
                   <p className="text-slate-700 text-xs leading-relaxed">
-                    All services included on your agreed Annual Care plan (home checks, scheduled preventative maintenance, pool/lawn care) carry zero management fee surcharge.
+                    All routine services included on your agreed Annual Care plan (home checks, seasonal preventative maintenance, pool and grounds care) are fully managed under one umbrella with guaranteed quality control and itemized monthly billing in arrears.
                   </p>
                 </div>
 
-                <div className="bg-coastal-50/70 border border-coastal-200 rounded-2xl p-6 space-y-3">
+                <div className="bg-coastal-50/80 border border-coastal-200 rounded-2xl p-6 space-y-3">
                   <div className="inline-block bg-coastal-900 text-sand-300 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full">
-                    Non-Routine Jobs & Trade Projects
+                    Custom Repairs & Projects
                   </div>
-                  <h4 className="font-serif text-lg font-bold text-slate-900">15% Management & Admin Fee</h4>
+                  <h4 className="font-serif text-lg font-bold text-slate-900">Pre-Approved Itemized Estimates</h4>
                   <p className="text-slate-700 text-xs leading-relaxed">
-                    For unscheduled repairs, ad-hoc trade work, emergency dispatch, and custom improvement projects outside your annual plan, a transparent <strong>15% Management and Administration Fee</strong> applies to the trade invoice. No non-routine work is ever started without your explicit written approval.
+                    For custom renovations, specialty contractor work, or ad-hoc trade dispatch, we provide a complete, transparent written estimate before any work begins. We oversee contractor licensing, supervise execution, and verify workmanship.
                   </p>
                 </div>
               </div>
@@ -292,111 +292,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. 3-TIER HOME WATCH & STEWARDSHIP PLANS SHOWCASE */}
+      {/* 5. BESPOKE ANNUAL PROPERTY STEWARDSHIP SHOWCASE */}
       <section className="bg-coastal-950 text-white py-16 sm:py-24 border-t border-sand-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-sand-300">Transparent Monthly Care Plans</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-sand-300">Predictable Annual Stewardship</span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
-              Delaware Beach Home Watch & Stewardship Tiers
+              Tailored Coastal Delaware Property Care
             </h2>
             <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light leading-relaxed">
-              Predictable, structured plans for absentee coastal homeowners. One dedicated point of contact and one reconciled monthly invoice for all house expenses.
+              Every luxury beach home has unique architecture, mechanical layouts, and occupancy schedules. Rather than rigid, generic packages, we design a customized annual stewardship plan built specifically for your property.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-md lg:max-w-none mx-auto">
-            {/* Tier 1 */}
-            <div className="bg-coastal-900/90 rounded-2xl p-6 border border-coastal-700 flex flex-col justify-between space-y-6">
-              <div className="space-y-4">
-                <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Essential Watch</div>
-                <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">$165</span>
-                  <span className="text-xs text-slate-400">/ month</span>
-                </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  1x monthly inspection, Account & Vendor Administration, keyholder custody, and photographic digital reports.
-                </p>
-                <ul className="text-xs text-slate-300 space-y-2 pt-2 border-t border-coastal-800">
-                  <li>✓ 12 Comprehensive Reviews / Year</li>
-                  <li>✓ Keyholder & Managed Access</li>
-                  <li>✓ Vendor COI & License Auditing</li>
-                  <li>✓ Invoiced Monthly in Arrears</li>
-                </ul>
+          {/* 3 Core Pillars of the Stewardship Plan */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-coastal-900/90 rounded-2xl p-6 border border-coastal-800 space-y-4 shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-coastal-800 text-sand-300 flex items-center justify-center font-bold text-lg border border-coastal-700">
+                01
               </div>
-              <Link
-                href="/annual-estimate"
-                className="block w-full py-3 rounded-xl text-center text-xs uppercase tracking-wider font-semibold bg-coastal-800 hover:bg-coastal-700 text-white border border-coastal-600 transition"
-              >
-                View Essential Plan
-              </Link>
+              <h3 className="font-serif text-xl font-bold text-white">Routine Home Checks</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Bi-weekly interior and exterior inspections. We cycle HVAC equipment, run plumbing traps, monitor crawlspace humidity, check for leaks, and deliver digital photo inspection logs.
+              </p>
+              <ul className="text-xs text-slate-400 space-y-1.5 pt-2 border-t border-coastal-800">
+                <li>✓ Comprehensive 50-point checklist</li>
+                <li>✓ Summer humidity & winter freeze defense</li>
+                <li>✓ Immediate storm prep & post-storm surveys</li>
+              </ul>
             </div>
 
-            {/* Tier 2 */}
-            <div className="bg-coastal-900 rounded-2xl p-6 border-2 border-sand-400 relative flex flex-col justify-between space-y-6 shadow-xl">
+            <div className="bg-coastal-900/90 rounded-2xl p-6 border-2 border-sand-400 relative space-y-4 shadow-xl">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-sand-400 text-coastal-950 text-[10px] font-bold uppercase tracking-widest px-3 py-0.5 rounded-full">
-                Most Popular Flagship
+                Single Point of Contact
               </div>
-              <div className="space-y-4">
-                <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Coastal Stewardship</div>
-                <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">$295</span>
-                  <span className="text-xs text-slate-400">/ month</span>
-                </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  Bi-weekly year-round reviews (summer mechanical audits + winter freeze checks) + 2 free concierge liaisons.
-                </p>
-                <ul className="text-xs text-slate-300 space-y-2 pt-2 border-t border-coastal-800">
-                  <li>✓ 26 Bi-Weekly Reviews / Year</li>
-                  <li>✓ Summer HVAC & Dehumidifier Audits</li>
-                  <li>✓ Winter Freeze & Pipe Protection</li>
-                  <li>✓ 2 Included Concierge Liaisons / Year</li>
-                  <li>✓ Priority Emergency Dispatch</li>
-                </ul>
+              <div className="w-12 h-12 rounded-xl bg-sand-400 text-coastal-950 flex items-center justify-center font-bold text-lg">
+                02
               </div>
-              <Link
-                href="/annual-estimate"
-                className="block w-full py-3 rounded-xl text-center text-xs uppercase tracking-wider font-bold bg-sand-400 hover:bg-sand-300 text-coastal-950 transition shadow-md"
-              >
-                View Stewardship Plan
-              </Link>
+              <h3 className="font-serif text-xl font-bold text-white">Turnkey Vendor Oversight</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                We schedule, manage, and supervise all routine exterior maintenance—lawn care, landscaping, pool and spa service, and seasonal cleanups—with verified contractor insurance.
+              </p>
+              <ul className="text-xs text-slate-400 space-y-1.5 pt-2 border-t border-coastal-800">
+                <li>✓ Contractor COI & licensing auditing</li>
+                <li>✓ On-site quality inspection before payment</li>
+                <li>✓ Zero vendor management hassle for you</li>
+              </ul>
             </div>
 
-            {/* Tier 3 */}
-            <div className="bg-coastal-900/90 rounded-2xl p-6 border border-coastal-700 flex flex-col justify-between space-y-6">
-              <div className="space-y-4">
-                <div className="text-xs font-semibold text-sand-300 uppercase tracking-wider">Executive Care</div>
-                <div className="flex items-baseline space-x-2">
-                  <span className="font-serif text-4xl font-bold text-white">$445</span>
-                  <span className="text-xs text-slate-400">/ month</span>
-                </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  Weekly in off-season (24 checks) + bi-weekly in summer (12 checks) + post-storm sweeps + 4 liaisons.
-                </p>
-                <ul className="text-xs text-slate-300 space-y-2 pt-2 border-t border-coastal-800">
-                  <li>✓ 36 Total Reviews / Year</li>
-                  <li>✓ Weekly Winter Freeze Defense</li>
-                  <li>✓ Guaranteed Post-Storm Sweeps</li>
-                  <li>✓ 4 Included Concierge Liaisons / Year</li>
-                  <li>✓ Priority Project Scheduling</li>
-                </ul>
+            <div className="bg-coastal-900/90 rounded-2xl p-6 border border-coastal-800 space-y-4 shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-coastal-800 text-sand-300 flex items-center justify-center font-bold text-lg border border-coastal-700">
+                03
               </div>
-              <Link
-                href="/annual-estimate"
-                className="block w-full py-3 rounded-xl text-center text-xs uppercase tracking-wider font-semibold bg-coastal-800 hover:bg-coastal-700 text-white border border-coastal-600 transition"
-              >
-                View Executive Plan
-              </Link>
+              <h3 className="font-serif text-xl font-bold text-white">One Consolidated Bill</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Never juggle multiple contractor invoices again. All routine reviews, scheduled maintenance, and approved repair expenses are carefully reconciled into one itemized monthly bill in arrears.
+              </p>
+              <ul className="text-xs text-slate-400 space-y-1.5 pt-2 border-t border-coastal-800">
+                <li>✓ Invoiced monthly in arrears</li>
+                <li>✓ Line-item clarity with zero surprises</li>
+                <li>✓ Single point of financial accountability</li>
+              </ul>
             </div>
           </div>
 
-          <div className="text-center pt-4">
-            <Link
-              href="/annual-estimate#walkthrough-form"
-              className="inline-block bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg"
-            >
-              Schedule Your Complimentary Property Walkthrough →
-            </Link>
+          {/* Walkthrough CTA Card */}
+          <div className="bg-gradient-to-r from-coastal-900 to-coastal-850 rounded-3xl p-8 sm:p-10 border border-coastal-700 max-w-4xl mx-auto text-center space-y-6 shadow-2xl">
+            <div className="space-y-2 max-w-2xl mx-auto">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                How It Works: Simple, Transparent, Tailored
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                We meet at your property (or access via secure lockbox) for a complimentary 20-minute mechanical walkthrough. We then provide an itemized Annual Care Plan tailored to your square footage and seasonal schedule.
+              </p>
+            </div>
+            <div className="pt-2">
+              <Link
+                href="/annual-estimate#walkthrough-form"
+                className="inline-block bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg"
+              >
+                Schedule Your Complimentary Property Walkthrough →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -172,7 +172,7 @@ export default function Navbar() {
             <Link href="/locations/fenwick-island" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Fenwick Island</Link>
             <Link href="/locations/ocean-view" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Ocean View</Link>
           </div>
-          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Home Watch Plans & Tiers</Link>
+          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Annual Care Plans</Link>
           <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ & Pricing</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">About Us</Link>
           <Link href="/resources" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Resources & Guides</Link>
