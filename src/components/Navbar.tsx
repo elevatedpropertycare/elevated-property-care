@@ -58,7 +58,7 @@ export default function Navbar() {
               </span>
               <div className="absolute left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-sand-200 py-3 hidden group-hover:block transition-all duration-200 z-50">
                 <Link href="/services/property-reviews" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
-                  Property Reviews (Home Watch)
+                  Home Checks & Property Reviews
                   <span className="block text-xs text-slate-500 font-normal">Bi-weekly seasonal & mechanical audits</span>
                 </Link>
                 <Link href="/services/preventative-maintenance" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
@@ -103,8 +103,8 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/annual-estimate" className="hover:text-coastal-700 transition whitespace-nowrap font-semibold text-coastal-950">
-              Home Watch Plans
+            <Link href="/services/property-reviews" className="hover:text-coastal-700 transition whitespace-nowrap font-semibold text-coastal-950">
+              Home Checks
             </Link>
             <Link href="/faq" className="hover:text-coastal-700 transition whitespace-nowrap">
               FAQ & Pricing
@@ -155,7 +155,7 @@ export default function Navbar() {
           <Link href="/" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Home</Link>
           <div className="pl-2 border-l-2 border-coastal-400 space-y-2 py-1">
             <span className="text-xs font-semibold uppercase tracking-wider text-coastal-800">Services</span>
-            <Link href="/services/property-reviews" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Property Reviews (Home Watch)</Link>
+            <Link href="/services/property-reviews" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Home Checks & Property Reviews</Link>
             <Link href="/services/preventative-maintenance" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Preventative Maintenance</Link>
             <Link href="/services/landscaping-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Landscaping & Exterior</Link>
             <Link href="/services/pool-and-spa-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Pool & Spa Care</Link>
@@ -172,7 +172,8 @@ export default function Navbar() {
             <Link href="/locations/fenwick-island" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Fenwick Island</Link>
             <Link href="/locations/ocean-view" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Ocean View</Link>
           </div>
-          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Annual Care Plans</Link>
+          <Link href="/services/property-reviews" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Home Checks</Link>
+          <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Annual Care Plans</Link>
           <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ & Pricing</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">About Us</Link>
           <Link href="/resources" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Resources & Guides</Link>

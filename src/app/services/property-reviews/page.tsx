@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Routine Property Reviews & Home Watch Checklists | Delaware Beaches',
-  description: 'Exhaustive interior and exterior home inspection checklists starting at $45/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
+  description: 'Exhaustive interior and exterior home inspection checklists starting at $65/visit for luxury beach homes in Rehoboth, Bethany, Lewes, and Fenwick Island.',
   keywords: ['property review delaware', 'home watch checklist beach house', 'vacation home inspection rehoboth', 'house watching sussex county'],
 };
 
@@ -42,10 +42,10 @@ export default function PropertyReviewsPage() {
             Routine Property Reviews & Home Watch Program
           </h1>
           <p className="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Having our eyes on your property is the single most critical defense against catastrophic and concealed coastal damage. Comprehensive, customizable walk-throughs starting at $45 per month.
+            Having our eyes on your property year-round is the single most critical and effective defense against catastrophic and costly concealed coastal damage. Comprehensive, customizable walk-throughs starting at $65 per visit.
           </p>
           <div className="pt-2 flex flex-wrap gap-4 text-xs">
-            <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Digital Report with Photos</span>
+            <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Real Time Digital Reports with Photos</span>
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Weekly in Winter / Bi-Weekly in Summer</span>
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Dedicated Assigned Property Manager</span>
           </div>
@@ -59,10 +59,10 @@ export default function PropertyReviewsPage() {
             Proactive Oversight Built for Vacation Homeowners
           </h2>
           <p className="text-slate-700 text-sm leading-relaxed">
-            The cornerstone of Elevated Property Care's approach is our Property Review program, often referred to as our House Watching Program. This customizable and comprehensive service empowers your dedicated Property Manager to be proactive: providing you with regular updates, ensuring quality control, offering expert recommendations, and completing routine tasks you would rather not handle yourself.
+            The cornerstone of Elevated Property Care's approach is our Property Review program, often referred to as our House Watching Program. This customizable and comprehensive approach empowers us to be proactive, allowing us to spot issues early: providing you with regular updates, ensuring quality control, offering expert recommendations, and completing routine tasks you would rather not handle yourself.
           </p>
           <p className="text-slate-700 text-sm leading-relaxed">
-            Property Reviews are included in all annual estimates, priced depending on property size, complexity, and other criteria. Property Reviews can be arranged on a weekly, bi-weekly, or monthly schedule. Having our eyes on your property is what allows us to deliver seamless, stress-free homeownership.
+            Property Reviews and Home Checks are included in all annual estimates, priced depending on property size, complexity, and other criteria. Property Checks can be arranged on a weekly, bi-weekly, or monthly schedule. Having our eyes on your property is what allows us to deliver seamless, stress-free homeownership.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function PropertyReviewsPage() {
               Sample Property Review Reports
             </h3>
             <p className="text-slate-600 text-xs sm:text-sm">
-              Here is an authentic look at the detailed digital reports delivered directly to homeowners after every visit—complete with timestamped photography, system checks, and actionable observations.
+              Here is an authentic look at the detailed digital reports delivered directly to homeowners after every visit—complete with timestamped photography, system checks, and actionable observations. We also provide you with the routine service schedule, so you know exactly when each service is completed.
             </p>
           </div>
 
