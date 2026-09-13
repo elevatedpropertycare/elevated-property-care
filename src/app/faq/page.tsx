@@ -5,18 +5,18 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions & Pricing Transparency | Elevated Property Care',
-  description: 'Detailed answers on property management rates ($50/hr), routine review pricing ($45/visit), 0% routine markup policy, and 365-day availability.',
+  description: 'Detailed answers on preferred in-house labor rates, routine property reviews ($65/visit), 0% routine markup policy, and 365-day availability.',
 };
 
 export default function FAQPage() {
   const faqs = [
     {
       q: "What is the hourly rate of a property manager?",
-      a: "Elevated Property Care charges a transparent hourly rate of $50/hr for our Property Manager non-routine labor. We publish all trade labor rates annually so our clients are never surprised by an invoice."
+      a: "Elevated Property Care provides preferred, highly competitive in-house labor rates for our retained annual clients as an exclusive membership benefit. This ensures owners can easily handle punch-list needs without having to search for outside contractors. Clients without an annual agreement pay higher standard trade rates."
     },
     {
       q: "How much do you charge for a \"Property Review\" (inspection) and how often do you visit?",
-      a: "Property Review pricing starts at $45 per visit and includes an exhaustive digital checklist with bespoke comments and high-resolution images delivered in a digital report. We tailor a prudent schedule to your property and preferences, with a typical schedule being weekly in winter and every two weeks from April through October."
+      a: "Property Review pricing starts at $65 per visit and includes an exhaustive digital checklist with bespoke comments and high-resolution images delivered in a digital report. We tailor a prudent schedule to your property and preferences, with a typical schedule being weekly in winter and every two weeks from April through October."
     },
     {
       q: "Do you charge a management fee on routine care?",
@@ -44,7 +44,7 @@ export default function FAQPage() {
     },
     {
       q: "Do you provide handyman and carpentry services in-house?",
-      a: "Yes. We offer skilled in-house services across painting, carpentry, structural repairs, furniture assembly, power washing, and general punch lists at our published $50/hr rate."
+      a: "Yes. We offer skilled in-house services across carpentry, high-end furniture assembly, cabinetry adjustments, hardware installations, drywall repairs, and general punch lists at our preferred client rate."
     },
     {
       q: "How does Elevated Property Care differ from traditional rental property management companies?",

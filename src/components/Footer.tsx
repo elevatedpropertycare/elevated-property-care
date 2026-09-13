@@ -42,11 +42,11 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-white font-semibold text-base mb-4 tracking-wide">Services</h4>
           <ul className="space-y-2.5 text-xs text-slate-400">
-            <li><Link href="/services/property-reviews" className="hover:text-white transition">Property Reviews (Home Watch)</Link></li>
+            <li><Link href="/services/property-reviews" className="hover:text-white transition">Home Checks & Property Reviews</Link></li>
             <li><Link href="/services/preventative-maintenance" className="hover:text-white transition">Preventative Maintenance</Link></li>
             <li><Link href="/services/landscaping-care" className="hover:text-white transition">Landscaping & Grounds</Link></li>
             <li><Link href="/services/pool-and-spa-care" className="hover:text-white transition">Pool & Spa Care</Link></li>
-            <li><Link href="/services/handyman-and-repairs" className="hover:text-white transition">Handyman & Carpentry ($50/hr)</Link></li>
+            <li><Link href="/services/handyman-and-repairs" className="hover:text-white transition">Handyman & Carpentry</Link></li>
             <li><Link href="/services/concierge" className="hover:text-white transition">Concierge & Keyholder</Link></li>
           </ul>
         </div>

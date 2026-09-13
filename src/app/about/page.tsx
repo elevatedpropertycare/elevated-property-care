@@ -50,7 +50,7 @@ export default function AboutPage() {
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Delaware Licensed General Services & Resident Contractor</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Fully Insured & Bonded with Comprehensive Liability Coverage</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Managers (No Outsourced Contractors)</li>
-              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Published, Predictable Labor Rates ($50/hr Flat Rate)</li>
+              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Preferred In-House Labor Rates for Retained Clients</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 365 Days a Year Rapid Emergency Response</li>
             </ul>
           </div>

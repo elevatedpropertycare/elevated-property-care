@@ -75,7 +75,7 @@ export default function Navbar() {
                 </Link>
                 <Link href="/services/handyman-and-repairs" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Handyman & Carpentry
-                  <span className="block text-xs text-slate-500 font-normal">Transparent $50/hr technical labor</span>
+                  <span className="block text-xs text-slate-500 font-normal">Carpentry, assembly & hardware repairs</span>
                 </Link>
                 <Link href="/services/concierge" className="block px-4 py-2 hover:bg-coastal-50 text-slate-800 font-medium">
                   Concierge & Storm Prep
@@ -159,7 +159,7 @@ export default function Navbar() {
             <Link href="/services/preventative-maintenance" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Preventative Maintenance</Link>
             <Link href="/services/landscaping-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Landscaping & Exterior</Link>
             <Link href="/services/pool-and-spa-care" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Pool & Spa Care</Link>
-            <Link href="/services/handyman-and-repairs" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Handyman & Carpentry ($50/hr)</Link>
+            <Link href="/services/handyman-and-repairs" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Handyman & Carpentry</Link>
             <Link href="/services/concierge" onClick={() => setIsOpen(false)} className="block text-sm text-slate-700">Concierge & Storm Response</Link>
           </div>
           <div className="pl-2 border-l-2 border-coastal-400 space-y-2 py-1">
