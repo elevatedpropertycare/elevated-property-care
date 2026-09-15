@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions & Pricing Transparency | Elevated Property Care',
-  description: 'Detailed answers on preferred in-house labor rates, routine property reviews ($65/visit), 0% routine markup policy, and 365-day availability.',
+  description: 'Detailed answers on preferred in-house labor rates, routine property reviews ($65/visit), and 365-day availability.',
 };
 
 export default function FAQPage() {
@@ -20,7 +20,7 @@ export default function FAQPage() {
     },
     {
       q: "Do you charge a management fee on routine care?",
-      a: "Elevated Property Care differentiates itself by not charging a management fee on any routine care and maintenance services that are included in your annual estimate. We do apply a 15% management fee on all non-routine emergency or bespoke jobs."
+      a: "Elevated Property Care provides fully itemized, all-inclusive annual estimates covering all your scheduled routine services. For bespoke, non-routine projects or emergency contractor coordination, we manage and oversee the entire execution with a standard 15% management fee."
     },
     {
       q: "What is your availability throughout the year?",

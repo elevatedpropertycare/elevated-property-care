@@ -66,7 +66,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs text-slate-700">
             <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2 shadow-sm">
               <h4 className="font-bold text-sm text-slate-900">Absolute Transparency</h4>
-              <p>Every service and vendor cost is itemized. Zero hidden fees, zero markups on routine contracts, and transparent billing in arrears.</p>
+              <p>Every service and vendor cost is itemized. Clear, upfront agreements with zero hidden fees and transparent billing in arrears.</p>
             </div>
             <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2 shadow-sm">
               <h4 className="font-bold text-sm text-slate-900">Proactive Prevention</h4>
