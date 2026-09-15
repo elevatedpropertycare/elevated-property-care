@@ -7,7 +7,52 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export default function AnnualCarePlanPage() {
   const [town, setTown] = useState('Bethany Beach');
   const [usage, setUsage] = useState('Personal Second Home / Vacation Retreat');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [sqft, setSqft] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleWalkthroughSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'estimate',
+          name: fullName,
+          email,
+          phone,
+          location: town,
+          usage,
+          sqft,
+          message: `Complimentary Property Walkthrough request for a ${sqft || "unspecified sq ft"} property in ${town}. Usage: ${usage}.`,
+        }),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMessage(
+          data.message ||
+            'We encountered an issue submitting your request. Please call us directly at (302) 278-0938 or email info@elevatedpropertycare.com.'
+        );
+      }
+    } catch (err) {
+      setErrorMessage(
+        'A connection issue occurred. Please call us directly at (302) 278-0938 or email info@elevatedpropertycare.com.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const maintenanceAddons = [
     { name: 'Annual Smoke & CO Detector Sweep', price: 'Custom Scoped', desc: 'Spring testing, full battery replacement across all sensors, and device date audits.' },
@@ -270,28 +315,32 @@ export default function AnnualCarePlanPage() {
                 </p>
               </div>
             ) : (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-                className="space-y-4"
-              >
+              <form onSubmit={handleWalkthroughSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="bg-amber-900/60 border border-amber-500/50 text-amber-200 text-xs p-3.5 rounded-xl">
+                    {errorMessage}
+                  </div>
+                )}
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Your Full Name</label>
+                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Your Full Name *</label>
                     <input
                       type="text"
                       required
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
                       placeholder="Your Full Name"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
                   </div>
                   <div className="space-y-1">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Email Address</label>
+                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Email Address *</label>
                     <input
                       type="email"
                       required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="youremail@example.com"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
@@ -300,10 +349,12 @@ export default function AnnualCarePlanPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Phone Number</label>
+                    <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Phone Number *</label>
                     <input
                       type="tel"
                       required
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       placeholder="Your Phone Number"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
@@ -346,6 +397,8 @@ export default function AnnualCarePlanPage() {
                     <label className="text-xs font-semibold uppercase tracking-wider text-slate-300">Approximate Square Footage</label>
                     <input
                       type="text"
+                      value={sqft}
+                      onChange={(e) => setSqft(e.target.value)}
                       placeholder="e.g. 4,200 sq ft"
                       className="w-full p-3 bg-coastal-900 border border-coastal-700 rounded-xl text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sand-400"
                     />
@@ -355,9 +408,14 @@ export default function AnnualCarePlanPage() {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full bg-sand-400 hover:bg-sand-300 disabled:bg-sand-500 text-coastal-950 font-bold py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg flex items-center justify-center space-x-2"
                   >
-                    Schedule Complimentary Property Walkthrough
+                    {isSubmitting ? (
+                      <span>Submitting Request...</span>
+                    ) : (
+                      <span>Schedule Complimentary Property Walkthrough</span>
+                    )}
                   </button>
                   <p className="text-[11px] text-center text-slate-400 mt-2">
                     No obligation. We respect your privacy and never share homeowner contact details.

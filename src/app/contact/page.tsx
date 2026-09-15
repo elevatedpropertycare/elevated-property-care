@@ -3,7 +3,60 @@
 import React, { useState } from 'react';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    location: 'Rehoboth Beach',
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'contact',
+          ...formData,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMessage(
+          data.message ||
+            'We encountered an issue submitting your inquiry. Please call us directly at (302) 278-0938 or email info@elevatedpropertycare.com.'
+        );
+      }
+    } catch (err) {
+      setErrorMessage(
+        'A connection issue occurred. Please call us directly at (302) 278-0938 or email info@elevatedpropertycare.com.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="space-y-16 pb-20">
@@ -49,7 +102,7 @@ export default function ContactPage() {
                 <a href="mailto:info@elevatedpropertycare.com" className="text-sm text-coastal-800 font-bold hover:underline">
                   info@elevatedpropertycare.com
                 </a>
-                <p className="text-[11px] text-slate-500">We respond to all inquiries within 24 hours</p>
+                <p className="text-[11px] text-slate-500">We respond to all inquiries promptly</p>
               </div>
 
               <div className="bg-white p-5 rounded-xl border border-sand-200 shadow-sm space-y-1">
@@ -67,44 +120,84 @@ export default function ContactPage() {
 
             {submitted ? (
               <div className="bg-emerald-50 border border-emerald-300 p-6 rounded-xl text-center space-y-3">
+                <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-xl font-bold">
+                  ✓
+                </div>
                 <h4 className="font-serif text-lg font-bold text-emerald-900">Inquiry Received</h4>
-                <p className="text-xs text-emerald-800 leading-relaxed">
+                <p className="text-xs text-emerald-800 leading-relaxed max-w-md mx-auto">
                   Thank you for contacting Elevated Property Care. A dedicated Property Manager will review your details and contact you shortly.
                 </p>
               </div>
             ) : (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-                className="space-y-4"
-              >
+              <form onSubmit={handleSubmit} className="space-y-4">
+                {errorMessage && (
+                  <div className="bg-amber-50 border border-amber-300 text-amber-900 text-xs p-3.5 rounded-lg">
+                    {errorMessage}
+                  </div>
+                )}
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">First Name *</label>
-                    <input type="text" required className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600" />
+                    <input
+                      type="text"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      required
+                      placeholder="First Name"
+                      className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                    />
                   </div>
                   <div className="space-y-1">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">Last Name *</label>
-                    <input type="text" required className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600" />
+                    <input
+                      type="text"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      required
+                      placeholder="Last Name"
+                      className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                    />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-1">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">Email Address *</label>
-                    <input type="email" required className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600" />
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      placeholder="youremail@example.com"
+                      className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                    />
                   </div>
                   <div className="space-y-1">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">Phone Number</label>
-                    <input type="tel" className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600" />
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="(302) 555-0123"
+                      className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                    />
                   </div>
                 </div>
 
                 <div className="space-y-1">
                   <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">Property Location (Town / Community) *</label>
-                  <select required className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600">
+                  <select
+                    name="location"
+                    value={formData.location}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                  >
                     <option value="Rehoboth Beach">Rehoboth Beach</option>
                     <option value="Bethany Beach">Bethany Beach</option>
                     <option value="Lewes">Lewes</option>
@@ -117,14 +210,27 @@ export default function ContactPage() {
 
                 <div className="space-y-1">
                   <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700">Your Message or Property Details *</label>
-                  <textarea rows={4} required placeholder="Tell us about your property and services needed..." className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"></textarea>
+                  <textarea
+                    rows={4}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    placeholder="Tell us about your property and services needed..."
+                    className="w-full p-3 bg-sand-50 border border-sand-300 rounded-lg text-xs focus:outline-none focus:border-coastal-600"
+                  />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-coastal-900 hover:bg-coastal-950 text-white font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider transition shadow-md"
+                  disabled={isSubmitting}
+                  className="w-full bg-coastal-900 hover:bg-coastal-950 disabled:bg-coastal-700 text-white font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider transition shadow-md flex items-center justify-center space-x-2"
                 >
-                  Submit Property Inquiry
+                  {isSubmitting ? (
+                    <span>Submitting Inquiry...</span>
+                  ) : (
+                    <span>Submit Property Inquiry</span>
+                  )}
                 </button>
               </form>
             )}

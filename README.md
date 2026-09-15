@@ -87,3 +87,20 @@ To replace any image with your own photo:
 2. Open the page file where you want to change it (e.g. `src/app/page.tsx`).
 3. Replace the Unsplash URL with `'/my-hero.jpg'`.
 4. Commit the change on GitHub, and Vercel will automatically re-deploy your site in 30 seconds!
+
+---
+
+### Step 4: Enable Email Lead Notifications (Contact & Walkthrough Forms)
+
+The website is wired to automatically route all inquiries and estimate requests to your inbox. To activate live email delivery via Vercel:
+
+#### Recommended Method: Resend (Free 3,000 emails/month)
+1. Go to [https://resend.com](https://resend.com) and sign up for free (you can click **Continue with GitHub**).
+2. Click **API Keys** in the left sidebar, then click **Create API Key**. Give it any name (e.g. `Website`) and copy the key (starts with `re_`).
+3. Open your **Vercel Dashboard** → click your `elevated-property-care` project → click **Settings** (top tab) → click **Environment Variables** (left menu).
+4. Add the following variable:
+   - **Key**: `RESEND_API_KEY`
+   - **Value**: `re_your_api_key_here`
+5. (Optional) Add `NOTIFICATION_EMAIL` with value `elevatedpropertycarecorp@gmail.com` (if unset, it automatically defaults to this email).
+6. Click **Save**, then go to the **Deployments** tab in Vercel and click **Redeploy** on the latest deployment (or push a new commit).
+7. Test the Contact Us form—you will receive the lead in your inbox immediately!
