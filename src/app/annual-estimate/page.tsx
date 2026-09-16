@@ -98,7 +98,7 @@ export default function AnnualCarePlanPage() {
 
             <div className="pt-2">
               <span className="inline-block bg-coastal-900/90 text-sand-300 border border-coastal-700 text-[11px] sm:text-xs px-4 py-1.5 rounded-full font-semibold">
-                ✓ One Dedicated Contact • Turnkey Vendor Quality Control • Invoiced Monthly in Arrears
+                ✓ One Dedicated Contact • Vendor Coordination & Quality Control • One Reconciled Monthly Invoice
               </span>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function AnnualCarePlanPage() {
             <div className="text-center max-w-3xl mx-auto space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">The Bespoke Care Model</span>
               <h2 className="font-serif text-2xl sm:text-4xl font-bold text-slate-900">
-                What's Included in Your Annual Stewardship Plan
+                What's Included in Your Annual Estimate
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                 Rather than generic, one-size-fits-all packages, we formulate a single transparent care agreement customized to your property during our initial mechanical walkthrough.
@@ -126,13 +126,13 @@ export default function AnnualCarePlanPage() {
                   </div>
                   <h3 className="font-serif text-lg font-bold text-slate-900">Routine Home Checks</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Scheduled interior and exterior inspections. We cycle plumbing fixtures, verify HVAC functionality, monitor crawlspace humidity, and inspect for leaks or storm wear.
+                    Scheduled interior and exterior checks. We cycle plumbing fixtures, verify HVAC functionality, monitor humidity, check appliances and inspect for leaks or storm wear. This also allows us to find issues early, and ensure preventative maintenance is completed on time to prevent large failures.
                   </p>
                 </div>
                 <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
-                  <li>• 50-point inspection checklist</li>
+                  <li>• 30-point inspection checklist</li>
                   <li>• High-resolution digital photo logs</li>
-                  <li>• Delivered immediately to your portal</li>
+                  <li>• Delivered real-time to your preferred recipients</li>
                 </ul>
               </div>
 
@@ -160,9 +160,9 @@ export default function AnnualCarePlanPage() {
                   <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
                     03
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-slate-900">Turnkey Vendor Oversight</h3>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">Vendor Coordination and Quality Control</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    We coordinate, schedule, and supervise your routine exterior maintenance—lawn care, landscaping, pool and spa service, and seasonal cleanups.
+                    We coordinate, schedule, and supervise routine exterior maintenance—lawn care, landscaping, pool and spa service, and seasonal cleanups.
                   </p>
                 </div>
                 <ul className="text-[11px] text-slate-500 space-y-1 pt-3 border-t border-sand-200">
@@ -178,7 +178,7 @@ export default function AnnualCarePlanPage() {
                   <div className="w-10 h-10 rounded-xl bg-coastal-900 text-sand-300 flex items-center justify-center font-bold text-sm">
                     04
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-slate-900">One Consolidated Statement</h3>
+                  <h3 className="font-serif text-lg font-bold text-slate-900">One Consolidated Invoice</h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     All scheduled home checks, routine maintenance, and approved repair expenses are carefully reconciled into a single transparent monthly invoice in arrears.
                   </p>
@@ -217,9 +217,9 @@ export default function AnnualCarePlanPage() {
                 <div className="w-10 h-10 rounded-lg bg-coastal-900 text-sand-300 flex items-center justify-center font-serif text-lg font-bold">
                   1
                 </div>
-                <h3 className="font-serif text-lg font-bold text-slate-900">20-Min Property Walkthrough</h3>
+                <h3 className="font-serif text-lg font-bold text-slate-900">Complimentary Property Walkthrough</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  We walk your property together (or access via lockbox) to review mechanical configurations, shutoff valves, exterior exposures, and seasonal priorities.
+                  We walk your property together (or access via lockbox) to review mechanical configurations and equipment, shutoff valves, exterior exposures, required preventative maintenance and seasonal priorities.
                 </p>
               </div>
 
@@ -261,21 +261,14 @@ export default function AnnualCarePlanPage() {
                   Customized seasonal care designed around your property's layout, square footage, and system age. Scoped with complete itemized clarity during your initial walkthrough.
                 </p>
               </div>
-              <div className="text-xs text-slate-500 font-medium">
-                Added directly to your monthly statement as scheduled
-              </div>
+
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {maintenanceAddons.map((addon, i) => (
-                <div key={i} className="p-4 rounded-xl border border-sand-200 bg-sand-50/50 flex justify-between items-start space-x-4">
-                  <div className="space-y-1">
-                    <div className="font-semibold text-slate-900 text-sm">{addon.name}</div>
-                    <div className="text-xs text-slate-600 leading-relaxed">{addon.desc}</div>
-                  </div>
-                  <div className="font-bold text-xs text-coastal-900 bg-white px-3 py-1.5 rounded-md border border-sand-200 whitespace-nowrap shadow-sm">
-                    {addon.price}
-                  </div>
+                <div key={i} className="p-4 rounded-xl border border-sand-200 bg-sand-50/50 space-y-1">
+                  <div className="font-semibold text-slate-900 text-sm">{addon.name}</div>
+                  <div className="text-xs text-slate-600 leading-relaxed">{addon.desc}</div>
                 </div>
               ))}
             </div>
@@ -286,7 +279,7 @@ export default function AnnualCarePlanPage() {
                 Full-Service Managed Care Available:
               </h4>
               <p className="text-xs text-coastal-900 leading-relaxed">
-                We also provide turnkey management for <strong>Landscaping & Lawn Care</strong>, <strong>Pool & Spa Maintenance</strong>, <strong>Irrigation Start/Winterization</strong>, and <strong>HVAC Biannual Contracts</strong>. These are custom-scoped based on your property’s exact layout during our initial walkthrough.
+                We also provide turnkey management for <strong>Landscaping & Lawn Care</strong>, <strong>Pool & Spa Maintenance</strong>, <strong>Irrigation Start/Winterization</strong>, and <strong>HVAC Preventative Maintenance and Tune Ups</strong>. These are custom-scoped based on your property’s exact layout during our initial walkthrough.
               </p>
             </div>
           </div>
