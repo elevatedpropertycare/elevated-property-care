@@ -320,18 +320,12 @@ export default function LandscapingCarePage() {
             <p className="text-slate-600 text-sm max-w-2xl mx-auto leading-relaxed">
               Discover how incorporating full-spectrum landscape management into your annual property care agreement delivers exceptional curb appeal, verified quality control, and complete peace of mind.
             </p>
-            <div className="pt-2 flex flex-col sm:flex-row justify-center gap-4">
-              <Link
-                href="/annual-estimate"
-                className="bg-coastal-900 hover:bg-coastal-950 text-white font-semibold px-8 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-sm transition"
-              >
-                Request an Annual Grounds Estimate
-              </Link>
+            <div className="pt-2 flex justify-center">
               <Link
                 href="/contact"
-                className="bg-white hover:bg-sand-50 text-coastal-900 border border-sand-300 font-semibold px-8 py-3.5 rounded-xl text-xs uppercase tracking-wider transition"
+                className="inline-block bg-coastal-900 hover:bg-coastal-950 text-white font-semibold px-8 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-sm transition"
               >
-                Speak with Our Grounds Team
+                Discuss Your Landscaping Needs Today
               </Link>
             </div>
           </div>
