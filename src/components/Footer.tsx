@@ -55,14 +55,14 @@ export default function Footer() {
         <div>
           <h4 className="font-serif text-white font-semibold text-base mb-4 tracking-wide">Target Areas</h4>
           <ul className="space-y-2 text-xs text-slate-400">
-            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach Care</Link></li>
-            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach Care</Link></li>
-            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes Property Care</Link></li>
-            <li><Link href="/locations/dewey-beach" className="hover:text-white transition">Dewey Beach Care</Link></li>
-            <li><Link href="/locations/south-bethany" className="hover:text-white transition">South Bethany Care</Link></li>
-            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island Care</Link></li>
-            <li><Link href="/locations/ocean-view" className="hover:text-white transition">Ocean View Care</Link></li>
-            <li><Link href="/annual-estimate" className="hover:text-white transition font-semibold text-sand-300">Annual Care Plans</Link></li>
+            <li><Link href="/locations/bethany-beach" className="hover:text-white transition">Bethany Beach</Link></li>
+            <li><Link href="/locations/rehoboth-beach" className="hover:text-white transition">Rehoboth Beach</Link></li>
+            <li><Link href="/locations/lewes" className="hover:text-white transition">Lewes</Link></li>
+            <li><Link href="/locations/dewey-beach" className="hover:text-white transition">Dewey Beach</Link></li>
+            <li><Link href="/locations/south-bethany" className="hover:text-white transition">South Bethany</Link></li>
+            <li><Link href="/locations/fenwick-island" className="hover:text-white transition">Fenwick Island</Link></li>
+            <li><Link href="/locations/ocean-view" className="hover:text-white transition">Ocean View</Link></li>
+            <li><Link href="/annual-estimate" className="hover:text-white transition font-semibold text-sand-300">Annual Care</Link></li>
           </ul>
         </div>
 
