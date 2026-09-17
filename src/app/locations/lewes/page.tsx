@@ -14,7 +14,7 @@ export default function LewesPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Lewes",
-    "url": "https://elevatedpropertycare.com/locations/lewes",
+    "url": "https://www.elevatedpropertycare.com/locations/lewes",
     "telephone": "+1-302-278-0938",
     "priceRange": "$$",
     "description": "Luxury absentee home watch and preventative maintenance serving Lewes, Delaware.",

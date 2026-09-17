@@ -21,7 +21,7 @@ export default function SouthBethanyPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - South Bethany",
-    "url": "https://elevatedpropertycare.com/locations/south-bethany",
+    "url": "https://www.elevatedpropertycare.com/locations/south-bethany",
     "telephone": "+1-302-278-0938",
     "priceRange": "41702",
     "description": "Luxury absentee home watch, canal bulkhead auditing, and winter freeze protection serving South Bethany, Delaware.",

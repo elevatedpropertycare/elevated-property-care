@@ -107,7 +107,7 @@ export default function Navbar() {
               Home Checks
             </Link>
             <Link href="/faq" className="hover:text-coastal-700 transition whitespace-nowrap">
-              FAQ & Pricing
+              FAQ
             </Link>
             <Link href="/about" className="hover:text-coastal-700 transition whitespace-nowrap">
               About Us
@@ -174,7 +174,7 @@ export default function Navbar() {
           </div>
           <Link href="/services/property-reviews" onClick={() => setIsOpen(false)} className="block py-2 text-coastal-950 font-bold hover:text-coastal-700">Home Checks</Link>
           <Link href="/annual-estimate" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Annual Care Plans</Link>
-          <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ & Pricing</Link>
+          <Link href="/faq" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">FAQ</Link>
           <Link href="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">About Us</Link>
           <Link href="/resources" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Resources & Guides</Link>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="block py-2 text-slate-800 hover:text-coastal-700">Contact Us</Link>

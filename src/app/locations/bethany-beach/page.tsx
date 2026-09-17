@@ -14,7 +14,7 @@ export default function BethanyBeachPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Bethany Beach",
-    "url": "https://elevatedpropertycare.com/locations/bethany-beach",
+    "url": "https://www.elevatedpropertycare.com/locations/bethany-beach",
     "telephone": "+1-302-278-0938",
     "priceRange": "$$",
     "description": "Luxury absentee home watch and preventative maintenance serving Bethany Beach, Delaware.",

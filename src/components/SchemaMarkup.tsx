@@ -9,9 +9,9 @@ export default function SchemaMarkup({ type = 'LocalBusiness', data }: SchemaPro
   const defaultLocalBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": "https://elevatedpropertycare.com/#organization",
+    "@id": "https://www.elevatedpropertycare.com/#organization",
     "name": "Elevated Property Care",
-    "url": "https://elevatedpropertycare.com",
+    "url": "https://www.elevatedpropertycare.com",
     "telephone": "+1-302-278-0938",
     "email": "info@elevatedpropertycare.com",
     "priceRange": "28808",

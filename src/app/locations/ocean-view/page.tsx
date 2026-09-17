@@ -21,7 +21,7 @@ export default function OceanViewPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Ocean View",
-    "url": "https://elevatedpropertycare.com/locations/ocean-view",
+    "url": "https://www.elevatedpropertycare.com/locations/ocean-view",
     "telephone": "+1-302-278-0938",
     "priceRange": "41702",
     "description": "Premier absentee home watch, crawlspace humidity monitoring, and preventative maintenance serving Ocean View, Delaware.",

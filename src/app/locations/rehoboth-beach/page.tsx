@@ -14,7 +14,7 @@ export default function RehobothBeachPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Rehoboth Beach",
-    "url": "https://elevatedpropertycare.com/locations/rehoboth-beach",
+    "url": "https://www.elevatedpropertycare.com/locations/rehoboth-beach",
     "telephone": "+1-302-278-0938",
     "priceRange": "$$",
     "description": "Luxury absentee home watch and preventative maintenance serving Rehoboth Beach, Delaware.",

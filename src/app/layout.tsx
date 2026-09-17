@@ -5,7 +5,10 @@ import Footer from '@/components/Footer';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://elevatedpropertycare.com'),
+  metadataBase: new URL('https://www.elevatedpropertycare.com'),
+  alternates: {
+    canonical: './',
+  },
   title: {
     default: 'Elevated Property Care | Delaware Luxury Home Watch & Property Care',
     template: '%s | Elevated Property Care',
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Elevated Property Care | Delaware Luxury Beach Home Management',
     description: 'Hamptons-standard preventative care and absentee home watch for luxury vacation homes in Coastal Sussex County, Delaware.',
-    url: 'https://elevatedpropertycare.com',
+    url: 'https://www.elevatedpropertycare.com',
     siteName: 'Elevated Property Care',
     locale: 'en_US',
     type: 'website',

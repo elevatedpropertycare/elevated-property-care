@@ -14,7 +14,7 @@ export default function FenwickIslandPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Fenwick Island",
-    "url": "https://elevatedpropertycare.com/locations/fenwick-island",
+    "url": "https://www.elevatedpropertycare.com/locations/fenwick-island",
     "telephone": "+1-302-278-0938",
     "priceRange": "$$",
     "description": "Luxury absentee home watch and preventative maintenance serving Fenwick Island, Delaware.",

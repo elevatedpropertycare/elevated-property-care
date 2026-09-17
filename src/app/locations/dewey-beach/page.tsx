@@ -21,7 +21,7 @@ export default function DeweyBeachPage() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Elevated Property Care - Dewey Beach",
-    "url": "https://elevatedpropertycare.com/locations/dewey-beach",
+    "url": "https://www.elevatedpropertycare.com/locations/dewey-beach",
     "telephone": "+1-302-278-0938",
     "priceRange": "41702",
     "description": "Luxury absentee home watch, storm response, and preventative maintenance serving Dewey Beach, Delaware.",
