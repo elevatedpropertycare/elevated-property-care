@@ -22,7 +22,7 @@ A custom, institutional-grade website built specifically for **Elevated Property
 4. **Interactive Annual Estimate Calculator**:
    - `/annual-estimate` — Live calculator allowing homeowners to select town, home size, review frequency, and add-on oversight options to get an instant annual estimate and request an official proposal.
 5. **Preserved Content & Transparency**:
-   - `/faq` — Complete transparent rates ($50/hr labor, $45/visit review, 15% non-routine fee, 0% routine markup, 365-day availability, warranty).
+   - `/faq` — Complete transparent rates ($50/hr labor, $45/visit review, 15% non-routine fee, 0% routine markup, year-round care, warranty).
    - `/about` — Hamptons estate care background, Delaware licensed resident contractor credentials.
    - `/contact` — Unified high-converting contact portal.
 6. **Migrated & Expanded Content Hub**:

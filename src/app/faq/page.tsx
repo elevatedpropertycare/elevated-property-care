@@ -36,7 +36,7 @@ export default function FAQPage() {
         },
         {
           q: "What towns and areas in Delaware do you service?",
-          a: "We operate 365 days a year across Coastal Sussex County, primarily serving Rehoboth Beach, Bethany Beach, Lewes, Dewey Beach, South Bethany, Fenwick Island, and Ocean View."
+          a: "We provide dependable year-round property care across Coastal Sussex County, primarily serving Rehoboth Beach, Bethany Beach, Lewes, Dewey Beach, South Bethany, Fenwick Island, and Ocean View."
         }
       ]
     },
@@ -162,7 +162,7 @@ export default function FAQPage() {
             {/* Quality Badges */}
             <div className="pt-2 flex flex-wrap justify-center gap-3 text-xs">
               <span className="bg-white/10 px-3.5 py-1.5 rounded-full border border-white/20 text-sand-200">
-                ✓ 365-Day Dedicated Local Oversight
+                ✓ Year-Round Dedicated Local Oversight
               </span>
               <span className="bg-white/10 px-3.5 py-1.5 rounded-full border border-white/20 text-sand-200">
                 ✓ Real-Time Photo Reports After Every Check
@@ -216,7 +216,7 @@ export default function FAQPage() {
               Have a Specific Question About Your Home?
             </h3>
             <p className="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-              Every coastal property has unique requirements. We are available 365 days a year to answer your questions or schedule a complimentary walkthrough.
+              Every coastal property has unique requirements. We are here to answer your questions, discuss your property's needs, or schedule a complimentary walkthrough.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row justify-center gap-4">
               <Link

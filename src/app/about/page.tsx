@@ -51,7 +51,7 @@ export default function AboutPage() {
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Fully Insured & Bonded with Comprehensive Liability Coverage</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Managers (No Outsourced Contractors)</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Preferred In-House Labor Rates for Retained Clients</li>
-              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 365 Days a Year Rapid Emergency Response</li>
+              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Year-Round Rapid Emergency Response</li>
             </ul>
           </div>
         </div>

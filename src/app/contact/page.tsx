@@ -84,7 +84,7 @@ export default function ContactPage() {
                 Delaware Coastal Headquarters
               </h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                We are actively on the ground 365 days a year across Sussex County beaches. Whether you are in residence or away, we are always accessible.
+                We provide dependable year-round property stewardship across Sussex County beaches. Whether you are in residence or away, we are here to support your home.
               </p>
             </div>
 

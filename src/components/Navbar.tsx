@@ -27,7 +27,7 @@ export default function Navbar() {
 
           {/* Pinned Direct Call Link on Right (Always clickable on mobile & desktop) */}
           <div className="flex items-center px-3 sm:px-4 z-10 bg-coastal-950 flex-shrink-0 border-l border-coastal-800 space-x-2 text-[11px]">
-            <span className="hidden md:inline text-slate-300">Available 365 Days</span>
+            <span className="hidden md:inline text-slate-300">Year-Round Care</span>
             <a href="tel:3022780938" className="text-sand-300 hover:text-white font-semibold underline whitespace-nowrap">
               (302) 278-0938
             </a>
