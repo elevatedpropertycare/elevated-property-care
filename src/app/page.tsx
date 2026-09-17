@@ -1,3 +1,4 @@
+import ServiceVisualBanner from '@/components/ServiceVisualBanner';
 import React from 'react';
 import Link from 'next/link';
 
@@ -107,97 +108,109 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1: Property Reviews */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')" }} />
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="property-reviews" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Property Reviews (Home Watch)</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  The cornerstone of our model. Structured bi-weekly interior and exterior detailed inspections designed to test system and identify issues early, as well as quality control routine services and ensure all systems and mechanicals operate as intended. Real-time digital reporting.
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Property Reviews (Home Watch)
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  The cornerstone of our model. Structured bi-weekly interior and exterior inspections designed to test systems and identify issues early, audit routine services, and deliver real-time digital photo reports.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/property-reviews" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  View Checklist & Sample Report →
+                <Link href="/services/property-reviews" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  View Checklist & Sample Reports →
                 </Link>
               </div>
             </div>
 
             {/* Card 2: Preventative Maintenance */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80')" }} />
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="preventative-maintenance" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Preventative Maintenance</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  Running plumbing and electrical fixtures, cycling HVAC units, ensuring perimeter security and comprehensive actions for freeze defense.
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Preventative Maintenance
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Running plumbing and electrical fixtures, cycling HVAC heating and cooling, checking appliances, monitoring humidity levels, and comprehensive actions for coastal freeze defense.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/preventative-maintenance" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Learn about our preventative measures →
+                <Link href="/services/preventative-maintenance" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  Explore Preventative Measures →
                 </Link>
               </div>
             </div>
 
-            {/* Card 3: Furniture assembly, hardware installation */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=800&q=80')" }} />
+            {/* Card 3: Furniture Assembly & Handyman */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="handyman" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Furniture assembly, hardware installation</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  Punch list and carpentry repairs, furniture assembly, paint touch-ups, and hardware adjustments handled in-house. We are happy to assist with any requets our clients may have. 
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Handyman & High-End Assembly
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  In-house carpentry repairs, luxury furniture assembly (RH, Pottery Barn, Arhaus), cabinet door adjustments, paint touch-ups, hardware installation, and general punch lists at preferred client rates.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/handyman-and-repairs" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Handyman jobs →
+                <Link href="/services/handyman-and-repairs" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  In-House Handyman & Assembly →
                 </Link>
               </div>
             </div>
 
-            {/* Card 4: Landscaping Oversight */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&w=800&q=80')" }} />
+            {/* Card 4: Landscaping & Grounds Care */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="landscaping" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Landscaping & Exterior Care</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  Management of your lawn and grounds through our vetted partner vendors. We coordinate, oversee and quality control routine mowing, seasonal cleanups, pruning, mulch replenishment, irrigation monitoring, and coastal plant health so your property gets important landscaping care.
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Landscaping & Grounds Care
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Full-spectrum grounds management through vetted local crews. We oversee routine mowing, seasonal cleanups, pruning, mulch replenishment, and smart irrigation to keep your estate pristine.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/landscaping-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  More about landscaping services →
+                <Link href="/services/landscaping-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  Explore Grounds Management →
                 </Link>
               </div>
             </div>
 
-            {/* Card 5: Pool and Spa */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80')" }} />
+            {/* Card 5: Pool & Spa Coordination */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="pool-spa" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Pool & Spa Coordination</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  Managing pool opening and closing procedures, weekly pool service ensuring pool is sparkling clean with a balanced water quality, taking away the hassle from you. 
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Pool & Spa Coordination
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Managing certified pool openings and winter closings, weekly maintenance, water chemistry testing, and equipment checks—ensuring clear, balanced water ready for your arrival.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/pool-and-spa-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Pool Service Oversight →
+                <Link href="/services/pool-and-spa-care" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  Pool & Spa Oversight →
                 </Link>
               </div>
             </div>
 
-            {/* Card 6: Concierge & Storm Prep */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-sand-200 flex flex-col justify-between">
-              <div className="h-48 bg-cover bg-center bg-sand-200" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=800&q=80')" }} />
+            {/* Card 6: Storm & Weather Response */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-sand-200 hover:border-coastal-300 transition duration-300 flex flex-col justify-between">
+              <ServiceVisualBanner type="storm-prep" />
               <div className="p-6 flex-grow space-y-3">
-                <h3 className="font-serif text-xl font-bold text-slate-900">Storm and Weather Event Response</h3>
-                <p className="text-slate-600 text-xs leading-relaxed">
-                  Pre-storm property and patio furniture preparations, and immediate post-storm checks and damage assessments with real-time digital reports. Pre-freeze protocols for house preparations before high risk freeze events.  
+                <h3 className="font-serif text-xl font-bold text-slate-900 group-hover:text-coastal-900 transition">
+                  Storm & Weather Event Response
+                </h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Pre-storm patio furniture lash-downs and outdoor preparations, followed by priority post-storm exterior sweeps with real-time digital damage assessments and freeze protocols.
                 </p>
               </div>
               <div className="p-6 pt-0">
-                <Link href="/services/concierge" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline">
-                  Weather event prep →
+                <Link href="/services/concierge" className="text-coastal-800 font-semibold text-xs uppercase tracking-wider hover:underline inline-flex items-center">
+                  Weather Defense & Concierge →
                 </Link>
               </div>
             </div>
