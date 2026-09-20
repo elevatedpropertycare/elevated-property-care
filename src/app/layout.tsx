@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elevatedpropertycare.com'),
@@ -46,6 +47,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className="min-h-screen flex flex-col font-sans">
         <SchemaMarkup />
         <Navbar />
