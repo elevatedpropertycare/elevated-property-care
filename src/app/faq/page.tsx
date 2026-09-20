@@ -209,6 +209,19 @@ export default function FAQPage() {
           ))}
         </div>
 
+        {/* Value Mindset Pull-Quote */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sand-100 via-sand-50 to-sand-100 border border-sand-300 p-6 sm:p-8 text-center shadow-sm">
+            <span className="text-sand-400 font-serif text-5xl sm:text-6xl block leading-none select-none opacity-40">“</span>
+            <blockquote className="font-serif italic text-base sm:text-xl text-slate-900 max-w-2xl mx-auto leading-snug -mt-3">
+              Price is what you pay. Value is what you get.
+            </blockquote>
+            <cite className="block text-[11px] sm:text-xs uppercase tracking-widest font-semibold text-coastal-700 mt-2.5 not-italic">
+              — Warren Buffett
+            </cite>
+          </div>
+        </section>
+
         {/* Call to Action Section */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-sand-100 p-8 sm:p-12 rounded-3xl border border-sand-300 text-center space-y-5">

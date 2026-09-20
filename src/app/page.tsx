@@ -338,13 +338,22 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-coastal-800 text-center">
-              <Link
-                href="/annual-estimate#walkthrough-form"
-                className="inline-block bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg"
-              >
-                Schedule Your Complimentary Property Walkthrough →
-              </Link>
+            <div className="pt-8 border-t border-coastal-800 text-center space-y-6">
+              <div className="max-w-2xl mx-auto px-4">
+                <span className="text-sand-400/50 font-serif text-4xl sm:text-5xl block leading-none select-none">“</span>
+                <p className="font-serif italic text-base sm:text-xl text-sand-100 leading-relaxed -mt-2">
+                  Peace of mind is knowledge that your home is in the best hands, so you spend your time on what matters most.
+                </p>
+              </div>
+
+              <div>
+                <Link
+                  href="/annual-estimate#walkthrough-form"
+                  className="inline-block bg-sand-400 hover:bg-sand-300 text-coastal-950 font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-lg"
+                >
+                  Schedule Your Complimentary Property Walkthrough →
+                </Link>
+              </div>
             </div>
           </div>
         </div>

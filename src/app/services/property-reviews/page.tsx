@@ -188,11 +188,26 @@ export default function PropertyReviewsPage() {
           </p>
         </div>
 
-        {/* CTA */}
-        <div className="text-center space-y-4 pt-6">
-          <Link href="/annual-estimate" className="inline-block bg-coastal-800 hover:bg-coastal-900 text-white font-semibold px-8 py-3.5 rounded text-xs uppercase tracking-wider transition">
-            Explore Our 3 Home Watch Plans & Pricing →
-          </Link>
+        {/* Mindset Pull-Quote & CTA */}
+        <div className="max-w-3xl mx-auto space-y-6 pt-4">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sand-100 via-sand-50 to-sand-100 border border-sand-300 p-6 sm:p-8 text-center shadow-sm">
+            <span className="text-sand-400 font-serif text-5xl sm:text-6xl block leading-none select-none opacity-40">“</span>
+            <blockquote className="font-serif italic text-base sm:text-xl text-slate-900 max-w-xl mx-auto leading-snug -mt-3">
+              Lost time is never found again.
+            </blockquote>
+            <cite className="block text-[11px] sm:text-xs uppercase tracking-widest font-semibold text-coastal-700 mt-2 not-italic">
+              — Benjamin Franklin
+            </cite>
+          </div>
+
+          <div className="text-center pt-2">
+            <Link
+              href="/annual-estimate#walkthrough-form"
+              className="inline-block bg-coastal-900 hover:bg-coastal-950 text-white font-semibold px-8 py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-sm transition"
+            >
+              Get Your Tailored Home Check Estimate →
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -191,13 +191,26 @@ export default function AnnualCarePlanPage() {
               </div>
             </div>
 
-            <div className="text-center pt-2">
-              <a
-                href="#walkthrough-form"
-                className="inline-block bg-coastal-900 hover:bg-coastal-950 text-white font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-md"
-              >
-                Schedule Walkthrough For Your Custom Plan →
-              </a>
+            {/* Simplicity Pull-Quote & Button */}
+            <div className="pt-6 border-t border-sand-200 text-center space-y-6">
+              <div className="max-w-2xl mx-auto px-4">
+                <span className="text-sand-400 font-serif text-4xl sm:text-5xl block leading-none select-none opacity-40">“</span>
+                <p className="font-serif italic text-base sm:text-lg text-slate-900 leading-relaxed -mt-2">
+                  Simplicity is about subtracting the obvious and adding the meaningful.
+                </p>
+                <cite className="block text-[10px] sm:text-[11px] uppercase tracking-widest font-semibold text-coastal-700 mt-2 not-italic">
+                  — John Maeda
+                </cite>
+              </div>
+
+              <div>
+                <a
+                  href="#walkthrough-form"
+                  className="inline-block bg-coastal-900 hover:bg-coastal-950 text-white font-bold px-8 py-4 rounded-xl text-xs uppercase tracking-widest transition shadow-md"
+                >
+                  Schedule Walkthrough For Your Custom Plan →
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -282,6 +295,19 @@ export default function AnnualCarePlanPage() {
                 We also provide turnkey management for <strong>Landscaping & Lawn Care</strong>, <strong>Pool & Spa Maintenance</strong>, <strong>Irrigation Start/Winterization</strong>, and <strong>HVAC Preventative Maintenance and Tune Ups</strong>. These are custom-scoped based on your property’s exact layout during our initial walkthrough.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Mindset Pull-Quote */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8 sm:my-10">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sand-100 via-sand-50 to-sand-100 border border-sand-300 p-6 sm:p-8 text-center shadow-sm">
+            <span className="text-sand-400 font-serif text-5xl sm:text-6xl block leading-none select-none opacity-40">“</span>
+            <blockquote className="font-serif italic text-base sm:text-xl text-slate-900 max-w-2xl mx-auto leading-snug -mt-3">
+              The bitterness of poor quality remains long after the sweetness of low price is forgotten.
+            </blockquote>
+            <cite className="block text-[11px] sm:text-xs uppercase tracking-widest font-semibold text-coastal-700 mt-2.5 not-italic">
+              — Benjamin Franklin
+            </cite>
           </div>
         </section>
 
