@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Rehoboth Beach, DE',
+  title: 'Luxury Home Watch & Property Care in Rehoboth Beach, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Rehoboth Beach, Delaware.',
   keywords: ['rehoboth home watch', 'rehoboth beach home watch', 'absentee home services rehoboth beach', 'absentee home watch delaware', 'henlopen acres home watch', 'property management rehoboth beach de', 'beach house winterization rehoboth'],
 };

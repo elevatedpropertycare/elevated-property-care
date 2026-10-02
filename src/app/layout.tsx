@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Elevated Property Care | Delaware Luxury Beach Home Management',
-    description: 'Hamptons-standard preventative care and absentee home watch for luxury vacation homes in Coastal Sussex County, Delaware.',
+    description: 'Premier coastal preventative care and absentee home watch for luxury vacation homes in Coastal Sussex County, Delaware.',
     url: 'https://www.elevatedpropertycare.com',
     siteName: 'Elevated Property Care',
     locale: 'en_US',

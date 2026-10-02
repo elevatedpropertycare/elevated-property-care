@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Dewey Beach, DE',
+  title: 'Luxury Home Watch & Property Care in Dewey Beach, DE',
   description: 'Premier absentee home watch, routine property review inspections, and preventative maintenance for luxury beach houses in Dewey Beach, Delaware.',
   keywords: [
     'dewey beach home watch',
@@ -23,7 +23,7 @@ export default function DeweyBeachPage() {
     "name": "Elevated Property Care - Dewey Beach",
     "url": "https://www.elevatedpropertycare.com/locations/dewey-beach",
     "telephone": "+1-302-278-0938",
-    "priceRange": "41702",
+    "priceRange": "$$",
     "description": "Luxury absentee home watch, storm response, and preventative maintenance serving Dewey Beach, Delaware.",
     "address": {
       "@type": "PostalAddress",

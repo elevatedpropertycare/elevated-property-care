@@ -257,7 +257,7 @@ export default function LandscapingCarePage() {
               <div className="bg-white/5 p-5 rounded-xl border border-white/10 space-y-2">
                 <h4 className="font-bold text-sand-200 text-sm">One Accountable Partner</h4>
                 <p>
-                  No coordinating separate lawn services, irrigation techs, and tree cutters. One direct call to your Primary Property Manager handles everything.
+                  No coordinating separate lawn services, irrigation techs, and tree cutters. One direct call to your Primary Property Care Manager handles everything.
                 </p>
               </div>
             </div>

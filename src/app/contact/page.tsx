@@ -125,7 +125,7 @@ export default function ContactPage() {
                 </div>
                 <h4 className="font-serif text-lg font-bold text-emerald-900">Inquiry Received</h4>
                 <p className="text-xs text-emerald-800 leading-relaxed max-w-md mx-auto">
-                  Thank you for contacting Elevated Property Care. A dedicated Property Manager will review your details and contact you shortly.
+                  Thank you for contacting Elevated Property Care. A dedicated Property Care Manager will review your details and contact you shortly.
                 </p>
               </div>
             ) : (

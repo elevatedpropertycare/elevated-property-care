@@ -54,7 +54,7 @@ export default function FAQPage() {
         },
         {
           q: "How and when do I receive the inspection report?",
-          a: "After every completed check, a detailed digital report is delivered in real-time directly to your preferred email recipients. Each report contains GPS-verified timestamped photography, sensor readings, system statuses, and actionable notes from your dedicated Property Manager."
+          a: "After every completed check, a detailed digital report is delivered in real-time directly to your preferred email recipients. Each report contains GPS-verified timestamped photography, sensor readings, system statuses, and actionable notes from your dedicated Property Care Manager."
         },
         {
           q: "What happens if an urgent issue (like a leak or heating failure) is detected?",
@@ -72,7 +72,7 @@ export default function FAQPage() {
         },
         {
           q: "Why do retained annual clients receive preferred, affordable labor rates?",
-          a: "We intentionally structure our in-house handyman and carpentry rates to be fair and exceptionally affordable as an exclusive perk of having an annual property care agreement with Elevated Property Care. Because we already manage your home and know its systems, we want you to comfortably rely on your trusted Property Manager rather than spending valuable weekends searching for, vetting, and waiting on unpredictable outside contractors."
+          a: "We intentionally structure our in-house handyman and carpentry rates to be fair and exceptionally affordable as an exclusive perk of having an annual property care agreement with Elevated Property Care. Because we already manage your home and know its systems, we want you to comfortably rely on your trusted Property Care Manager rather than spending valuable weekends searching for, vetting, and waiting on unpredictable outside contractors."
         },
         {
           q: "Can clients without an annual care contract hire you for handyman work?",

@@ -27,7 +27,7 @@ export default function AboutPage() {
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
-            <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Hamptons Precision, Delaware Roots</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-coastal-600">Coastal Expertise, Delaware Roots</span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
               A Higher Benchmark in Coastal Property Oversight
             </h2>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <ul className="space-y-2.5">
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Delaware Licensed General Services & Resident Contractor</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Fully Insured & Bonded with Comprehensive Liability Coverage</li>
-              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Managers (No Outsourced Contractors)</li>
+              <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> 100% In-House Property Care Managers (No Outsourced Contractors)</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Preferred In-House Labor Rates for Retained Clients</li>
               <li className="flex items-center"><span className="text-emerald-600 mr-2 font-bold">✓</span> Year-Round Rapid Emergency Response</li>
             </ul>
@@ -74,7 +74,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-white p-6 rounded-xl border border-sand-200 space-y-2 shadow-sm">
               <h4 className="font-bold text-sm text-slate-900">Single-Source Accountability</h4>
-              <p>You have one dedicated Property Manager who represents your interests, audits every sub-trade, and guarantees service satisfaction.</p>
+              <p>You have one dedicated Property Care Manager who represents your interests, audits every sub-trade, and guarantees service satisfaction.</p>
             </div>
           </div>
         </div>

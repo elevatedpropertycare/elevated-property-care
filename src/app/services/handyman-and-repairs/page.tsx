@@ -194,7 +194,7 @@ export default function HandymanAndRepairsPage() {
                 </p>
                 <div className="p-4 bg-sand-100/70 rounded-xl border border-sand-200 text-xs text-slate-600">
                   <span className="font-semibold text-slate-900 block mb-1">Why this matters:</span>
-                  You enjoy trusted, familiar property managers who already know your home’s floor plan, shutoff valves, and finish materials—tackling your projects promptly at a preferred rate with zero compromise on craftsmanship.
+                  You enjoy trusted, familiar Property Care Managers who already know your home’s floor plan, shutoff valves, and finish materials—tackling your projects promptly at a preferred rate with zero compromise on craftsmanship.
                 </div>
               </div>
             </div>

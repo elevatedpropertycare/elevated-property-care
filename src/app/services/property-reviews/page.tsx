@@ -47,7 +47,7 @@ export default function PropertyReviewsPage() {
           <div className="pt-2 flex flex-wrap gap-4 text-xs">
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Real Time Digital Reports with Photos</span>
             <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Weekly in Winter / Bi-Weekly in Summer</span>
-            <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Dedicated Assigned Property Manager</span>
+            <span className="bg-white/10 px-3 py-1.5 rounded border border-white/20">✓ Dedicated Assigned Property Care Manager</span>
           </div>
         </div>
       </section>
@@ -181,10 +181,10 @@ export default function PropertyReviewsPage() {
         <div className="bg-sand-100 p-8 rounded-2xl border border-sand-300 space-y-4">
           <h3 className="font-serif text-xl font-bold text-slate-900">Thoughtful Perks & Recommendations</h3>
           <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-            Every Elevated Property Review goes beyond a mere visual check; it includes a thoughtful perk designed to lighten your load. Your Property Manager will dedicate time during each visit to a menial task you won't have to worry about—such as sweeping your garage floor, clearing cobwebs, clearing pool skimmers, adjusting house clocks after daylight savings, tidying your porch, or watering indoor plants.
+            Every Elevated Property Review goes beyond a mere visual check; it includes a thoughtful perk designed to lighten your load. Your Property Care Manager will dedicate time during each visit to a menial task you won't have to worry about—such as sweeping your garage floor, clearing cobwebs, clearing pool skimmers, adjusting house clocks after daylight savings, tidying your porch, or watering indoor plants.
           </p>
           <p className="text-slate-700 text-xs sm:text-sm leading-relaxed">
-            Furthermore, with each review, your Property Manager will provide insightful recommendations for improvements, upcoming preventative repairs, and maintenance suggestions. None of these recommendations are mandatory; they represent our professional commitment to your peace of mind.
+            Furthermore, with each review, your Property Care Manager will provide insightful recommendations for improvements, upcoming preventative repairs, and maintenance suggestions. None of these recommendations are mandatory; they represent our professional commitment to your peace of mind.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Fenwick Island, DE',
+  title: 'Luxury Home Watch & Property Care in Fenwick Island, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Fenwick Island, Delaware.',
   keywords: ['fenwick island home watch', 'fenwick home watch', 'absentee home services fenwick island', 'absentee home watch delaware', 'bayside home watch fenwick', 'vacation home inspection fenwick island de'],
 };

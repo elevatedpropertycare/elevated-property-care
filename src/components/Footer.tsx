@@ -85,7 +85,7 @@ export default function Footer() {
             <div>
               <span className="block text-slate-500 font-medium">Direct Billing Policy:</span>
               <p className="text-[11px] text-slate-400 mt-0.5">
-                Invoiced in arrears monthly with full itemization. Zero management fee on routine contracted services.
+                Invoiced in arrears monthly with full itemization and transparent accounting.
               </p>
             </div>
           </div>

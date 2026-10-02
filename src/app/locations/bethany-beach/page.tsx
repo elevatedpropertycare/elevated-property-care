@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Bethany Beach, DE',
+  title: 'Luxury Home Watch & Property Care in Bethany Beach, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Bethany Beach, Delaware.',
   keywords: ['bethany home watch', 'bethany beach home watch', 'absentee home services bethany beach', 'absentee home watch delaware', 'beach house property management bethany beach', 'vacation home inspection bethany beach de', 'sussex county home watch'],
 };

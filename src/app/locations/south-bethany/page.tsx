@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in South Bethany, DE',
+  title: 'Luxury Home Watch & Property Care in South Bethany, DE',
   description: 'Premier absentee home watch, canal-front property inspections, and freeze defense for luxury residences in South Bethany, Delaware.',
   keywords: [
     'south bethany home watch',
@@ -23,7 +23,7 @@ export default function SouthBethanyPage() {
     "name": "Elevated Property Care - South Bethany",
     "url": "https://www.elevatedpropertycare.com/locations/south-bethany",
     "telephone": "+1-302-278-0938",
-    "priceRange": "41702",
+    "priceRange": "$$",
     "description": "Luxury absentee home watch, canal bulkhead auditing, and winter freeze protection serving South Bethany, Delaware.",
     "address": {
       "@type": "PostalAddress",

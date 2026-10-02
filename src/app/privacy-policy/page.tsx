@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
         </p>
         <h2 className="font-serif text-lg font-bold text-slate-900 pt-2">Security of Property Records</h2>
         <p>
-          All digital property review inspection reports, access protocols, and mechanical schedules are maintained in encrypted, secure environments accessible only to your designated Property Manager.
+          All digital property review inspection reports, access protocols, and mechanical schedules are maintained in encrypted, secure environments accessible only to your designated Property Care Manager.
         </p>
       </div>
     </div>

@@ -65,7 +65,7 @@ export default function AnnualCarePlanPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Elevated Property Care - Coastal Delaware Property Stewardship",
-    "description": "Tailored absentee home watch and coastal property management plans for Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, South Bethany, and Fenwick Island.",
+    "description": "Tailored absentee home watch and coastal property care plans for Bethany Beach, Rehoboth Beach, Lewes, Dewey Beach, Ocean View, South Bethany, and Fenwick Island.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Elevated Property Care",

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Lewes, DE',
+  title: 'Luxury Home Watch & Property Care in Lewes, DE',
   description: 'Premier absentee home care, routine property review inspections, and preventative maintenance for luxury beach houses in Lewes, Delaware.',
   keywords: ['lewes home watch', 'lewes de home watch', 'absentee home services lewes de', 'absentee home watch coastal delaware', 'cape shores home watch', 'property management lewes delaware'],
 };

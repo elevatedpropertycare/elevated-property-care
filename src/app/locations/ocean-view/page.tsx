@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SchemaMarkup from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Luxury Home Watch & Property Management in Ocean View, DE',
+  title: 'Luxury Home Watch & Property Care in Ocean View, DE',
   description: 'Premier absentee home watch, routine property inspections, and preventative maintenance for residences in Ocean View and Bear Trap Dunes, Delaware.',
   keywords: [
     'ocean view de home watch',
@@ -23,7 +23,7 @@ export default function OceanViewPage() {
     "name": "Elevated Property Care - Ocean View",
     "url": "https://www.elevatedpropertycare.com/locations/ocean-view",
     "telephone": "+1-302-278-0938",
-    "priceRange": "41702",
+    "priceRange": "$$",
     "description": "Premier absentee home watch, crawlspace humidity monitoring, and preventative maintenance serving Ocean View, Delaware.",
     "address": {
       "@type": "PostalAddress",

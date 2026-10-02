@@ -14,8 +14,8 @@ export default function SchemaMarkup({ type = 'LocalBusiness', data }: SchemaPro
     "url": "https://www.elevatedpropertycare.com",
     "telephone": "+1-302-278-0938",
     "email": "info@elevatedpropertycare.com",
-    "priceRange": "28808",
-    "description": "Luxury absentee property management, weekly home watch inspections, and preventative maintenance across coastal Sussex County, Delaware.",
+    "priceRange": "$$",
+    "description": "Luxury absentee property care, weekly home watch inspections, and preventative maintenance across coastal Sussex County, Delaware.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lewes",
